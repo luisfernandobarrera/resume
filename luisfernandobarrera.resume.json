@@ -11,7 +11,7 @@
             "region": "Jalisco",
             "countryCode": "MX"
         },
-        "summary": "I am an experienced Python Programmer specialized in designing and programming backend stuff usually with Django/Flask. Have experience in Web Apps and some expertise designing its frontend. Have designed CMS, ERP, CRM, B2B, B2C, e-Commerce, Finance and Accounting Apps. I also enjoy and have experience working with big sets of data, extracting, transforming, and refining them (ETL).",
+        "summary": "I am an experienced Python Programmer specialized in designing and programming in backend usually with Django/Flask. I have experience in Web Apps and some expertise designing its frontend, as well as designing CMS, ERP, CRM, B2B, B2C, e-Commerce, Finance and Accounting Apps. I enjoy and have experience extracting, transforming, and refining big datasets (ETL).",
         "profiles": [
             {
                 "network": "linkedin",
@@ -288,16 +288,17 @@
         {
             "organization": "El Sommelier Económico",
             "startDate": "2016-02-01",
-            "summary": "An organization to foster discussion of current trends and multidisciplinary learning",
+            "summary": "An organization to foster discussion of current trends and multidisciplinary learning.",
             "position": "Member"
         }
     ],
     "meta": {
         "canonical": "https://github.com/luisfernandobarrera/resume",
         "display": "https://cv.luisfernandobarrera.com",
+        "gh-pages-domain": "cv.luisfernandobarrera.com",
         "version": "v0.1.2",
         "lastModified": "2020-01-19T02:30:00-06:00",
         "theme": "spartan",
-        "notes": "Missing projects, interests and skills"
+        "notes": ""
     }
 }

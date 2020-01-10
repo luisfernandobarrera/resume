@@ -32,3 +32,13 @@ def style():
         css = sass.compile(string=r.read(), indented=True)
     return Response(css, mimetype="text/css")
 
+# For Github Pages
+@app.route("/CNAME")
+def cname():
+    with open(RESUME, encoding="utf-8") as o:
+        document = json.load(o)
+    gh_pages = document.get('meta', {}).get('gh-pages-domain') or None
+    if gh_pages:
+        return Response(gh_pages, mimetype="text/plain")
+    else:
+        return Response(status=404)
