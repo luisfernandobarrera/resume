@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:900|Source+Sans+Pro|Raleway:700&display=swap')
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+
+
+$main-font: 'Source Sans Pro', sans-serif
+$title-font: Merriweather, serif
+$print-font-size: 10pt
+$print-line-height: 1.5em
+$print-font-family: Georgia, "Times New Roman", Times, serif
+$print-title-font-family: "Raleway", Helvetica, Calibri, sans-serif
+$print-non-text-font-family: "Source Sans Pro", Helvetica, Calibri, sans-serif
+
+$proportion: 1.618
+$main-proportion: 100% / $proportion
+$secondary-proportion: 100% - $main-proportion
+
+
+/* Reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+@media screen
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video
+    margin: 0
+    padding: 0
+    border: 0
+    font-size: 100%
+    font: inherit
+    vertical-align: baseline
+
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section
+    display: block
+
+  body
+    line-height: 1
+
+  ol, ul
+    list-style: none
+
+  blockquote, q
+    quotes: none
+
+  blockquote:before, blockquote:after,
+  q:before, q:after
+    content: ''
+    content: none
+
+  table
+    border-collapse: collapse
+    border-spacing: 0
+
+  /* End Reset */
+
+
+@media screen
+  body
+    background: #f2f2f2
+    line-height: 1.6
+    font-size: 16px
+    font-family: $main-font
+
+  #resume
+    padding: 1rem 0
+    margin: 1rem auto
+
+  #header
+    padding: 0
+    margin-bottom: 1em
+
+  #resume > header div
+    display: table
+    padding-left: 0.5em
+
+    &.middle
+      padding-top: 1.5em
+
+  .print
+    display: none
+
+  header
+    padding: 1em 0
+
+    h1, h2, h3, h4, h5, h6
+      margin: 0.75rem 0
+
+    img
+      display: block
+      width: 10em
+      border-radius: 0.275em
+      float: right
+      vertical-align: middle
+
+    h1.name
+      font-size: 1.5rem
+
+    h2.label
+      font-size: 1.2em
+      font-weight: 400
+      color: #757575
+
+    .name
+      line-height: 1
+      font-family: $title-font
+      font-weight: 900
+
+    .label
+      line-height: 1
+      font-weight: 400
+
+  section
+    //&:not(.section)
+    //  padding: .5em 1rem
+
+    &#references
+      border-bottom: none
+
+    &#basics
+      background: inherit
+
+      #profiles
+          ul
+            list-style: none
+            margin: inherit
+            padding: inherit
+
+    &#skills
+      padding-bottom: 0
+
+    &#education, &#work
+      padding-bottom: 1em
+
+  .main-summary section
+    padding-bottom: 1em
+
+  header::after
+    display: table
+    content: " "
+    clear: both
+
+  h2.section-title
+    text-align: left
+    font-size: 1.2rem
+    font-family: $title-font
+    font-weight: 900
+    color: #757575
+    margin-bottom: 0.1275em
+
+  .date
+    font-weight: 700
+    color: #757575
+
+  .position, .area, .institution
+    font-weight: 900
+
+  #interests .item, #languages .item, #skills .item
+    padding: 0 1em 1em 0
+    border-bottom: none
+
+    .name, .language
+      font-weight: 700
+      font-size: 110%
+
+  //.website::before
+    display: inline-block
+    font: normal normal normal 14px/1 FontAwesome
+    font-size: inherit
+    text-rendering: auto
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    text-decoration: none
+    min-width: 1.25em
+    margin-right: 0.25em
+    text-align: center
+    content: '\f14c'
+  //
+
+  #profiles, #skills, #interests, #languages
+    display: -webkit-box
+    display: -moz-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    -webkit-flex-flow: row wrap
+    flex-flow: row wrap
+    -webkit-justify-content: flex-start
+    justify-content: flex-start
+    padding-bottom: 1em
+
+  #profiles, #location
+    box-shadow: none
+    padding: 0
+
+  #profiles .item
+    margin: 0
+    padding: 0
+    padding-right: 1em
+    border-bottom: none
+
+  #interests ul
+    margin-top: 0.5em
+
+  #publications .name
+    font-style: italic
+
+  .courses li, .keywords li
+    display: inline-block
+    background: #f0f0f0
+    font-size: 0.9em
+    line-height: 1
+    color: #333
+    padding: 0.4em 0.8em
+    border-bottom: 1px solid #ddd
+    border-right: 1px solid #ddd
+    border-radius: 3px
+
+  #publications .date
+    font-weight: normal
+    color: #000
+
+  #skills
+    .item
+      min-width: 15em
+      padding: 0 .5em .8em 0
+      border-bottom: none
+
+    .level
+      .bar
+        border: 1px solid #ddd
+        display: block
+        width: 10em
+        height: 5px
+        margin: 0em 0 1em 0
+        position: relative
+
+        &::after
+          position: absolute
+          content: " "
+          top: 0
+          left: 0
+          background: black
+          height: 5px
+
+      &.beginner .bar::after
+        background: #EB5F51
+        width: 2.5em
+
+      &.intermediate .bar::after
+        background: #ffdf1f
+        width: 5em
+
+      &.advanced .bar::after
+        background: #59C596
+        width: 7.5em
+
+      &.master .bar::after
+        background: #5CB85C
+        width: 10em
+
+  /* Skills chart
+
+  #references .item
+    padding-left: 1em
+    border-left: 5px solid #EB5F51
+
+  .fa.social
+    margin-right: 0.25em
+    font-size: 1.1em
+
+  /* Social Media Brand Colors
+
+  .google-plus
+    color: #dd4b39
+
+  .tumblr
+    color: #32506d
+
+  .foursquare
+    color: #0072b1
+
+  .facebook
+    color: #3b5998
+
+  .linkedin
+    color: #007bb6
+
+  .pinterest
+    color: #cb2027
+
+  .dribbble
+    color: #ea4c89
+
+  .instagram
+    color: #517fa4
+
+  .twitter
+    color: #00aced
+
+  .soundcloud
+    color: #ff3a00
+
+  .wordpress
+    color: #21759b
+
+  .youtube
+    color: #bb0000
+
+  .github
+    color: #171515
+
+  .stack-overflow
+    color: #828386
+    position: relative
+
+  .flickr
+    color: #ff0084
+
+  .stack-overflow::after
+    position: absolute
+    left: 0
+    content: '\f16c'
+    color: #f68a1f
+    overflow: hidden
+    height: 40%
+
+  /******************
+   **		HELPER CLASSES
+   ******************
+
+  .fa
+    min-width: 1.25em
+    margin-right: 0.25em
+    text-align: center
+
+  .clear
+    display: table
+    clear: both
+
+  /****************
+   **		TABLET
+   ****************
+  @media screen and (min-width: 602px)
+    #resume
+      width: 550px
+      margin: 0 auto
+
+    .item
+      ul, ol
+        margin-left: 3em
+        margin-top: 1em
+        list-style: disc
+
+    .entry
+      margin-bottom: 1em
+
+    #basics
+      .contact-block
+        display: inline-block
+        width: 50%
+
+      #contact, #contact-languages
+        float: right
+
+    #work
+      $separation: 0.5em
+
+      h3.name
+        width: $main-proportion + 5%
+        display: block
+        float: left
+        vertical-align: top
+        margin-top: 0
+        margin-bottom: $separation
+
+      .website, .date, .location
+        width: $secondary-proportion - 5%
+        display: block
+        float: right
+        text-align: right
+        margin-bottom: $separation
+
+      .companyDescription, .position
+        display: block
+        width: $main-proportion + 5%
+        float: left
+        margin-bottom: $separation
+
+      .companyDescription
+        font-style: italic
+        font-family: $print-non-text-font-family
+
+      .position
+        font-weight: 800
+
+    .education
+      .name, .institution
+        width: $secondary-proportion
+        float: left
+        margin: 0
+        vertical-align: text-top
+
+      .area, .date
+        width: $main-proportion
+        float: left
+        margin: 0
+        vertical-align: text-top
+
+      header
+        margin-bottom: 0
+        padding-bottom: 0
+
+
+  /****************
+   **		LAPTOP
+   ****************
+  @media screen and (min-width: 1025px)
+    #resume
+      width: 650px
+      padding: 3em
+      margin: 3em auto
+      background: #fff
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4)
+
+    .section
+      display: -webkit-box
+      display: -moz-box
+      display: -ms-flexbox
+      display: -webkit-flex
+      display: flex
+      -webkit-flex-flow: row wrap
+      flex-flow: row wrap
+      -webkit-justify-content: space-between
+      justify-content: space-between
+      margin-bottom: 1em
+      margin-top: 1em
+      border-bottom: 1px solid #eee
+
+      &:last-of-type
+        border-bottom: none
+        margin-bottom: 0
+
+    section > header
+      line-height: 1
+      padding-bottom: 1em
+
+    h2.section-title
+      line-height: 1.1
+      padding-top: 0
+      margin-bottom: 0.4em
+
+    section
+      &:not(.section)
+        width: 40em
+        margin-top: 0
+        border: none
+
+      p
+        margin: 0
+
+      &#basics
+        width: auto
+        padding-top: 1em
+        padding-left: 1em
+        padding-bottom: 1em
+        border-top: 1px solid #eee
+        border-bottom: 1px solid #eee
+
+    #profiles .item
+      padding-bottom: 1em
+
+    div
+      padding: 0
+
+    #skills .item
+      padding-left: 0
+      margin-top: 0
+
+
+@media print
+
+  @page
+    margin: 1.4cm
+
+  a
+    text-decoration-line: none
+    color: inherit
+
+  body
+    text-align: justify
+    font: $print-font-size $print-font-family
+    line-height: $print-line-height
+    background: #fff !important
+    color: #000
+
+  .fa
+    display: none
+
+  h1, h2, h3, h4, h5, h6
+    font-family: $print-title-font-family
+    font-weight: 700
+
+  .section
+    padding: 0
+    clear: both
+    width: 100%
+    margin-bottom: 1em
+
+
+  #basics
+    #profiles
+      ul
+        list-style: none
+        padding-left: 0
+        margin: 0
+    .contact-block
+      display: inline-block
+      width: 50%
+    #contact, #contact-languages
+      float: right
+      text-align: right
+      div .fa
+        float: left
+
+  #work
+    section.job
+      .item
+        padding-top: 0.1em
+        clear: both
+      &:not(:last-child)
+        margin-bottom: 3em
+      page-break-inside: avoid
+
+    h3.name
+      width: $main-proportion
+      display: block
+      float: left
+      margin: 0
+
+    .website, .date, .location
+      width: $secondary-proportion
+      display: block
+      float: right
+      text-align: right
+
+    .companyDescription, .position
+      display: block
+      width: $main-proportion
+      float: left
+
+    .companyDescription
+      font-style: italic
+      font-family: $print-non-text-font-family
+
+    .position
+      font-weight: 800
+
+    .location
+      &:before
+        content: "Location: "
+
+  .education
+    header
+      .name
+        margin: 0 auto
+        display: block
+        width: $secondary-proportion
+        vertical-align: bottom
+        float: left
+
+      .area
+        width: $main-proportion
+        vertical-align: bottom
+        float: left
+
+    .item
+      .institution
+        width: $secondary-proportion
+        font-weight: 800
+        float: left
+
+      .date
+        width: $main-proportion
+        float: left
+
+    &:after
+      content: ''
+      display: block
+      clear: both
+
+
+
+

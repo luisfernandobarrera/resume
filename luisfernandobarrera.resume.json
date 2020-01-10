@@ -1,0 +1,303 @@
+{
+    "basics": {
+        "name": "Luis Fernando Barrera",
+        "email": "luisfernando@informind.com",
+        "image": "https://avatars2.githubusercontent.com/u/1202547?s=460&v=4",
+        "url": "https://luisfernandobarrera.com",
+        "label": "Python Data/Web Backend Programmer",
+        "phone": "+52 55 4848 1150",
+        "location": {
+            "city": "Guadalajara",
+            "region": "Jalisco",
+            "countryCode": "MX"
+        },
+        "summary": "I am an experienced Python Programmer specialized in designing and programming backend stuff usually with Django/Flask. Have experience in Web Apps and some expertise designing its frontend. Have designed CMS, ERP, CRM, B2B, B2C, e-Commerce, Finance and Accounting Apps. I also enjoy and have experience working with big sets of data, extracting, transforming, and refining them (ETL).",
+        "profiles": [
+            {
+                "network": "linkedin",
+                "url": "https://www.linkedin.com/in/luisfernandobarrera/",
+                "username": "luisfernandobarrera"
+            },
+            {
+                "network": "github",
+                "url": "https://github.com/luisfernandobarrera",
+                "username": "luisfernandobarrera"
+            },
+            {
+                "network": "skype",
+                "url": "skype:luisfernando_371?call",
+                "username": "luisfernando_371"
+            }
+        ]
+    },
+    "skills": [
+        {
+            "name": "Python Programming",
+            "level": "Expert",
+            "keywords": [
+                "django", "pandas", "flask", "asyncio", "fastapi", "scrapy", "numpy"
+            ]
+        },
+        {
+            "name": "Web Development with Python",
+            "level": "Expert",
+            "keywords": [
+                "django", "flask", "SQLAlchemy", "Celery", "Django-REST", "REST API"
+            ]
+        },
+        {
+            "name": "Business",
+            "keywords": [
+                "Administration", "Accounting", "Software for SMB", "ERP", "CRM", "Taxes", "electronic invoicing"
+            ]
+        },
+        {
+            "name": "Databases",
+            "level": "Expert",
+            "keywords": [
+                "SQL", "Data Design","PostgreSQL", "Redis", "MySQL", "sqlite3", "Legacy Databases"
+            ]
+        },
+        {
+            "name": "DevOps & Networking",
+            "level": "Intermediate",
+            "keywords": [
+                "Docker", "Kubernetes", "CI", "CircleCI", "Networking", "AWS",
+                "Windows Server", "Ubuntu", "CentOS"
+            ]
+        },
+        {
+            "name": "Frontend & Web",
+            "keywords": [
+                "Javascript",
+                "KnockoutJS",
+                "VueJS",
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "name": "Other Languages and Frameworks",
+            "level": "Used occasionally",
+            "keywords": [
+                "Java",
+                "PHP",
+                "WordPress",
+                "Bash",
+                "PowerShell"
+            ]
+        },
+        {
+            "name": "Tools & Others",
+            "keywords": ["PyCharm", "Git", "vscode", "zsh"]
+        }
+    ],
+    "interests": [
+        {
+            "name": "General",
+            "keywords": ["Finance", "Money", "Administration", "Business", "Data Management", "Entrepreneurship", "Markets"]
+        },
+        {
+            "name": "Data",
+            "keywords": ["Geographical Data", "Data collection", "Scraping", "Pipelines", "Designing Catalogues", "Visualization"]
+        }
+    ],
+    "work": [
+        {
+            "company": "Cial Dun&Bradstreet México",
+            "description": "Latin America’s leading business data and analytics provider",
+            "position": "Python Data Warehouse Developer",
+            "location": "Remote and Mexico City",
+            "startDate": "2018-10-01",
+            "url": "https://cialdnb.com",
+            "summary": "Python Programmer working with Kubernetes managing clusters and designing APIs to control and integrate Cial's Data Collection workflow",
+            "highlights": [
+                "Designed APIs to glue stats, status and control of the tasks in the kubernetes cluster using python, FastAPI and Airtable as a convenient frontend interface (Hyperkube)",
+                "Installed, Configured and Managed CialDnB's Kubernetes cluster with distributed storage. Configured Docker image to run the scrapers for collection purposes. (Ragnatela project)",
+                "Helped refactoring the in-house designed distributed scrapy-based framework to collect results using redis as a distributed queue with middlewares to send to our data collection pipeline",
+                "Wrote some scrapers using Selenium and Scrapy",
+                "Designed Silk in Django. An API and management system for organizing the sources, schemas and tasks to collect data to feed the business users with Latin American companies' data in Portuguese and Spanish",
+                "Working remotely and asynchronously with a team distributed in Israel, Croatia and Russia"
+            ]
+        },
+        {
+            "company": "Shopventory",
+            "description": "E-commerce Inventory Management",
+            "position": "Django developer",
+            "location": "Remote",
+            "startDate": "2018-06-01",
+            "endDate": "2018-09-15",
+            "url": "https://shopventory.com/",
+            "summary": "Python/Django programmer and Javascript/AngularJS programmer. Working on the project temporarily."
+        },
+        {
+            "company": "AdRoll (Tiempo Development)",
+            "description": "Digital Marketing Company",
+            "url": "https://adroll.com",
+            "position": "Software Engineer",
+            "location": "Remote",
+            "startDate": "2017-05-15",
+            "endDate": "2018-01-15",
+            "summary": "Python programmer in the Attribution team creating scripts to process big trails of event data in TrailDB.",
+            "highlights": [
+                "Wrote software to process big trails of advertising events and resume them or transform them in different formats for other internal users",
+                "Designing tests.",
+                "Creating APIs in Flask and in Jersey (Java).",
+                "Working from home in Mexico City with teams in San Francisco and Monterrey.",
+                "Contract through [Tiempo Development](https://tiempodev.com/)"
+            ]
+        },
+        {
+            "company": "Nextor Telecom",
+            "description": "A telecom and telecom related software company.",
+            "position": "Lead Software Engineer",
+            "location": "Mexico City, MX",
+            "startDate": "2014-08-10",
+            "endDate": "2017-03-15",
+            "url": "https://nextortelecom.com",
+            "summary": "Lead developer and maintainer of Nextor Telecom’s software infrastructure. It’s portfolio includes products such as: Vozero, a prepaid VoIP conference service with a self-service user page to collect payments and manage conference calls in real-time; NextorProxy, a Cloud VoIP PBX service among others.",
+            "highlights": [
+                "Developed Experos a micro ERP for managing the company's administration",
+                "Developed Mango Analytics a comprenhensive solution for Call Detail Record, managing and processing large volumes of calls and storing and making available for search call recordings",
+                "Developed a method to quickly setup and create webapps with REST, Django and Bootstrap."
+            ]
+        },
+        {
+            "company": "informind",
+            "position": "Founder and Developer",
+            "description": "An IT and Software Consulting Company",
+            "location": "Mexico City, MX",
+            "startDate": "2009-09-30",
+            "endDate": "2014-05-06",
+            "url": "http://informind.com",
+            "summary": "Founder of Informind. Python Developer and Software Team Leader. Administrative consultant, Data Management Consultant.",
+            "highlights": [
+                "Company chiefly focused in Data management (Catalogue design and sanitation, Document schema design)  and the installation of ERP systems in order to generate meaningful and useful information to the Finance, Administration and Executive departments.",
+                "We offered to every small and medium sized business, solutions such as Websites, Apps, Servers and Networking consultant.",
+                "Our vision was to offer: our customers, a quality and affordable all-in-one IT solution; our employees, the opportunity to learn and grow by offering tailored solutions that are valuable to our customer.",
+                "Our customers were in the Manufacturing, Accounting, Commercial, Retail, Healthcare and Publishing industries.",
+                "Remote support (telephone and mail) and in-site. Software and Hardware sales. Sales and project planning. Python software development. Software Architect.  External Software implementation. Network design and implementation."
+            ]
+        },
+        {
+            "company": "Bank of America Merrill Lynch",
+            "description": "Global Bank",
+            "position": "Unit Testing Engineer",
+            "location": "Mexico City, MX",
+            "startDate": "2013-04-01",
+            "endDate": "2013-07-31",
+            "url": "https://bankofamerica.com.mx",
+            "summary": "Unit tester for money market in-house developed software written in Quartz (Bank of America’s Python Development platform).",
+            "highlights": [
+                "Collaboration and teamwork with Indian, Brazilian and American developers.",
+                "Counter-clock project and with adverse situations, objectives met successfully."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "This CV",
+            "type": "Personal Project",
+            "description": "Curriculum Vitae Production System",
+            "startDate": "2018-12-17",
+            "summary": "A system that builds a Github page with my CV, including a PDF.",
+            "url": "http://github.com/luisfernandobarrera/cv",
+            "highlights": [
+                "Using resume.json format as the basis for storing the CV data",
+                "Using jinja2 as template format",
+                "Using SASS with a stylesheet that formats the template for screen and print media"
+            ]
+        },
+        {
+            "name": "Pergamum",
+            "entity": "Letras Libres / Fernando García Ramírez",
+            "type": "Custom Application",
+            "description": "Document Management System",
+            "startDate": "2016-12-01",
+            "endDate": "2018-07-01",
+            "roles": ["Python Developer", "Frontend Developer", "Deployment and Mainteinance"],
+            "keywords": ["Django", "PostgreSQL", "Apache Tika", "Apache Solr", "Bootstrap"],
+            "summary": "Search and manage a document database to mine content and cross-reference documents with scrapers to fetch and add new data from news datasources.",
+            "highlights": [
+                "Using Django and Bootstrap to create an Admin View for users",
+                "Using Apache Tika to fetch metadata",
+                "Using Solr as Search Backend",
+                "Deployed on AWS using ECR and CodeShip",
+                "Code available for review"
+            ]
+        },
+        {
+            "name": "Experos",
+            "entity": "Nextor Telecom",
+            "type": "ERP",
+            "roles": ["Backend Developer", "Frontend Engineer", "Project Owner and Manager"],
+            "startDate": "2015-03-01",
+            "endDate": "2017-01-15",
+            "description": "A micro-ERP with Invoicing, Purchases, Accounts Payable and Receivable capabilities to manage the company and automate processes, and eventually to merchandise it. ",
+            "highlights": [
+                "Using Django-PostgreSQL, APIs and Knockout for developing mockups and allow frontend engineers to easily integrate it into a previously developed mocked up interface.",
+                "Backend: Django, PostgreSQL, Django REST Framework  APIs. M2Crypto, tablib, XML",
+                "Frontend: Knockout.Js Django.js. Bootstrap, React, Redux",
+                "Integrations with Mexican Electronic Invoicing, Electronic Accounting and various banks and payment systems"
+            ]
+        },
+        {
+            "name": "coringa",
+            "type": "Personal Project",
+            "description": "Expense manager",
+            "url": "https://github.com/luisfernandobarrera/coringa ",
+            "highlights": [
+                "An API to store Expenses and Income, Budgeting, Cash Flow and Reporting.",
+                "By the moment only with a Backend.",
+                "Exporting and importing from propietary system YNAB4"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "UNAM",
+            "area": "Economics",
+            "studyType": "Bachelor",
+            "startDate": "2010-08-01",
+            "endDate": "2013-05-20"
+        }
+    ],
+    "languages": [
+        {
+            "language": "Spanish",
+            "fluency": "Native"
+        },
+        {
+            "language": "English",
+            "fluency": "C1",
+            "institution": "The Anglo"
+        },
+        {
+            "language": "Portuguese",
+            "fluency": "C1",
+            "institution": "Casa do Brasil"
+        },
+        {
+            "language": "German",
+            "fluency": "A2",
+            "institution": "ITEM"
+
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "El Sommelier Económico",
+            "startDate": "2016-02-01",
+            "summary": "An organization to foster discussion of current trends and multidisciplinary learning",
+            "position": "Member"
+        }
+    ],
+    "meta": {
+        "canonical": "https://github.com/luisfernandobarrera/resume",
+        "display": "https://cv.luisfernandobarrera.com",
+        "version": "v0.1.2",
+        "lastModified": "2020-01-19T02:30:00-06:00",
+        "theme": "spartan",
+        "notes": "Missing projects, interests and skills"
+    }
+}
