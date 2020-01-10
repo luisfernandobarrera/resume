@@ -600,6 +600,79 @@ $secondary-proportion: 100% - $main-proportion
       display: block
       clear: both
 
+  #languages
+    display: -moz-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    -webkit-flex-flow: row wrap
+    flex-flow: row wrap
+    -webkit-justify-content: flex-start
+    justify-content: flex-start
+    padding-bottom: 1em
+
+    font-family: $print-non-text-font-family
+
+    .item
+      padding: 0 1em 1em 0
+      border-bottom: none
+
+    .language
+      font-weight: 700
+      font-size: 110%
+      font-family: $print-font-family
+
+
+  #interests, #skills
+    .name
+      font-weight: 700
+      font-size: 110%
+
+    .item
+      display: block
+      width: 100%
+      clear: both
+      margin-bottom: 2em
+
+
+      &:after
+        display: block
+        border-bottom: 1px solid slategray
+
+      .name, .level
+        display: inline-block
+        vertical-align: text-bottom
+        text-align: left
+        font-size: 1em
+
+      .name
+        padding-right: 1em
+
+      .keywords
+        font-family: $print-non-text-font-family
+
+      ul, ol
+        list-style: none
+        padding-left: 0
+        margin: 0
+
+        li
+          display: inline-block
+          padding: 0 0.5em
+          border-left: 1px solid lightgray
+
+
+          &:first-of-type
+            margin-left: 0
+
+          &:last-of-type
+            margin-right: 0
+            border-right: 1px solid lightgray
+
+      //&:nth-of-type(even)
+      //  float: right
+      //  text-align: right
+
 
 
 

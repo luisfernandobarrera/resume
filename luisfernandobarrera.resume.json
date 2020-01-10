@@ -39,7 +39,7 @@
             ]
         },
         {
-            "name": "Web Development with Python",
+            "name": "Python Web Development",
             "level": "Expert",
             "keywords": [
                 "django", "flask", "SQLAlchemy", "Celery", "Django-REST", "REST API"
@@ -62,7 +62,7 @@
             "name": "DevOps & Networking",
             "level": "Intermediate",
             "keywords": [
-                "Docker", "Kubernetes", "CI", "CircleCI", "Networking", "AWS",
+                "Docker", "Kubernetes", "CircleCI", "Networking", "AWS",
                 "Windows Server", "Ubuntu", "CentOS"
             ]
         },
@@ -77,7 +77,7 @@
             ]
         },
         {
-            "name": "Other Languages and Frameworks",
+            "name": "Other",
             "level": "Used occasionally",
             "keywords": [
                 "Java",
@@ -95,7 +95,7 @@
     "interests": [
         {
             "name": "General",
-            "keywords": ["Finance", "Money", "Administration", "Business", "Data Management", "Entrepreneurship", "Markets"]
+            "keywords": ["Finance", "Money", "Administration", "Business", "Data Management", "Entrepreneurship", "Markets", "Personal Finance", "Accounting", "Administration"]
         },
         {
             "name": "Data",
@@ -144,7 +144,7 @@
                 "Designing tests.",
                 "Creating APIs in Flask and in Jersey (Java).",
                 "Working from home in Mexico City with teams in San Francisco and Monterrey.",
-                "Contract through [Tiempo Development](https://tiempodev.com/)"
+                "Contract through Tiempo Development (https://tiempodev.com/)"
             ]
         },
         {

@@ -437,4 +437,55 @@
   .education:after {
     content: '';
     display: block;
-    clear: both; } }
+    clear: both; }
+  #languages {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 1em;
+    font-family: "Source Sans Pro", Helvetica, Calibri, sans-serif; }
+    #languages .item {
+      padding: 0 1em 1em 0;
+      border-bottom: none; }
+    #languages .language {
+      font-weight: 700;
+      font-size: 110%;
+      font-family: Georgia, "Times New Roman", Times, serif; }
+  #interests .name, #skills .name {
+    font-weight: 700;
+    font-size: 110%; }
+  #interests .item, #skills .item {
+    display: block;
+    width: 100%;
+    clear: both;
+    margin-bottom: 2em; }
+    #interests .item:after, #skills .item:after {
+      display: block;
+      border-bottom: 1px solid slategray; }
+    #interests .item .name, #interests .item .level, #skills .item .name, #skills .item .level {
+      display: inline-block;
+      vertical-align: text-bottom;
+      text-align: left;
+      font-size: 1em; }
+    #interests .item .name, #skills .item .name {
+      padding-right: 1em; }
+    #interests .item .keywords, #skills .item .keywords {
+      font-family: "Source Sans Pro", Helvetica, Calibri, sans-serif; }
+    #interests .item ul, #interests .item ol, #skills .item ul, #skills .item ol {
+      list-style: none;
+      padding-left: 0;
+      margin: 0; }
+      #interests .item ul li, #interests .item ol li, #skills .item ul li, #skills .item ol li {
+        display: inline-block;
+        padding: 0 0.5em;
+        border-left: 1px solid lightgray; }
+        #interests .item ul li:first-of-type, #interests .item ol li:first-of-type, #skills .item ul li:first-of-type, #skills .item ol li:first-of-type {
+          margin-left: 0; }
+        #interests .item ul li:last-of-type, #interests .item ol li:last-of-type, #skills .item ul li:last-of-type, #skills .item ol li:last-of-type {
+          margin-right: 0;
+          border-right: 1px solid lightgray; } }
