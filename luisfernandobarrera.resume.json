@@ -201,7 +201,7 @@
             "description": "Curriculum Vitae Production System",
             "startDate": "2018-12-17",
             "summary": "A system that builds a Github page with my CV, including a PDF.",
-            "url": "http://github.com/luisfernandobarrera/cv",
+            "url": "http://github.com/luisfernandobarrera/resume",
             "highlights": [
                 "Using resume.json format as the basis for storing the CV data",
                 "Using jinja2 as template format",
@@ -210,7 +210,7 @@
         },
         {
             "name": "Pergamum",
-            "entity": "Letras Libres / Fernando García Ramírez",
+            "entity": "Letras Libres",
             "type": "Custom Application",
             "description": "Document Management System",
             "startDate": "2016-12-01",
@@ -233,8 +233,9 @@
             "roles": ["Backend Developer", "Frontend Engineer", "Project Owner and Manager"],
             "startDate": "2015-03-01",
             "endDate": "2017-01-15",
-            "description": "A micro-ERP with Invoicing, Purchases, Accounts Payable and Receivable capabilities to manage the company and automate processes, and eventually to merchandise it. ",
+            "description": "Custom ERP with Accounting Functionality",
             "highlights": [
+                "A micro-ERP with Invoicing, Purchases, Accounts Payable and Receivable capabilities to manage the company and automate processes, and eventually to merchandise it. ",
                 "Using Django-PostgreSQL, APIs and Knockout for developing mockups and allow frontend engineers to easily integrate it into a previously developed mocked up interface.",
                 "Backend: Django, PostgreSQL, Django REST Framework  APIs. M2Crypto, tablib, XML",
                 "Frontend: Knockout.Js Django.js. Bootstrap, React, Redux",
@@ -245,7 +246,7 @@
             "name": "coringa",
             "type": "Personal Project",
             "description": "Expense manager",
-            "url": "https://github.com/luisfernandobarrera/coringa ",
+            "url": "https://github.com/luisfernandobarrera/coringa",
             "highlights": [
                 "An API to store Expenses and Income, Budgeting, Cash Flow and Reporting.",
                 "By the moment only with a Backend.",

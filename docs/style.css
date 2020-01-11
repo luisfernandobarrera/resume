@@ -63,7 +63,7 @@
   .print {
     display: none; }
   header {
-    padding: 1em 0; }
+    padding: 0; }
     header h1, header h2, header h3, header h4, header h5, header h6 {
       margin: 0.75rem 0; }
     header img {
@@ -85,6 +85,8 @@
     header .label {
       line-height: 1;
       font-weight: 400; }
+  .section > header {
+    padding: 1em 0; }
   section#references {
     border-bottom: none; }
   section#basics {
@@ -253,38 +255,41 @@
     margin: 0 auto; }
   .item ul, .item ol {
     margin-left: 3em;
-    margin-top: 1em;
     list-style: disc; }
   .entry {
     margin-bottom: 1em; }
+    .entry header {
+      padding: 1em 0; }
   #basics .contact-block {
     display: inline-block;
     width: 50%; }
   #basics #contact, #basics #contact-languages {
     float: right; }
-  #work h3.name {
+  #work h3.name, #projects h3.name {
     width: 66.8047%;
     display: block;
     float: left;
     vertical-align: top;
     margin-top: 0;
     margin-bottom: 0.5em; }
-  #work .website, #work .date, #work .location {
+  #work .website, #work .date, #work .location, #work .working-for, #projects .website, #projects .date, #projects .location, #projects .working-for {
     width: 33.1953%;
     display: block;
     float: right;
     text-align: right;
     margin-bottom: 0.5em; }
-  #work .companyDescription, #work .position {
+  #work .company-description, #work .position, #work .project-description, #projects .company-description, #projects .position, #projects .project-description {
     display: block;
     width: 66.8047%;
     float: left;
     margin-bottom: 0.5em; }
-  #work .companyDescription {
+  #work .company-description, #work .project-description, #projects .company-description, #projects .project-description {
     font-style: italic;
     font-family: "Source Sans Pro", Helvetica, Calibri, sans-serif; }
-  #work .position {
+  #work .position, #work .roles, #work .working-for, #projects .position, #projects .roles, #projects .working-for {
     font-weight: 800; }
+  #work .roles, #projects .roles {
+    clear: both; }
   .education .name, .education .institution {
     width: 38.1953%;
     float: left;
@@ -389,33 +394,37 @@
     text-align: right; }
     #basics #contact div .fa, #basics #contact-languages div .fa {
       float: left; }
-  #work section.job {
+  #work section.job, #work section.project, #projects section.job, #projects section.project {
     page-break-inside: avoid; }
-    #work section.job .item {
+    #work section.job .item, #work section.project .item, #projects section.job .item, #projects section.project .item {
       padding-top: 0.1em;
       clear: both; }
-    #work section.job:not(:last-child) {
+    #work section.job:not(:last-child), #work section.project:not(:last-child), #projects section.job:not(:last-child), #projects section.project:not(:last-child) {
       margin-bottom: 3em; }
-  #work h3.name {
+  #work h3.name, #projects h3.name {
     width: 61.8047%;
     display: block;
     float: left;
     margin: 0; }
-  #work .website, #work .date, #work .location {
+  #work .website, #work .date, #work .location, #work .working-for, #projects .website, #projects .date, #projects .location, #projects .working-for {
     width: 38.1953%;
     display: block;
     float: right;
     text-align: right; }
-  #work .companyDescription, #work .position {
+  #work .company-description, #work .position, #work .project-description, #projects .company-description, #projects .position, #projects .project-description {
     display: block;
     width: 61.8047%;
     float: left; }
-  #work .companyDescription {
+  #work .company-description, #work .project-description, #projects .company-description, #projects .project-description {
     font-style: italic;
     font-family: "Source Sans Pro", Helvetica, Calibri, sans-serif; }
-  #work .position {
+  #work .position, #work .roles, #work .working-for, #projects .position, #projects .roles, #projects .working-for {
     font-weight: 800; }
-  #work .location:before {
+  #work .roles, #projects .roles {
+    clear: both; }
+  #work .summary, #work .extras, #projects .summary, #projects .extras {
+    margin-bottom: 1em; }
+  #work .location:before, #projects .location:before {
     content: "Location: "; }
   .education header .name {
     margin: 0 auto;

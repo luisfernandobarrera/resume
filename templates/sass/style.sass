@@ -92,7 +92,7 @@ $secondary-proportion: 100% - $main-proportion
     display: none
 
   header
-    padding: 1em 0
+    padding: 0
 
     h1, h2, h3, h4, h5, h6
       margin: 0.75rem 0
@@ -120,6 +120,9 @@ $secondary-proportion: 100% - $main-proportion
     .label
       line-height: 1
       font-weight: 400
+
+  .section > header
+    padding: 1em 0
 
   section
     //&:not(.section)
@@ -360,11 +363,13 @@ $secondary-proportion: 100% - $main-proportion
     .item
       ul, ol
         margin-left: 3em
-        margin-top: 1em
         list-style: disc
 
     .entry
       margin-bottom: 1em
+
+      header
+        padding: 1em 0
 
     #basics
       .contact-block
@@ -374,7 +379,7 @@ $secondary-proportion: 100% - $main-proportion
       #contact, #contact-languages
         float: right
 
-    #work
+    #work, #projects
       $separation: 0.5em
 
       h3.name
@@ -385,25 +390,28 @@ $secondary-proportion: 100% - $main-proportion
         margin-top: 0
         margin-bottom: $separation
 
-      .website, .date, .location
+      .website, .date, .location, .working-for
         width: $secondary-proportion - 5%
         display: block
         float: right
         text-align: right
         margin-bottom: $separation
 
-      .companyDescription, .position
+      .company-description, .position, .project-description
         display: block
         width: $main-proportion + 5%
         float: left
         margin-bottom: $separation
 
-      .companyDescription
+      .company-description, .project-description
         font-style: italic
         font-family: $print-non-text-font-family
 
-      .position
+      .position, .roles, .working-for
         font-weight: 800
+
+      .roles
+        clear: both
 
     .education
       .name, .institution
@@ -534,8 +542,8 @@ $secondary-proportion: 100% - $main-proportion
       div .fa
         float: left
 
-  #work
-    section.job
+  #work, #projects
+    section.job, section.project
       .item
         padding-top: 0.1em
         clear: both
@@ -549,27 +557,34 @@ $secondary-proportion: 100% - $main-proportion
       float: left
       margin: 0
 
-    .website, .date, .location
+    .website, .date, .location, .working-for
       width: $secondary-proportion
       display: block
       float: right
       text-align: right
 
-    .companyDescription, .position
+    .company-description, .position, .project-description
       display: block
       width: $main-proportion
       float: left
 
-    .companyDescription
+    .company-description, .project-description
       font-style: italic
       font-family: $print-non-text-font-family
 
-    .position
+    .position, .roles, .working-for
       font-weight: 800
+
+    .roles
+      clear: both
+
+    .summary, .extras
+      margin-bottom: 1em
 
     .location
       &:before
         content: "Location: "
+
 
   .education
     header

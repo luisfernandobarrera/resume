@@ -78,7 +78,7 @@
                             <a href="{{ job.url }}">{{ job.url }}</a>
                         </div>
                         {% if job.description %}
-                            <div class="companyDescription">
+                            <div class="company-description">
                                 {{ job.description }}
                             </div>
                         {% endif %}
@@ -170,40 +170,53 @@
 
     {% if resume.projects %}
         <section class="section">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">Main Projects</h2>
+            <section id="projects">
+                {% for project in resume.projects %}
+                    <section class="project entry">
+                        <header>
+                            <h3 class="name">{{ project.name }} ({{ project.type }})</h3>
+                            {% if project.entity %}
+                                <div class="working-for">{{ project.entity }}</div>
+                            {% endif %}
+                            <div class="project-description">
+                                {{ project.description }}
+                            </div>
+                            {% if project.roles %}
+                                <div class="roles">{% for role in project.roles %}{{ role }}. {% endfor %}</div>
+                            {% endif %}
 
-            {% for project in resume.projects %}
-                <section class="project entry">
-                    <header>
-                        <h3 class="name">{{ project.name }} ({{ project.type }})</h3>
-                    </header>
-                    <div class="item">
-                        <div class="description">
-                            {{ project.description }}
-                        </div>
-                        {% if project.roles %}
-                            <div class="roles">{% for role in project.roles %}{{ role|lower }}. {% endfor %}</div>
-                        {% endif %}
-                        {% if project.entity %}
-                            <div class="working-for">{{ project.entity }}</div>
-                        {% endif %}
-                        <div class="extras">
+                        </header>
+                        <div class="item">
                             {% if project.keywords %}
+                                <div class="extras">
                                 <span class="keywords">{% for keyword in project.keywords %}{{ keyword|lower }}
                                     {% if not loop.last %}&middot;{% endif %} {% endfor %}</span>
+                                </div>
+                            {% endif %}
+
+                            {% if project.highlights %}
+                                <ul class="highlights">
+                                    {% if project.summary %}
+                                        <li>{{ project.summary }}</li>
+                                    {% endif %}
+                                    {% for highlight in project.highlights %}
+                                        <li>{{ highlight }}</li>
+                                    {% endfor %}
+                                    {% if project.startDate %}
+                                        <li>Developed from {{ project.startDate }}{% if project.endDate %} to
+                                            {{ project.endDate }}{% endif %}
+                                        </li>
+                                    {% endif %}
+                                    {% if project.url %}
+                                        <li><a href="{{ project.url }}">{{ project.url }}</a></li>
+                                    {% endif %}
+                                </ul>
                             {% endif %}
                         </div>
-                        {% if project.highlights %}
-                            <ul class="highlights">
-                                {% for highlight in project.highlights %}
-                                    <li>{{ highlight }}</li>
-                                {% endfor %}
-                            </ul>
-                        {% endif %}
-                    </div>
-                </section>
-
-            {% endfor %}
+                    </section>
+                {% endfor %}
+            </section>
         </section>
     {% endif %}
 
