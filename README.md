@@ -23,6 +23,9 @@ To develop your cv
 python -m flask run 
 ```
 
+To have PDF support you have to install WeasyPrint that requires the GTK Library. 
+[Instructions to install](https://weasyprint.readthedocs.io/en/stable/install.html#gtk64installer)
+
 Inside the `templates` folder you will find the template and the SASS file.
 
 ### TODO ###

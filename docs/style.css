@@ -265,30 +265,30 @@
     width: 50%; }
   #basics #contact, #basics #contact-languages {
     float: right; }
-  #work h3.name, #projects h3.name {
+  #work h3.name, #projects h3.name, #volunteer h3.name {
     width: 66.8047%;
     display: block;
     float: left;
     vertical-align: top;
     margin-top: 0;
     margin-bottom: 0.5em; }
-  #work .website, #work .date, #work .location, #work .working-for, #projects .website, #projects .date, #projects .location, #projects .working-for {
+  #work .website, #work .date, #work .location, #work .working-for, #projects .website, #projects .date, #projects .location, #projects .working-for, #volunteer .website, #volunteer .date, #volunteer .location, #volunteer .working-for {
     width: 33.1953%;
     display: block;
     float: right;
     text-align: right;
     margin-bottom: 0.5em; }
-  #work .company-description, #work .position, #work .project-description, #projects .company-description, #projects .position, #projects .project-description {
+  #work .company-description, #work .position, #work .project-description, #projects .company-description, #projects .position, #projects .project-description, #volunteer .company-description, #volunteer .position, #volunteer .project-description {
     display: block;
     width: 66.8047%;
     float: left;
     margin-bottom: 0.5em; }
-  #work .company-description, #work .project-description, #projects .company-description, #projects .project-description {
+  #work .company-description, #work .project-description, #projects .company-description, #projects .project-description, #volunteer .company-description, #volunteer .project-description {
     font-style: italic;
     font-family: "Source Sans Pro", Helvetica, Calibri, sans-serif; }
-  #work .position, #work .roles, #work .working-for, #projects .position, #projects .roles, #projects .working-for {
+  #work .position, #work .roles, #work .working-for, #projects .position, #projects .roles, #projects .working-for, #volunteer .position, #volunteer .roles, #volunteer .working-for {
     font-weight: 800; }
-  #work .roles, #projects .roles {
+  #work .roles, #projects .roles, #volunteer .roles {
     clear: both; }
   .education .name, .education .institution {
     width: 38.1953%;
@@ -363,6 +363,8 @@
 @media print {
   @page {
     margin: 1.4cm; }
+  .no-page-break {
+    page-break-inside: avoid; }
   a {
     text-decoration-line: none;
     color: inherit; }
@@ -394,37 +396,37 @@
     text-align: right; }
     #basics #contact div .fa, #basics #contact-languages div .fa {
       float: left; }
-  #work section.job, #work section.project, #projects section.job, #projects section.project {
+  #work section.job, #work section.project, #projects section.job, #projects section.project, #volunteer section.job, #volunteer section.project {
     page-break-inside: avoid; }
-    #work section.job .item, #work section.project .item, #projects section.job .item, #projects section.project .item {
+    #work section.job .item, #work section.project .item, #projects section.job .item, #projects section.project .item, #volunteer section.job .item, #volunteer section.project .item {
       padding-top: 0.1em;
       clear: both; }
-    #work section.job:not(:last-child), #work section.project:not(:last-child), #projects section.job:not(:last-child), #projects section.project:not(:last-child) {
+    #work section.job:not(:last-child), #work section.project:not(:last-child), #projects section.job:not(:last-child), #projects section.project:not(:last-child), #volunteer section.job:not(:last-child), #volunteer section.project:not(:last-child) {
       margin-bottom: 3em; }
-  #work h3.name, #projects h3.name {
+  #work h3.name, #projects h3.name, #volunteer h3.name {
     width: 61.8047%;
     display: block;
     float: left;
     margin: 0; }
-  #work .website, #work .date, #work .location, #work .working-for, #projects .website, #projects .date, #projects .location, #projects .working-for {
+  #work .website, #work .date, #work .location, #work .working-for, #projects .website, #projects .date, #projects .location, #projects .working-for, #volunteer .website, #volunteer .date, #volunteer .location, #volunteer .working-for {
     width: 38.1953%;
     display: block;
     float: right;
     text-align: right; }
-  #work .company-description, #work .position, #work .project-description, #projects .company-description, #projects .position, #projects .project-description {
+  #work .company-description, #work .position, #work .project-description, #projects .company-description, #projects .position, #projects .project-description, #volunteer .company-description, #volunteer .position, #volunteer .project-description {
     display: block;
     width: 61.8047%;
     float: left; }
-  #work .company-description, #work .project-description, #projects .company-description, #projects .project-description {
+  #work .company-description, #work .project-description, #projects .company-description, #projects .project-description, #volunteer .company-description, #volunteer .project-description {
     font-style: italic;
     font-family: "Source Sans Pro", Helvetica, Calibri, sans-serif; }
-  #work .position, #work .roles, #work .working-for, #projects .position, #projects .roles, #projects .working-for {
+  #work .position, #work .roles, #work .working-for, #projects .position, #projects .roles, #projects .working-for, #volunteer .position, #volunteer .roles, #volunteer .working-for {
     font-weight: 800; }
-  #work .roles, #projects .roles {
+  #work .roles, #work .summary, #projects .roles, #projects .summary, #volunteer .roles, #volunteer .summary {
     clear: both; }
-  #work .summary, #work .extras, #projects .summary, #projects .extras {
+  #work .summary, #work .extras, #projects .summary, #projects .extras, #volunteer .summary, #volunteer .extras {
     margin-bottom: 1em; }
-  #work .location:before, #projects .location:before {
+  #work .location:before, #projects .location:before, #volunteer .location:before {
     content: "Location: "; }
   .education header .name {
     margin: 0 auto;

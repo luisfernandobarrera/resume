@@ -35,7 +35,7 @@
             "name": "Python Programming",
             "level": "Expert",
             "keywords": [
-                "django", "pandas", "flask", "asyncio", "fastapi", "scrapy", "numpy"
+                "django", "pandas", "flask", "asyncio", "fastapi", "scrapy", "numpy", "anaconda", "poetry"
             ]
         },
         {
@@ -72,6 +72,7 @@
                 "Javascript",
                 "KnockoutJS",
                 "VueJS",
+                "SASS",
                 "HTML",
                 "CSS"
             ]

@@ -1,9 +1,22 @@
 import jinja2
-from flask import Flask, render_template, Response, jsonify
+from flask import Flask, render_template, Response, jsonify, url_for
 import json
 import sass
 import os
 import glob
+import logging
+
+logger = logging.getLogger(__name__)
+
+try:
+    from flask_weasyprint import HTML, render_pdf
+    PDF_SUPPORT = True
+    logging.info(f"* PDF support enabled")
+
+except (ImportError, OSError):
+    PDF_SUPPORT = False
+    logging.info(f"* PDF support disabled")
+
 
 app = Flask(__name__)
 files = glob.glob("*.resume.json")
@@ -33,6 +46,13 @@ def style():
     return Response(css, mimetype="text/css")
 
 
+# PDF Support
+if PDF_SUPPORT:
+    @app.route('/cv.pdf')
+    def cv_pdf():
+        return render_pdf(url_for('cv'))
+
+
 # For Github Pages
 with open(RESUME, encoding="utf-8") as o:
     document = json.load(o)
@@ -41,4 +61,5 @@ if gh_pages:
     @app.route("/CNAME")
     def cname():
         return Response(gh_pages, mimetype="application/octet-stream")
+
 

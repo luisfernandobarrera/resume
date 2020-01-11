@@ -15,7 +15,7 @@
         </div>
     </header>
 
-    <section id="basics">
+    <section id="basics" class="no-page-break">
         <div id="location" class="contact-block">
             <span class="fa fa-map-marker"></span>
             <span class="city">{{ resume.basics.location.city }},</span>
@@ -58,7 +58,7 @@
         </div>
     </section>
 
-    <section class="section main-summary">
+    <section class="section main-summary no-page-break">
         <h2 class='section-title'>About</h2>
         <section>
             <p>{{ resume.basics.summary }}</p>
@@ -69,7 +69,7 @@
         <h2 class='section-title'>Jobs</h2>
         <section id="work">
             {% for job in resume.work %}
-                <section class="job entry">
+                <section class="job entry no-page-break">
                     <header>
                         <h3 class="name">
                             {{ job.company }}
@@ -125,7 +125,7 @@
         <h2 class='section-title'>Skills</h2>
         <section id="skills">
             {% for skill in resume.skills %}
-                <div class="item">
+                <div class="item no-page-break">
                     <div class="name">
                         {{ skill.name }}
                     </div>
@@ -145,7 +145,7 @@
     </section>
 
     {% if resume.languages %}
-        <section class="section">
+        <section class="section no-page-break">
             <h2 class='section-title'>Languages</h2>
             <section id="languages">
                 {% for language in resume.languages %}
@@ -173,7 +173,7 @@
             <h2 class="section-title">Main Projects</h2>
             <section id="projects">
                 {% for project in resume.projects %}
-                    <section class="project entry">
+                    <section class="project entry no-page-break">
                         <header>
                             <h3 class="name">{{ project.name }} ({{ project.type }})</h3>
                             {% if project.entity %}
@@ -222,7 +222,7 @@
 
 
     {% if resume.education %}
-        <section class="section">
+        <section class="section no-page-break">
             <h2 class='section-title'>Education</h2>
             {% for study in resume.education %}
                 <section class="education entry">
@@ -260,7 +260,7 @@
     {% endif %}
 
     {% if resume.interests %}
-        <section class="section">
+        <section class="section no-page-break">
             <h2 class='section-title' class='section-title'>Interests</h2>
             <section id="interests">
                 {% for interest in resume.interests %}
@@ -284,7 +284,7 @@
     {% if resume.volunteer %}
         <section class="section">
             <h2 class='section-title'>Volunteer</h2>
-            <section id="education">
+            <section id="volunteer" class="no-page-break">
                 {% for org in resume.volunteer %}
                     <header>
                         <h3 class="institution name">

@@ -379,7 +379,7 @@ $secondary-proportion: 100% - $main-proportion
       #contact, #contact-languages
         float: right
 
-    #work, #projects
+    #work, #projects, #volunteer
       $separation: 0.5em
 
       h3.name
@@ -502,6 +502,9 @@ $secondary-proportion: 100% - $main-proportion
   @page
     margin: 1.4cm
 
+  .no-page-break
+    page-break-inside: avoid
+
   a
     text-decoration-line: none
     color: inherit
@@ -542,7 +545,7 @@ $secondary-proportion: 100% - $main-proportion
       div .fa
         float: left
 
-  #work, #projects
+  #work, #projects, #volunteer
     section.job, section.project
       .item
         padding-top: 0.1em
@@ -575,7 +578,7 @@ $secondary-proportion: 100% - $main-proportion
     .position, .roles, .working-for
       font-weight: 800
 
-    .roles
+    .roles, .summary
       clear: both
 
     .summary, .extras
