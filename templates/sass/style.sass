@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:900|Source+Sans+Pro|Raleway:700&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900|Source+Sans+Pro|Raleway:700&display=swap')
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
 
 
@@ -352,6 +352,61 @@ $secondary-proportion: 100% - $main-proportion
     display: table
     clear: both
 
+  @media screen and (max-width: 601px)
+    $title-font: 'Source Sans Pro', sans-serif
+    $main-font: Merriweather, serif
+    $title-color: #003D5D
+
+    body
+      font-size: 95%
+      font-family: $main-font
+      font-weight: 400
+      background-color: #ffffff
+      color: #333333
+
+    #resume
+      padding: 1em
+
+      & > header, & > section
+        margin-bottom: 1em
+
+      h2.label, h2.section-title, h1.name
+        font-family: $title-font
+        color: $title-color
+
+      h2
+        font-size: 1.3rem
+
+      h3
+        font-size: 1.2rem
+
+      .company-description, .project-description
+        font-family: $print-title-font-family
+        font-weight: 400
+
+
+
+
+    .item
+      margin: 1.5rem 0
+      text-align: justify
+
+      .summary, .extras
+        margin-bottom: 0.5rem
+
+      ul, ol
+        list-style: disc
+        margin-left: 2rem
+
+        li
+          a
+            text-overflow: ellipsis
+
+
+    #interests, #skills
+      .item
+        text-align: initial
+
   /****************
    **		TABLET
    ****************
@@ -500,7 +555,8 @@ $secondary-proportion: 100% - $main-proportion
 @media print
 
   @page
-    margin: 1.4cm
+    size: letter
+    margin: 1.2cm
 
   .no-page-break
     page-break-inside: avoid

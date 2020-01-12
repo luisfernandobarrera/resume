@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather:900|Source+Sans+Pro|Raleway:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,900|Source+Sans+Pro|Raleway:700&display=swap");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 /* Reset */
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -244,7 +244,43 @@
     text-align: center; }
   .clear {
     display: table;
-    clear: both; }
+    clear: both; } }
+
+@media screen and (max-width: 601px) {
+  body {
+    font-size: 95%;
+    font-family: Merriweather, serif;
+    font-weight: 400;
+    background-color: #ffffff;
+    color: #333333; }
+  #resume {
+    padding: 1em; }
+    #resume > header, #resume > section {
+      margin-bottom: 1em; }
+    #resume h2.label, #resume h2.section-title, #resume h1.name {
+      font-family: "Source Sans Pro", sans-serif;
+      color: #003D5D; }
+    #resume h2 {
+      font-size: 1.3rem; }
+    #resume h3 {
+      font-size: 1.2rem; }
+    #resume .company-description, #resume .project-description {
+      font-family: "Raleway", Helvetica, Calibri, sans-serif;
+      font-weight: 400; }
+  .item {
+    margin: 1.5rem 0;
+    text-align: justify; }
+    .item .summary, .item .extras {
+      margin-bottom: 0.5rem; }
+    .item ul, .item ol {
+      list-style: disc;
+      margin-left: 2rem; }
+      .item ul li a, .item ol li a {
+        text-overflow: ellipsis; }
+  #interests .item, #skills .item {
+    text-align: initial; } }
+
+@media screen {
   /****************
    **		TABLET
    **************** */ }
@@ -362,7 +398,8 @@
 
 @media print {
   @page {
-    margin: 1.4cm; }
+    size: letter;
+    margin: 1.2cm; }
   .no-page-break {
     page-break-inside: avoid; }
   a {
