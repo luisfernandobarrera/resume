@@ -101,6 +101,10 @@
         {
             "name": "Data",
             "keywords": ["Geographical Data", "Data collection", "Scraping", "Pipelines", "Designing Catalogues", "Visualization"]
+        },
+        {
+            "name": "Learning",
+            "keywords": ["Go", "C#", "React"]
         }
     ],
     "work": [
@@ -110,6 +114,7 @@
             "position": "Python Data Warehouse Developer",
             "location": "Remote and Mexico City",
             "startDate": "2018-10-01",
+            "endDate": "2020-01-15",
             "url": "https://cialdnb.com",
             "summary": "Python Programmer working with Kubernetes managing clusters and designing APIs to control and integrate Cial's Data Collection workflow",
             "highlights": [

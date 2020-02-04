@@ -22,8 +22,8 @@ app = Flask(__name__)
 files = glob.glob("*.resume.json")
 if files:
     RESUME = files[0]
-
-assert RESUME, "Cannot load resume.json"
+else:
+    assert False, "Cannot load resume.json"
 
 
 @app.route("/")
