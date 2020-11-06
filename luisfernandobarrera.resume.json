@@ -117,7 +117,7 @@
             "url": "https://credijusto.com",
             "summary": "Python/Django programmer working in the Financial Core (Fincore) team.",
             "highlights": [
-                "Mantained and developed Loany, a Portfolio Management System that handles Loans and Leases' transactions and calculations",
+                "Mantained and developed Loany, a Portfolio Management System that handles Loans and Leases' transactions and calculations. Using Django and React",
                 "Refactored the Theoretical Table calculations to handle grace periods",
                 "Mantaining Core Financial Libraries to handle calculations and settings across the company",
                 "Designed and developed Kardex, a financial transaction database that allows to get reports gathering quantitative and qualitative data. (More details on the projects section in this CV)",
