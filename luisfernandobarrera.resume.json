@@ -109,6 +109,23 @@
     ],
     "work": [
         {
+            "company": "Credijusto",
+            "description": "Small Business Lending Fintech",
+            "position": "Python Developer",
+            "location": "Remote and Mexico City",
+            "startDate": "2020-02-24",
+            "url": "https://credijusto.com",
+            "summary": "Python/Django programmer working in the Financial Core (Fincore) team.",
+            "highlights": [
+                "Mantained and developed Loany, a Portfolio Management System that handles Loans and Leases' transactions and calculations",
+                "Refactored the Theoretical Table calculations to handle grace periods",
+                "Mantaining Core Financial Libraries to handle calculations and settings across the company",
+                "Designed and developed Kardex, a financial transaction database that allows to get reports gathering quantitative and qualitative data. (More details on the projects section in this CV)",
+                "Audited all the Loan contracts to arrive to correct calculations and logic based on each subproduct (revolving and simple credit)",
+                "Developed strong financial math and accounting skills to help Tech team to understand the financial team needs and provide solutions to major company problems"
+            ]
+        },
+        {
             "company": "Cial Dun&Bradstreet México",
             "description": "Latin America’s leading business data and analytics provider",
             "position": "Python Data Warehouse Developer",
@@ -201,6 +218,23 @@
         }
     ],
     "projects": [
+        {
+            "name": "Kardex",
+            "entity": "Credijusto",
+            "type": "Loan Accounting System",
+            "roles": ["Designer"],
+            "startDate": "2020-08-15",
+            "description": "A system designed to make calculations on loans",
+            "keywords": ["SQLAlchemy", "Financial Math", "Accounting"],
+            "highlights": [
+                "Problem: Credijusto Loan Management system is a non-transactional system that register balances instead of transactions",
+                "Main goal is to create a data structure that allows getting the different balances for each loan in any point of time aggregating all the transactions up to that day",
+                "Connect to the existing systems, Loan Management System and CRM, to gather existing data and convert it to transactions",
+                "Based on those transactions calculate the regular interest, moratories, penalties, fees and balances in time using different algorithms of calculation depending on rules for products while maintaining accounting consistency, and using debits and credits",
+                "Develop connectors that allow us to fetch information from different sources and convert data to transactions",
+                "Develop an accesible SQLAlchemy Python API to allow easy reporting"
+            ]
+        },
         {
             "name": "This CV",
             "type": "Personal Project",
