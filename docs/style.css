@@ -62,6 +62,8 @@
       padding-top: 1.5em; }
   .print {
     display: none; }
+  .item .summary, .item .extras {
+    clear: both; }
   header {
     padding: 0; }
     header h1, header h2, header h3, header h4, header h5, header h6 {
