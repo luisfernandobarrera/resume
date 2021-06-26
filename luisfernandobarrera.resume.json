@@ -7,8 +7,8 @@
         "label": "Python Data/Web Backend Programmer",
         "phone": "+52 55 4848 1150",
         "location": {
-            "city": "Guadalajara",
-            "region": "Jalisco",
+            "city": "Ciudad de México",
+            "region": "CDMX",
             "countryCode": "MX"
         },
         "summary": "I am an experienced Python Programmer specialized in designing and programming in backend usually with Django/Flask. I have experience in Web Apps and some expertise designing its frontend, as well as designing CMS, ERP, CRM, B2B, B2C, e-Commerce, Finance and Accounting Apps. I enjoy and have experience extracting, transforming, and refining big datasets (ETL).",
@@ -104,7 +104,7 @@
         },
         {
             "name": "Learning",
-            "keywords": ["Go", "C#", "React"]
+            "keywords": ["Dart", "Flutter", "React"]
         }
     ],
     "work": [
@@ -337,7 +337,7 @@
         "canonical": "https://github.com/luisfernandobarrera/resume",
         "display": "https://cv.luisfernandobarrera.com",
         "gh-pages-domain": "cv.luisfernandobarrera.com",
-        "version": "v0.1.2",
+        "version": "v0.1.3",
         "lastModified": "2020-01-19T02:30:00-06:00",
         "theme": "spartan",
         "notes": ""
