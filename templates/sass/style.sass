@@ -77,6 +77,9 @@ $secondary-proportion: 100% - $main-proportion
     padding: 1rem 0
     margin: 1rem auto
 
+  #print-me
+    display: none
+
   #header
     padding: 0
     margin-bottom: 1em
@@ -489,6 +492,17 @@ $secondary-proportion: 100% - $main-proportion
         margin-bottom: 0
         padding-bottom: 0
 
+  @media screen and (min-width: 800px)
+    #print-me
+      display: block
+      position: fixed
+      top: 0
+      right: 0
+      z-index: 5
+
+      .fa
+        font-size: 5em
+        color: black
 
   /****************
    **		LAPTOP
@@ -576,7 +590,7 @@ $secondary-proportion: 100% - $main-proportion
     background: #fff !important
     color: #000
 
-  .fa
+  .fa, #print-me
     display: none
 
   h1, h2, h3, h4, h5, h6
