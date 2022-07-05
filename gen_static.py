@@ -1,9 +1,12 @@
 from app import app
 from flask_frozen import Freezer
+import os
+
+DESTINATION = os.getenv("STATIC_DESTINATION", "docs/")
 
 freezer = Freezer(app)
 app.config.update(
-    FREEZER_DESTINATION="docs/",
+    FREEZER_DESTINATION=DESTINATION,
     FREEZER_RELATIVE_URLS=True
 )
 
