@@ -34,7 +34,6 @@ jobs:
     - name: Generate static
       run: |
         DESTINATION=${{ github.workspace }}/docs python gen_static.py
-
     - name: check for changes
       run: |
         git config --local user.email "1202547+github-actions[bot]@users.noreply.github.com"
@@ -45,4 +44,4 @@ jobs:
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-      	ssh: true
+        ssh: true
