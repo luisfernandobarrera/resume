@@ -36,10 +36,12 @@
         </div>
         <div class="clear"></div>
         <div id="contact" class="contact-block">
+            {% if resume.basics.url %}
             <div class="website">
                 <span class="fa fa-globe"><span class="print">www: </span></span>
                 <span><a href="{{ resume.basics.url }}">{{ resume.basics.url }}</a></span>
             </div>
+            {% endif %}
             <div class="email">
                 <span class="fa fa-envelope"></span><span class="print">email: </span>
                 <a href="mailto:{{ resume.basics.email }}">{{ resume.basics.email }}</a>
