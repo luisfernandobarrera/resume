@@ -29,7 +29,4 @@ To have PDF support you have to install WeasyPrint that requires the GTK Library
 Inside the `templates` folder you will find the template and the SASS file.
 
 ### TODO ###
-
-- A hook to update the `docs/` folder after each commit.
-- Generate the PDF in the same process.
 - Mobile Template
