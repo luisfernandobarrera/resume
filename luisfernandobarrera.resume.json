@@ -10,7 +10,7 @@
             "region": "CDMX",
             "countryCode": "MX"
         },
-        "summary": "An experienced Python Programmer with a strong background in Finance, Accounting and Business Data and Applications. Love to design and to analyze data through building applications and libraries that help to achieve that goal. Also have experience building teams and mentoring people to achieve their full potential. Uses Getting Things Done (GTD) as personal workflow and have kept a personal ledger for 8 years. If your data has symbols like these: '$¢£€¥%', probably you would profit to have a coffee with me.",
+        "summary": "Experienced Python Programmer with a strong background in Finance, Accounting and Business Data and Applications. Love to design and to analyze data through building applications and libraries. Also have experience building teams and mentoring people. Use Getting Things Done (GTD) as personal workflow and have kept a personal ledger for 8 years. If your data has symbols like '$¢£€¥%', probably you would like to have a coffee with me.",
         "profiles": [
             {
                 "network": "linkedin",
@@ -121,7 +121,7 @@
         },
         {
             "name": "Calculators",
-            "keywords": ["Texas Instruments BA II Plus", "HP 10bII+", "Microsoft Excel", "Python numpy_financial", "Android 10BA Pro"]
+            "keywords": ["Texas Instruments BA II Plus", "HP 10bII+", "Microsoft Excel", "numpy_financial", "Android 10BA Pro"]
         }
     ],
     "interests": [
@@ -154,15 +154,14 @@
             "url": "https://covalto.com",
             "summary": "Engineering Manager (Fincore/ESB Squad). Portfolio Migration Leader in all the quantitative data as consultant and Data Engineer.",
             "highlights": [
-                "Achieved the Portfolio Migration from SOFOM to Bank successfully. 2 billion Mexican pesos (100 million USD). Migrating from SOFOM's in-house system LMS to Stefanini's Topaz in Banco Covalto. Regulated operation by the Comisión Nacional Bancaria y de Valores (CNBV, Mexican equivalent to SEC)",
-                "Migration was necessary step to business growth and merger between Credijusto and Banco Covalto (former Finterra) and to get NASDAQ IPO",
+                "Achieved successfully the Portfolio Migration from SOFOM to Bank. 2 billion Mexican pesos (100 million USD). Migrating from SOFOM's in-house system LMS to Stefanini's Topaz in Banco Covalto. Regulated operation by the Comisión Nacional Bancaria y de Valores (CNBV, Mexican equivalent to the U.S. SEC).",
+                "Migration was necessary step to business growth and merger between Credijusto and Banco Covalto (former Finterra) and to get NASDAQ IPO.",
                 "Led the collaboration across all business areas and departments to gather the logic from legacy systems and the logic to target systems. Creating all the transformations in between.",
                 "Wrote several financial math and accounting modules in a library to calculate, solve, split and do general work with amortization tables, cash flows, accounting, and payment application handling. Written against time with hard deadlines. (More details on the projects section in this CV as pennyworth). Full Coverage. Data testing from source information and in delivered files.",
                 "Wrote a library to abstract the Credit Contract to work, fill and share data. Writing multiple extractors to fill these Contracts from different sources: Loan Management Systems, Excel Files, Google Sheet Files, etc.",
                 "Delivered normalized data to the business teams for validation and calculations to fill the migration layouts",
                 "Worked as Engineering Manager for a team of 6 engineers working with several legacy projects related to payments, financial quotes, loan management systems, and the Enterprise Service Bus components.",
-                "Improved productivity and metrics through communication and setting OKRs. Implementing Testing, Clean Code and studying and discussing with the team."
-
+                "Improved productivity and metrics through communication and setting OKRs; implementing testing, clean code and best coding and architecture practices."
             ]
         },
         {
@@ -175,12 +174,12 @@
             "url": "https://credijusto.com",
             "summary": "Python/Django programmer working in the Financial Core (Fincore) team.",
             "highlights": [
-                "Maintained and developed Loany, a Portfolio Management System that handles Loans and Leases' transactions and calculations. Using Django and React",
-                "Refactored the Theoretical Table calculations to handle grace periods",
-                "Maintaining Core Financial Libraries to handle calculations and settings across the company",
+                "Maintained and developed Loany, a Portfolio Management System that handles Loans and Leases' transactions and calculations. Using Django and React.",
+                "Refactored the Theoretical Table calculations to handle grace periods.",
+                "Maintained Core Financial Libraries to handle calculations and settings across the company.",
                 "Designed and developed Kardex, a financial transaction database that allows to get reports gathering quantitative and qualitative data. (More details on the projects section in this CV).",
-                "Audited all the Loan contracts to arrive to correct calculations and logic based on each subproduct (revolving and simple credit)",
-                "Developed strong financial math and accounting skills to help Tech team to understand the financial team needs and provide solutions to major company problems",
+                "Audited all the Loan contracts to arrive to correct calculations and logic based on each subproduct (revolving and simple credit).",
+                "Developed strong financial math and accounting skills to help Tech team to understand the financial team needs and provide solutions to major company problems.",
                 "Designed the Enterprise Service Bus architecture to message processes across multiple origin and target systems in a sequential process, inspired by the Django middleware architecture."
             ]
         },
@@ -192,14 +191,14 @@
             "startDate": "2018-10-01",
             "endDate": "2020-01-15",
             "url": "https://cialdnb.com",
-            "summary": "Python Programmer working with Kubernetes managing clusters and designing APIs to control and integrate Cial's Data Collection workflow",
+            "summary": "Python Programmer working with Kubernetes managing clusters and designing APIs to control and integrate Cial's Data Collection workflow.",
             "highlights": [
-                "Designed APIs to glue stats, status and control of the tasks in the kubernetes cluster using python, FastAPI and Airtable as a convenient frontend interface (Hyperkube)",
-                "Installed, Configured and Managed CialDnB's Kubernetes cluster with distributed storage. Configured Docker image to run the scrapers for collection purposes. (Ragnatela project)",
-                "Helped refactoring the in-house designed distributed scrapy-based framework to collect results using redis as a distributed queue with middlewares to send to our data collection pipeline",
-                "Wrote some scrapers using Selenium and Scrapy",
-                "Designed Silk in Django. An API and management system for organizing the sources, schemas and tasks to collect data to feed the business users with Latin American companies' data in Portuguese and Spanish",
-                "Working remotely and asynchronously with a team distributed in Israel, Croatia and Russia"
+                "Designed APIs to glue stats, status and control of the tasks in the kubernetes cluster using python, FastAPI and Airtable as a convenient frontend interface (Hyperkube).",
+                "Installed, Configured and Managed CialDnB's Kubernetes cluster with distributed storage. Configured Docker image to run the scrapers for collection purposes. (Ragnatela project).",
+                "Helped refactoring the in-house designed distributed scrapy-based framework to collect results using redis as a distributed queue with middlewares to send to our data collection pipeline.",
+                "Wrote some scrapers using Selenium and Scrapy.",
+                "Designed Silk in Django. An API and management system for organizing the sources, schemas and tasks to collect data to feed the business users with Latin American companies' data in Portuguese and Spanish.",
+                "Working remotely and asynchronously with a team distributed in Israel, Croatia and Russia."
             ]
         },
         {
@@ -223,11 +222,11 @@
             "endDate": "2018-01-15",
             "summary": "Python programmer in the Attribution team creating scripts to process big trails of event data in TrailDB.",
             "highlights": [
-                "Wrote software to process big trails of advertising events and resume them or transform them in different formats for other internal users",
+                "Wrote software to process big trails of advertising events and resume them or transform them in different formats for other internal users.",
                 "Designing tests.",
                 "Creating APIs in Flask and in Jersey (Java).",
                 "Working from home in Mexico City with teams in San Francisco and Monterrey.",
-                "Contract through Tiempo Development (https://tiempodev.com/)"
+                "Contract through Tiempo Development (https://tiempodev.com/)."
             ],
             "hide": true
         },
@@ -241,8 +240,8 @@
             "url": "https://nextortelecom.com",
             "summary": "Lead developer and maintainer of Nextor Telecom’s software infrastructure. It’s portfolio includes products such as: Vozero, a prepaid VoIP conference service with a self-service user page to collect payments and manage conference calls in real-time; NextorProxy, a Cloud VoIP PBX service among others.",
             "highlights": [
-                "Developed Experos a micro ERP for managing the company's administration",
-                "Developed Mango Analytics a comprehensive solution for Call Detail Record, managing and processing large volumes of calls and storing and making available for search call recordings",
+                "Developed Experos a micro ERP for managing the company's administration.",
+                "Developed Mango Analytics a comprehensive solution for Call Detail Record, managing and processing large volumes of calls and storing and making available for search call recordings.",
                 "Developed a method to quickly setup and create webapps with REST, Django and Bootstrap."
             ]
         },
@@ -287,21 +286,21 @@
             "roles": ["Designer", "Python Developer"],
             "startDate": "2022-01-01",
             "endDate": "2022-12-31",
-            "description": "A full-fledged multipurpose financial and accounting library",
-            "keywords": ["Financial Data", "Financial Math", "Accounting"],
+            "description": "A full-fledged multipurpose financial and accounting library.",
+            "keywords": ["Business Data", "Financial Math", "Accounting"],
             "highlights": [
-                "A library with modules to calculate interest, work with cashflows, handle payments, keep accounting, and calculate and solve amortization tables (schedules).",
+                "A library with modules to calculate interest, work with cashflows and time value, handle payments,  keep accounting, and calculate and solve amortization tables (schedules).",
                 "Calculator: A module to calculate amortization tables given some parameters as interest rate, principal, duration, etc.",
-                "Table Module: A Schedule table object to make calculations. Works dynamically ordering calculations as a linked list with caches since records depended on previous record values. Can do operations on it as tables' addition and subtractions, table splits into many tables (for multiloan tables), final payment adjustments, roundings.",
+                "Table Module: A Schedule table object to make calculations. Works dynamically ordering calculations as a linked list with caches since records depended on previous record values. Can do operations on it as tables' addition and subtractions, table splits into many tables (for multiloan or complex tables), final payment adjustments, discount ious on time value, and roundings and adjustments.",
                 "Solver: A solver working on the table module trying to imitate the GoalSeek module in Excel to change a value until getting another expected one as close as possible. Used to adjust interest rate to different method calculations, until getting zero in balance.",
-                "Contract module: An abstraction to handle the Credit Contracts. Using a Contract-Version-Loan structure that contained all the information that the contract could have as IOUs, Payments, Advance Payments, Restructures, Write-offs, charges. Used as interchange format in business",
+                "Contract module: An abstraction to handle the Credit Contracts. Using a Contract-Version-Loan structure that contained all the information that the contract could have as IOUs, Payments, Advance Payments, Restructures, Write-offs, charges. Used as interchange format in business.",
                 "Kardex: A system to generate a Account Statement based on the Contract Structure and applying it to get the correct balance per different scopes such as loan, date, iou, version.",
-                "Using numpy_financial, dataclasses, pandas, jupyter"
+                "Using numpy_financial, dataclasses, pandas, jupyter."
             ]
         },
         {
             "name": "Kardex",
-            "entity": "Credijusto, Covalto, Inc.",
+            "entity": "Credijusto & Covalto, Inc.",
             "type": "Loan Accounting System",
             "roles": ["Designer", "Python Developer"],
             "startDate": "2020-08-15",
@@ -309,12 +308,12 @@
             "description": "A system designed to make calculations on loans",
             "keywords": ["SQLAlchemy", "Financial Math", "Accounting"],
             "highlights": [
-                "Problem: Credijusto Loan Management system is a non-transactional system that register balances instead of transactions",
-                "Main goal is to create a data structure that allows getting the different balances for each loan in any point of time aggregating all the transactions up to that day",
-                "Connect to the existing systems, Loan Management System and CRM, to gather existing data and convert it to transactions",
-                "Based on those transactions calculate the regular interest, moratory interest, penalties, fees and balances in time using different algorithms of calculation depending on rules for products while maintaining accounting consistency, and using debits and credits",
+                "Problem: Credijusto Loan Management system is a non-transactional system that register balances instead of transactions.",
+                "Main goal is to create a data structure that allows getting the different balances for each loan in any point of time aggregating all the transactions up to that day.",
+                "Connect to the existing systems, Loan Management System and CRM, to gather existing data and convert it to transactions.",
+                "Using the data from those transactions calculate the regular interest, moratory interest, penalties, fees and balances in time using different algorithms of calculation depending on rules for products while maintaining accounting consistency, and using debits and credits.",
                 "Develop connectors that allow us to fetch information from different sources and convert data to transactions",
-                "Develop an accesible SQLAlchemy Python API to allow easy reporting"
+                "Develop an accesible SQLAlchemy Python API to allow easy reporting."
             ]
         },
         {
@@ -325,9 +324,9 @@
             "summary": "A system that builds a Github page with my CV, including a PDF.",
             "url": "https://github.com/luisfernandobarrera/resume",
             "highlights": [
-                "Using resume.json format as the basis for storing the CV data",
-                "Using jinja2 as template format",
-                "Using SASS with a stylesheet that formats the template for screen and print media"
+                "Using resume.json format as the basis for storing the CV data.",
+                "Using jinja2 as template format.",
+                "Using SASS with a stylesheet that formats the template for screen and print media."
             ]
         },
         {
@@ -341,11 +340,11 @@
             "keywords": ["Django", "PostgreSQL", "Apache Tika", "Apache Solr", "Bootstrap"],
             "summary": "Search and manage a document database to mine content and cross-reference documents with scrapers to fetch and add new data from news data sources.",
             "highlights": [
-                "Using Django and Bootstrap to create an Admin View for users",
-                "Using Apache Tika to fetch metadata",
-                "Using Solr as Search Backend",
-                "Deployed on AWS using ECR and CodeShip",
-                "Code available for review"
+                "Using Django and Bootstrap to create an Admin View for users.",
+                "Using Apache Tika to fetch metadata.",
+                "Using Solr as Search Backend.",
+                "Deployed on AWS using ECR and CodeShip.",
+                "Code available for review."
             ],
             "hide": true
         },
@@ -358,10 +357,10 @@
             "endDate": "2017-01-15",
             "description": "Custom ERP with Accounting Functionality",
             "highlights": [
-                "A micro-ERP with Invoicing, Purchases, Accounts Payable and Receivable capabilities to manage the company and automate processes, and eventually to merchandise it. ",
+                "A micro-ERP with Invoicing, Purchases, Accounts Payable and Receivable capabilities to manage the company and automate processes, and eventually to merchandise it.",
                 "Using Django-PostgreSQL, APIs and Knockout for developing mockups and allow frontend engineers to easily integrate it into a previously developed mocked up interface.",
-                "Backend: Django, PostgreSQL, Django REST Framework  APIs. M2Crypto, tablib, XML",
-                "Frontend: Knockout.Js Django.js. Bootstrap, React, Redux",
+                "Backend: Django, PostgreSQL, Django REST Framework  APIs. M2Crypto, tablib, XML.",
+                "Frontend: Knockout.Js Django.js. Bootstrap, React, Redux.",
                 "Integrations with Mexican Electronic Invoicing, Electronic Accounting and various banks and payment systems"
             ]
         },
@@ -373,7 +372,7 @@
             "highlights": [
                 "An API to store Expenses and Income, Budgeting, Cash Flow and Reporting.",
                 "By the moment only with a Backend.",
-                "Exporting and importing from proprietary system YNAB4"
+                "Exporting and importing from proprietary system YNAB4."
             ],
             "hide": true
         }
@@ -421,7 +420,7 @@
         "display": "https://cv.luisfernandobarrera.com",
         "gh-pages-domain": "cv.luisfernandobarrera.com",
         "version": "v0.2.0",
-        "lastModified": "2022-12-29T07:00:00-06:00",
+        "lastModified": "2022-12-30T02:15:00-06:00",
         "theme": "spartan",
         "notes": ""
     }
