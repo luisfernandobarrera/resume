@@ -2,17 +2,49 @@
 <html lang="en">
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-<title>{{ resume.basics.name }}</title>
-<link href="style.css" rel="stylesheet" type="text/css">
+
+<head>
+
+    {% if not print %}
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TKFKC9X');</script>
+    <!-- End Google Tag Manager -->
+    {% endif %}
+
+    <title>{{ resume.basics.name }}</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
 
 
 <body>
+
+{% if not print %}
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKFKC9X" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <div id="print-me">
     <a href="/cv.pdf" title="print" target="_blank">
         <span class="fa fa-print"></span>
     </a>
 </div>
+{% endif %}
+
 
 <div id="resume">
     <header id="header">
@@ -37,10 +69,10 @@
         <div class="clear"></div>
         <div id="contact" class="contact-block">
             {% if resume.basics.url %}
-            <div class="website">
-                <span class="fa fa-globe"><span class="print">www: </span></span>
-                <span><a href="{{ resume.basics.url }}">{{ resume.basics.url }}</a></span>
-            </div>
+                <div class="website">
+                    <span class="fa fa-globe"><span class="print">www: </span></span>
+                    <span><a href="{{ resume.basics.url }}">{{ resume.basics.url }}</a></span>
+                </div>
             {% endif %}
             <div class="email">
                 <span class="fa fa-envelope"></span><span class="print">email: </span>
@@ -79,55 +111,55 @@
         <h2 class='section-title'>Jobs</h2>
         <section id="work">
             {% for job in resume.work %}
-            {% if not job.hide %}
-                <section class="job entry no-page-break">
-                    <header>
-                        <h3 class="name">
-                            {{ job.company }}
-                        </h3>
-                        <div class="website">
-                            <a href="{{ job.url }}">{{ job.url }}</a>
-                        </div>
-                        {% if job.description %}
-                            <div class="company-description">
-                                {{ job.description }}
+                {% if not job.hide %}
+                    <section class="job entry no-page-break">
+                        <header>
+                            <h3 class="name">
+                                {{ job.company }}
+                            </h3>
+                            <div class="website">
+                                <a href="{{ job.url }}">{{ job.url }}</a>
                             </div>
-                        {% endif %}
-                        <div class="date">
+                            {% if job.description %}
+                                <div class="company-description">
+                                    {{ job.description }}
+                                </div>
+                            {% endif %}
+                            <div class="date">
                         <span class="startDate">
                             {{ job.startDate }} -
                         </span>
-                            {% if job.endDate %}
-                                <span class="endDate">
+                                {% if job.endDate %}
+                                    <span class="endDate">
                             {{ job.endDate }}
                             </span>
-                            {% else %}
-                                <span class="endDate">
+                                {% else %}
+                                    <span class="endDate">
                             current
                             </span>
+                                {% endif %}
+                            </div>
+                            <div class="position">
+                                {{ job.position }}
+                            </div>
+                            <div class="location">
+                                {{ job.location }}
+                            </div>
+                        </header>
+                        <div class="item">
+                            <div class="summary">
+                                <p>{{ job.summary }}</p>
+                            </div>
+                            {% if job.highlights %}
+                                <ul class="highlights">
+                                    {% for highlight in job.highlights %}
+                                        <li>{{ highlight }}</li>
+                                    {% endfor %}
+                                </ul>
                             {% endif %}
                         </div>
-                        <div class="position">
-                            {{ job.position }}
-                        </div>
-                        <div class="location">
-                            {{ job.location }}
-                        </div>
-                    </header>
-                    <div class="item">
-                        <div class="summary">
-                            <p>{{ job.summary }}</p>
-                        </div>
-                        {% if job.highlights %}
-                            <ul class="highlights">
-                                {% for highlight in job.highlights %}
-                                    <li>{{ highlight }}</li>
-                                {% endfor %}
-                            </ul>
-                        {% endif %}
-                    </div>
-                </section>
-            {% endif %}
+                    </section>
+                {% endif %}
             {% endfor %}
         </section>
     </section>
@@ -185,48 +217,48 @@
             <section id="projects">
                 {% for project in resume.projects %}
                     {% if not project.hide %}
-                    <section class="project entry no-page-break">
-                        <header>
-                            <h3 class="name">{{ project.name }} ({{ project.type }})</h3>
-                            {% if project.entity %}
-                                <div class="working-for">{{ project.entity }}</div>
-                            {% endif %}
-                            <div class="project-description">
-                                {{ project.description }}
-                            </div>
-                            {% if project.roles %}
-                                <div class="roles">{% for role in project.roles %}{{ role }}. {% endfor %}</div>
-                            {% endif %}
+                        <section class="project entry no-page-break">
+                            <header>
+                                <h3 class="name">{{ project.name }} ({{ project.type }})</h3>
+                                {% if project.entity %}
+                                    <div class="working-for">{{ project.entity }}</div>
+                                {% endif %}
+                                <div class="project-description">
+                                    {{ project.description }}
+                                </div>
+                                {% if project.roles %}
+                                    <div class="roles">{% for role in project.roles %}{{ role }}. {% endfor %}</div>
+                                {% endif %}
 
-                        </header>
-                        <div class="item">
-                            {% if project.keywords %}
-                                <div class="extras">
+                            </header>
+                            <div class="item">
+                                {% if project.keywords %}
+                                    <div class="extras">
                                 <span class="keywords">{% for keyword in project.keywords %}{{ keyword|lower }}
                                     {% if not loop.last %}&middot;{% endif %} {% endfor %}</span>
-                                </div>
-                            {% endif %}
+                                    </div>
+                                {% endif %}
 
-                            {% if project.highlights %}
-                                <ul class="highlights">
-                                    {% if project.summary %}
-                                        <li>{{ project.summary }}</li>
-                                    {% endif %}
-                                    {% for highlight in project.highlights %}
-                                        <li>{{ highlight }}</li>
-                                    {% endfor %}
-                                    {% if project.startDate %}
-                                        <li>Developed from {{ project.startDate }}{% if project.endDate %} to
-                                            {{ project.endDate }}{% endif %}
-                                        </li>
-                                    {% endif %}
-                                    {% if project.url %}
-                                        <li><a href="{{ project.url }}">{{ project.url }}</a></li>
-                                    {% endif %}
-                                </ul>
-                            {% endif %}
-                        </div>
-                    </section>
+                                {% if project.highlights %}
+                                    <ul class="highlights">
+                                        {% if project.summary %}
+                                            <li>{{ project.summary }}</li>
+                                        {% endif %}
+                                        {% for highlight in project.highlights %}
+                                            <li>{{ highlight }}</li>
+                                        {% endfor %}
+                                        {% if project.startDate %}
+                                            <li>Developed from {{ project.startDate }}{% if project.endDate %} to
+                                                {{ project.endDate }}{% endif %}
+                                            </li>
+                                        {% endif %}
+                                        {% if project.url %}
+                                            <li><a href="{{ project.url }}">{{ project.url }}</a></li>
+                                        {% endif %}
+                                    </ul>
+                                {% endif %}
+                            </div>
+                        </section>
                     {% endif %}
                 {% endfor %}
             </section>

@@ -12,13 +12,13 @@ logger = logging.getLogger(__name__)
 
 try:
     from flask_weasyprint import HTML, render_pdf
+
     PDF_SUPPORT = True
     logging.info("* PDF support enabled")
 
 except (ImportError, OSError):
     PDF_SUPPORT = False
     logging.info("* PDF support disabled")
-
 
 app = Flask(__name__)
 if files := glob.glob("*.resume.json"):
@@ -31,7 +31,14 @@ else:
 def cv():
     with open(RESUME, encoding="utf-8") as o:
         document = json.load(o)
-    return render_template("template.html", resume=document)
+    return render_template("template.html", resume=document, print=False)
+
+
+@app.route("/print.html")
+def print_cv():
+    with open(RESUME, encoding="utf-8") as o:
+        document = json.load(o)
+    return render_template("template.html", resume=document, print=True)
 
 
 @app.route("/resume.json")
@@ -51,8 +58,7 @@ def style():
 if PDF_SUPPORT:
     @app.route('/cv.pdf')
     def cv_pdf():
-        return render_pdf(url_for('cv'))
-
+        return render_pdf(url_for('print_cv'))
 
 # For GitHub Pages
 with open(RESUME, encoding="utf-8") as o:
