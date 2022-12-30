@@ -63,4 +63,3 @@ if gh_pages:
     def cname():
         return Response(gh_pages, mimetype="application/octet-stream")
 
-
