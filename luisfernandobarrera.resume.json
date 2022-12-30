@@ -83,7 +83,7 @@
             ]
         },
         {
-            "name": "Frontend & Web",
+            "name": "Web development",
             "keywords": [
                 "Javascript",
                 "KnockoutJS",
@@ -105,7 +105,7 @@
             ]
         },
         {
-            "name": "Tools & Others",
+            "name": "Tools",
             "keywords": [
                 "PyCharm", 
                 "Git", 
@@ -420,7 +420,7 @@
         "display": "https://cv.luisfernandobarrera.com",
         "gh-pages-domain": "cv.luisfernandobarrera.com",
         "version": "v0.2.0",
-        "lastModified": "2022-12-30T02:15:00-06:00",
+        "lastModified": "2022-12-30T02:30:00-06:00",
         "theme": "spartan",
         "notes": ""
     }
