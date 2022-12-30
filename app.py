@@ -54,7 +54,7 @@ if PDF_SUPPORT:
         return render_pdf(url_for('cv'))
 
 
-# For Github Pages
+# For GitHub Pages
 with open(RESUME, encoding="utf-8") as o:
     document = json.load(o)
 gh_pages = document.get('meta', {}).get('gh-pages-domain') or None
@@ -62,4 +62,3 @@ if gh_pages:
     @app.route("/CNAME")
     def cname():
         return Response(gh_pages, mimetype="application/octet-stream")
-
