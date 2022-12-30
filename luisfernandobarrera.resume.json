@@ -293,7 +293,7 @@
                 "Calculator: A module to calculate amortization tables given some parameters as interest rate, principal, duration, etc.",
                 "Table Module: A Schedule table object to make calculations. Works dynamically ordering calculations as a linked list with caches since records depended on previous record values. Can do operations on it as tables' addition and subtractions, table splits into many tables (for multiloan or complex tables), final payment adjustments, discount ious on time value, and roundings and adjustments.",
                 "Solver: A solver working on the table module trying to imitate the GoalSeek module in Excel to change a value until getting another expected one as close as possible. Used to adjust interest rate to different method calculations, until getting zero in balance.",
-                "Contract module: An abstraction to handle the Credit Contracts. Using a Contract-Version-Loan structure that contained all the information that the contract could have as IOUs, Payments, Advance Payments, Restructures, Write-offs, charges. Used as interchange format in business.",
+                "Contract module: An abstraction to handle the Credit Contracts. Using a Contract-Version-Loan structure that contained all the information that the contract could have as: IOUs, Payments, Advance Payments, Restructures, Write-offs, Charges. Used as interchange format in business.",
                 "Kardex: A system to generate a Account Statement based on the Contract Structure and applying it to get the correct balance per different scopes such as loan, date, iou, version.",
                 "Using numpy_financial, dataclasses, pandas, jupyter."
             ]
@@ -360,7 +360,7 @@
                 "A micro-ERP with Invoicing, Purchases, Accounts Payable and Receivable capabilities to manage the company and automate processes, and eventually to merchandise it.",
                 "Using Django-PostgreSQL, APIs and Knockout for developing mockups and allow frontend engineers to easily integrate it into a previously developed mocked up interface.",
                 "Backend: Django, PostgreSQL, Django REST Framework  APIs. M2Crypto, tablib, XML.",
-                "Frontend: Knockout.Js Django.js. Bootstrap, React, Redux.",
+                "Frontend: Knockout.js, Django.js. Bootstrap, React, Redux.",
                 "Integrations with Mexican Electronic Invoicing, Electronic Accounting and various banks and payment systems"
             ]
         },

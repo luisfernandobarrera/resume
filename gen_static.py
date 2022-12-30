@@ -1,6 +1,7 @@
 from app import app
 from flask_frozen import Freezer
 import os
+os.environ['LC_ALL'] = 'en_US.utf-8'
 
 DESTINATION = os.getenv("STATIC_DESTINATION", "docs/")
 

@@ -6,21 +6,22 @@ import os
 import glob
 import logging
 
+os.environ['LC_ALL'] = 'en_US.utf-8'
+
 logger = logging.getLogger(__name__)
 
 try:
     from flask_weasyprint import HTML, render_pdf
     PDF_SUPPORT = True
-    logging.info(f"* PDF support enabled")
+    logging.info("* PDF support enabled")
 
 except (ImportError, OSError):
     PDF_SUPPORT = False
-    logging.info(f"* PDF support disabled")
+    logging.info("* PDF support disabled")
 
 
 app = Flask(__name__)
-files = glob.glob("*.resume.json")
-if files:
+if files := glob.glob("*.resume.json"):
     RESUME = files[0]
 else:
     assert False, "Cannot load resume.json"
