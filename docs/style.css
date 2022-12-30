@@ -355,11 +355,6 @@
       font-size: 5em;
       color: black; } }
 
-@media screen {
-  /****************
-   **		LAPTOP
-   **************** */ }
-
 @media screen and (min-width: 1025px) {
   #resume {
     width: 650px;
@@ -422,7 +417,7 @@
     color: inherit; }
   body {
     text-align: justify;
-    font: 10pt Georgia, "Times New Roman", Times, serif;
+    font: 10pt Merriweather, Georgia, "Times New Roman", Times, serif;
     line-height: 1.5em;
     background: #fff !important;
     color: #000; }
@@ -518,7 +513,7 @@
     #languages .language {
       font-weight: 700;
       font-size: 110%;
-      font-family: Georgia, "Times New Roman", Times, serif; }
+      font-family: Merriweather, Georgia, "Times New Roman", Times, serif; }
   #interests .name, #skills .name {
     font-weight: 700;
     font-size: 110%; }
