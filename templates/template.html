@@ -101,7 +101,10 @@
     <section class="section main-summary no-page-break">
         <h2 class='section-title'>About</h2>
         <section>
-            <p>{{ resume.basics.summary }}</p>
+            {% for paragraph in resume.basics.about %}
+                <p>{{ paragraph }}</p>
+            {% endfor %}
+            <!--<p>{{ resume.basics.summary }}</p>-->
         </section>
     </section>
 
@@ -110,8 +113,8 @@
         <section id="work">
             {% for job in resume.work %}
                 {% if not job.hide %}
-                    <section class="job entry no-page-break">
-                        <header>
+                    <section class="job entry">
+                        <header class="no-page-break-">
                             <h3 class="name">
                                 {{ job.company }}
                             </h3>
@@ -124,9 +127,9 @@
                                 </div>
                             {% endif %}
                             <div class="date">
-                        <span class="startDate">
-                            {{ job.startDate }} -
-                        </span>
+                                <span class="startDate">
+                                    {{ job.startDate }} -
+                                </span>
                                 {% if job.endDate %}
                                     <span class="endDate">
                             {{ job.endDate }}
@@ -143,11 +146,11 @@
                             <div class="location">
                                 {{ job.location }}
                             </div>
-                        </header>
-                        <div class="item">
                             <div class="summary">
                                 <p>{{ job.summary }}</p>
                             </div>
+                        </header>
+                        <div class="item">
                             {% if job.highlights %}
                                 <ul class="highlights">
                                     {% for highlight in job.highlights %}
