@@ -455,13 +455,11 @@
     text-align: right; }
     #basics #contact div .fa, #basics #contact-languages div .fa {
       float: left; }
-  #work section.job, #work section.project, #projects section.job, #projects section.project, #volunteer section.job, #volunteer section.project {
-    page-break-inside: avoid; }
-    #work section.job .item, #work section.project .item, #projects section.job .item, #projects section.project .item, #volunteer section.job .item, #volunteer section.project .item {
-      padding-top: 0.1em;
-      clear: both; }
-    #work section.job:not(:last-child), #work section.project:not(:last-child), #projects section.job:not(:last-child), #projects section.project:not(:last-child), #volunteer section.job:not(:last-child), #volunteer section.project:not(:last-child) {
-      margin-bottom: 3em; }
+  #work section.job .item, #work section.project .item, #projects section.job .item, #projects section.project .item, #volunteer section.job .item, #volunteer section.project .item {
+    padding-top: 0.1em;
+    clear: both; }
+  #work section.job:not(:last-child), #work section.project:not(:last-child), #projects section.job:not(:last-child), #projects section.project:not(:last-child), #volunteer section.job:not(:last-child), #volunteer section.project:not(:last-child) {
+    margin-bottom: 3em; }
   #work h3.name, #projects h3.name, #volunteer h3.name {
     width: 61.8047%;
     display: block;
