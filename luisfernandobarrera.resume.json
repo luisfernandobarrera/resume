@@ -6,9 +6,10 @@
     "label": "Data Engineering Manager (Financial, Accounting, Business, Python)",
     "phone": "+52 55 4848 1150",
     "location": {
-      "city": "Ciudad de México",
+      "city": "Mexico City",
       "region": "CDMX",
-      "countryCode": "MX"
+      "countryCode": "MX",
+      "country": "Mexico"
     },
     "summary": "Engineering Manager with strong experience building teams and mentoring people. Passionate and skilled Python Programmer with a strong background in Finance, Accounting and Business their Data and Applications.",
     "about": [
@@ -32,6 +33,20 @@
     ]
   },
   "skills": [
+     {
+      "name": "Engineering Management",
+      "keywords": [
+        "Team Building",
+        "OKRs Setting and KPIs",
+        "Mentoring",
+        "DevOps",
+        "Getting Things Done",
+        "Behavior-Driven Development",
+        "Test-Driven Development",
+        "Clean Code",
+        "Agile Methodologies"
+      ]
+    },
     {
       "name": "Python Data Programming",
       "level": "Expert",
@@ -42,7 +57,8 @@
         "seaborn",
         "numpy",
         "anaconda",
-        "poetry"
+        "poetry",
+        "asyncio"
       ]
     },
     {
@@ -55,25 +71,17 @@
         "fastapi",
         "Django-REST",
         "REST APIs",
-        "GraphQL"
+        "GraphQL",
+        "TortoiseORM"
       ]
     },
-    {
-      "name": "Work Methodologies",
-      "keywords": [
-        "DevOps",
-        "Getting Things Done",
-        "Behavior-Driven Development",
-        "Test-Driven Development",
-        "Clean Code",
-        "Agile Methodologies"
-      ]
-    },
+
     {
       "name": "Business",
       "keywords": [
         "Administration",
         "Accounting",
+        "Finance",
         "Software for SMB",
         "ERP",
         "CRM",
@@ -111,47 +119,12 @@
       "name": "Web development",
       "keywords": [
         "Javascript",
+        "React",
         "KnockoutJS",
         "VueJS",
         "SASS",
         "HTML",
         "CSS"
-      ]
-    },
-    {
-      "name": "Other",
-      "level": "Used occasionally",
-      "keywords": [
-        "Java",
-        "PHP",
-        "WordPress",
-        "Bash",
-        "PowerShell"
-      ]
-    },
-    {
-      "name": "Tools",
-      "keywords": [
-        "PyCharm",
-        "Git",
-        "vscode",
-        "zsh",
-        "macOS",
-        "DataGrip",
-        "Excel VBA",
-        "Todoist",
-        "Jira",
-        "Bullet Journaling"
-      ]
-    },
-    {
-      "name": "Calculators",
-      "keywords": [
-        "Texas Instruments BA II Plus",
-        "HP 10bII+",
-        "Microsoft Excel",
-        "numpy_financial",
-        "Android 10BA Pro"
       ]
     }
   ],
@@ -216,7 +189,8 @@
         "Optimized my team to take initiatives to develop projects to help operational areas, apply technology and achieve efficiency in those processes. Promoted an open team dynamic to get ideas and feedback from the team and the rest of the bank to design and achieve maximum impact projects that benefited our internal users and customer.",
         "Led the development of services with Salesforce and Topaz (core banking) to expose APIs that allow for the automation of data flows from origination channel processes by connecting most of the bank's systems. Integrating them through the middleware-based legacy integration platform developed within my team.",
         "Proposed, designed, gather requirements with potential customers, planned, and led the Treasury API project for real-time bank account movement consultation via REST or Webhook using Kafka, Django, and Topaz integration services. Led the consultations to get the customer requirements and gather security and compliance requirements into consideration for the project. Designed the project as a first step in an Open Banking initiative for Covalto."
-      ]
+      ],
+      "resumeVerbose": true
     },
     {
       "company": "Banco Covalto",
@@ -284,7 +258,8 @@
       "endDate": "2018-09-15",
       "url": "https://shopventory.com/",
       "summary": "Python/Django programmer and Javascript/AngularJS programmer. Working on the project temporarily.",
-      "hide": true
+      "hide": true,
+      "resumeHide": true
     },
     {
       "company": "AdRoll (Tiempo Development)",
@@ -302,7 +277,8 @@
         "Working from home in Mexico City with teams in San Francisco and Monterrey.",
         "Contract through Tiempo Development (https://tiempodev.com/)."
       ],
-      "hide": true
+      "hide": true,
+      "resumeHide": true
     },
     {
       "company": "Nextor Telecom",
@@ -317,7 +293,8 @@
         "Developed Experos a micro ERP for managing the company's administration.",
         "Developed Mango Analytics a comprehensive solution for Call Detail Record, managing and processing large volumes of calls and storing and making available for search call recordings.",
         "Developed a method to quickly setup and create webapps with REST, Django and Bootstrap."
-      ]
+      ],
+      "resumeHide": true
     },
     {
       "company": "informind",
@@ -327,7 +304,7 @@
       "startDate": "2009-09-30",
       "endDate": "2014-05-06",
       "url": "",
-      "summary": "Founder of Informind. Python Developer and Software Team Leader. Administrative consultant, Data Management Consultant.",
+      "summary": "Founder of informind. Python Developer and Software Team Leader. Administrative consultant, Data Management Consultant.",
       "highlights": [
         "Company chiefly focused in Data management (Catalogue design and sanitation, Document schema design)  and the installation of ERP systems in order to generate meaningful and useful information to the Finance, Administration and Executive departments.",
         "We offered to every small and medium sized business, solutions such as Websites, Apps, Servers and Networking consultant.",
@@ -544,8 +521,8 @@
     "canonical": "https://github.com/luisfernandobarrera/resume",
     "display": "https://cv.luisfernandobarrera.com",
     "gh-pages-domain": "cv.luisfernandobarrera.com",
-    "version": "v0.3.0",
-    "lastModified": "2024-03-18T04:00:00-06:00",
+    "version": "v0.3.4",
+    "lastModified": "2024-03-19T00:30:00-06:00",
     "theme": "spartan",
     "notes": ""
   }

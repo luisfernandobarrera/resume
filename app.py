@@ -20,7 +20,7 @@ except (ImportError, OSError):
     PDF_SUPPORT = False
     logging.info("* PDF support disabled")
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="templates")
 if files := glob.glob("*.resume.json"):
     RESUME = files[0]
 else:
@@ -31,18 +31,32 @@ else:
 def cv():
     with open(RESUME, encoding="utf-8") as o:
         document = json.load(o)
-    return render_template("template.html", resume=document, print=False)
+    return render_template("cv.html", resume=document, print=False)
+
+#
+# @app.route("/resume/")
+# def resume():
+#     with open(RESUME, encoding="utf-8") as o:
+#         document = json.load(o)
+#     return render_template("resume.html", resume=document, print=False)
 
 
-@app.route("/print.html")
+@app.route("/print-cv.html")
 def print_cv():
     with open(RESUME, encoding="utf-8") as o:
         document = json.load(o)
-    return render_template("template.html", resume=document, print=True)
+    return render_template("cv.html", resume=document, print=True)
+
+#
+# @app.route("/print-resume.html")
+# def print_resume():
+#     with open(RESUME, encoding="utf-8") as o:
+#         document = json.load(o)
+#     return render_template("resume.html", resume=document, print=True)
 
 
 @app.route("/resume.json")
-def resume():
+def resume_json():
     with open(RESUME, encoding="utf-8") as o:
         return jsonify(json.load(o))
 
@@ -59,6 +73,11 @@ if PDF_SUPPORT:
     @app.route('/cv.pdf')
     def cv_pdf():
         return render_pdf(url_for('print_cv'))
+
+    #
+    # @app.route('/resume.pdf')
+    # def resume_pdf():
+    #     return render_pdf(url_for('print_resume'))
 
 # For GitHub Pages
 with open(RESUME, encoding="utf-8") as o:

@@ -1,0 +1,111 @@
+{% extends "template.html" %}
+
+{% block about %}
+    <section>
+        <p>{{ resume.basics.summary }}</p>
+    </section>
+{% endblock about %}
+
+
+{% block skill_table %}
+    <section class="section no-page-break">
+        <h2 class='section-title'>Skills</h2>
+        <section id="skills">
+            {% for skill in resume.skills %}
+                <div class="item no-page-break">
+                    <div class="name">
+                        {{ skill.name }}
+                    </div>
+                    <div class="level {{ skill.level }}">
+                        <em>{{ skill.level }}</em>
+                    </div>
+                    {% if skill.keywords %}
+                        <ul class="keywords">
+                            {% for kw in skill.keywords %}
+                                <li>{{ kw }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </section>
+    </section>
+{% endblock skill_table %}
+
+{% block jobs %}
+    {% for job in resume.work %}
+        {% if not job.resumeHide %}
+            <section class="job entry" style="">
+                <header class="no-page-break">
+                    <h3 class="name">
+                        {{ job.company }}
+                    </h3>
+                    <div class="position">
+                        {{ job.position }}
+                    </div>
+                    <div class="duration">
+                                <span class="startDate">
+                                    {{ job.startDate }} -
+                                </span>
+                        {% if job.endDate %}
+                            <span class="endDate">
+                            {{ job.endDate }}
+                            </span>
+                        {% else %}
+                            <span class="endDate">
+                            current
+                            </span>
+                        {% endif %}
+                    </div>
+
+                    {% if job.resumeVerbose %}
+                        <div class="summary">
+                            <p>{{ job.summary }}</p>
+                        </div>
+                    {% endif %}
+                </header>
+            </section>
+        {% endif %}
+    {% endfor %}
+{% endblock jobs %}
+
+
+{% block education %}
+    {% if resume.education %}
+        <section class="section no-page-break">
+            <h2 class='section-title'>Education</h2>
+            {% for study in resume.education %}
+                <section class="education entry">
+
+                    <header>
+                        <h3 class="name">
+                            {{ study.area }}
+                        </h3>
+                        <div class="area">
+                            {{ study.studyType }}
+                        </div>
+                    </header>
+                    <div class="item">
+                        <div class="institution">
+                            {{ study.institution }}
+                        </div>
+                        <div class="date">
+                        <span class="startDate">
+                            {{ study.startDate }} -
+                        </span>
+                            {% if study.endDate %}
+                                <span class="endDate">
+                            {{ study.endDate }}
+                            </span>
+                            {% else %}
+                                <span class="endDate">
+                            current
+                            </span>
+                            {% endif %}
+                        </div>
+                    </div>
+                </section>
+            {% endfor %}
+        </section>
+    {% endif %}
+{% endblock education %}
