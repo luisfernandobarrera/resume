@@ -3,7 +3,7 @@
     "name": "Luis Fernando Barrera",
     "email": "luisfernando@informind.com",
     "image": "https://avatars2.githubusercontent.com/u/1202547?s=460&v=4",
-    "label": "Data Engineering Manager (Financial, Accounting, Business, Python)",
+    "label": "Senior Software Engineering Manager (Financial, Accounting, Business, Python)",
     "phone": "+52 55 4848 1150",
     "location": {
       "city": "Mexico City",
@@ -11,13 +11,13 @@
       "countryCode": "MX",
       "country": "Mexico"
     },
-    "summary": "Engineering Manager with strong experience building teams and mentoring people. Skilled and enthusiastic Python Programmer with a strong background in Finance, Accounting and Business their Data and Applications.",
+    "summary": "Senior Software Engineering Manager with proven experience building teams and mentoring people. Skilled and enthusiastic Python Programmer with a solid background in Finance, Accounting and Business their Data and Applications.",
     "about": [
-      "Engineering Manager with a strong drive for leading teams, structuring chaos, and organizing complexity. I achieve team objectives by fostering discussions to deeply understand problems and tackle them with a practical, hands-on approach, engage in coding and problem-solving alongside the team, focus on collective success and foster a collaborative environment. Experienced building teams and mentoring people.",
+      "Senior Software Engineering Manager with a strong drive for building software, leading teams, structuring chaos, organizing complexity. I achieve team objectives by fostering discussions to deeply understand problems and tackle them with a practical, hands-on approach, engage in coding and problem-solving alongside the team, focus on collective success and foster a collaborative environment. Experienced in building teams and mentoring people.",
       "Have the strong belief that the success of a team is not only a function of will and skills from the people but from the culture, the organization and the management team of the company. Enthusiastic about improving within a team, a company and myself.",
-      "Skilled and enthusiastic Python Programmer with a strong background in Finance, Accounting and Business their Data and Applications. Love to design and to analyze data through building applications and libraries. I just don't develop projects, I am proud to craft them.",
+      "Skilled and enthusiastic Python Programmer with a solid background in Finance, Accounting and Business their Data and Applications. Love to design and to analyze data through building applications and libraries. I just don't develop projects, I am proud to craft them.",
       "Hopelessly curious and eclectic. Love to learn about any topic to solve problems. I use Getting Things Done (GTD) as personal workflow, practice mindfulness to keep my mind clear, calm and handle stress, and have kept a personal ledger for 10 years.",
-      "If your data or project has symbols like '$¢£€¥%', probably you would like to share a coffee or interview me."
+      "If your data or project has symbols like '$¢£€¥%', you would probably like to share a coffee or interview me."
     ],
     "profiles": [
       {
@@ -33,32 +33,30 @@
     ]
   },
   "skills": [
-     {
+    {
       "name": "Engineering Management",
       "keywords": [
-        "Team Building",
-        "OKRs Setting and KPIs",
-        "Mentoring",
+        "team building",
+        "OKRs and KPIs",
+        "mentoring",
         "DevOps",
-        "Getting Things Done",
-        "Behavior-Driven Development",
-        "Test-Driven Development",
-        "Clean Code",
-        "Agile Methodologies"
+        "agile methodologies",
+        "product requirements",
+        "software architecture & design",
+        "project management"
       ]
     },
     {
       "name": "Python Data Programming",
       "level": "Expert",
       "keywords": [
-        "dataclasses",
         "pandas",
-        "jupyter",
-        "seaborn",
+        "dataclasses",
         "numpy",
-        "anaconda",
-        "poetry",
-        "asyncio"
+        "SQLAlchemy",
+        "advanced SQL",
+        "PostgreSQL",
+        "SQLite3"
       ]
     },
     {
@@ -66,65 +64,48 @@
       "level": "Expert",
       "keywords": [
         "django",
+        "fastAPI",
         "flask",
-        "SQLAlchemy",
-        "fastapi",
-        "Django-REST",
-        "REST APIs",
+        "django-REST",
+        "tortoiseORM",
+        "REST API",
         "GraphQL",
-        "TortoiseORM"
+        "javascript",
+        "VueJS",
+        "React",
+        "HTMX",
+        "SASS"
       ]
     },
-
     {
       "name": "Business",
       "keywords": [
-        "Administration",
-        "Accounting",
-        "Finance",
-        "Software for SMB",
+        "administration",
+        "accounting",
+        "finance",
+        "software for SMB",
         "ERP",
         "CRM",
-        "Taxes",
-        "electronic invoicing"
+        "taxes",
+        "electronic invoicing",
+        "electronic signature",
+        "financial math"
       ]
     },
     {
-      "name": "Databases",
-      "level": "Expert",
+      "name": "Tools",
       "keywords": [
-        "SQL",
-        "Data Design",
-        "PostgreSQL",
-        "Redis",
-        "MySQL",
-        "sqlite3",
-        "Legacy Databases"
-      ]
-    },
-    {
-      "name": "DevOps & Networking",
-      "level": "Intermediate",
-      "keywords": [
-        "Docker",
-        "Kubernetes",
+        "docker",
+        "kubernetes",
+        "bash",
+        "linux",
+        "excel VBA",
         "CircleCI",
-        "Networking",
-        "AWS",
-        "Windows Server",
-        "Linux"
-      ]
-    },
-    {
-      "name": "Web development",
-      "keywords": [
-        "Javascript",
-        "React",
-        "KnockoutJS",
-        "VueJS",
-        "SASS",
-        "HTML",
-        "CSS"
+        "SDLC",
+        "code quality",
+        "clean code",
+        "networking",
+        "continuous integration"
       ]
     }
   ],
@@ -179,7 +160,7 @@
       "startDate": "2023-12-01",
       "endDate": "2024-03-15",
       "url": "https://covalto.com",
-      "summary": "Worked as a de facto Engineering Director for Backend and Integration Services. Reporting directly to the CTO. Kept role of Manager and Technical Leader with a hands-on approach and programming and structuring code when necessary.",
+      "summary": "Worked as a de facto Engineering Director for Backend and Integration Services. Reporting directly to the CTO. Kept the role of Manager and Technical Leader with a hands-on approach and programming and structuring code when necessary.",
       "highlights": [
         "Assumed the responsibilities of the Director of Banking Services Engineering to design the technical architecture considering the functional architecture designed by the CTO. Served as a liaison between Financial Product Managers and other people in Operations such as the Chief Operations Officer, the Legal Team and Sales to translate those requirements to Technical teams reviewing needs and ideas and creating or reviewing projects ans their specifications.",
         "Proposed solutions to various integration issues and systems within the Bank by leveraging the capabilities of all teams and compensating for their weaknesses through the use of components such as aligning catalogs and data types. Discussing things like the implementations of BIAN (Banking Industry Architecture Network).",
@@ -232,7 +213,7 @@
       ]
     },
     {
-      "company": "CIAL Dun&Bradstreet México",
+      "company": "CIAL Dun & Bradstreet México",
       "description": "Latin America’s leading business data and analytics provider",
       "position": "Python Data Warehouse Developer",
       "location": "Remote and Mexico City",
@@ -331,6 +312,35 @@
   ],
   "projects": [
     {
+      "name": "Treasury API",
+      "entity": "Banco Covalto",
+      "type": "Backend API",
+      "description": "Treasury API to expose movements to bank customers",
+      "startDate": "2024-02-01",
+      "endDate": "2024-03-15",
+      "roles": [
+        "Product Designer",
+        "Architect",
+        "Manager"
+      ],
+      "keywords": [
+        "kafka",
+        "django",
+        "accounting",
+        "reconciliation systems",
+        "product design",
+        "webhooks",
+        "customer requirements",
+        "auth0",
+        "regulations & compliance"
+      ],
+      "summary": "Real-time bank account movement queries via REST API or Webhook. Integrated with financial core vía Kafka and services",
+      "highlights": [
+        "Proposed, designed, gathered requirements with potential customers, planned, and led the project for real-time bank account movement queries via REST or Webhook.",
+        "Designed the project as a first step in an Open Banking initiative for Covalto."
+      ]
+    },
+    {
       "name": "firmas / mifiel",
       "entity": "Banco Covalto",
       "type": "Web Application",
@@ -343,15 +353,23 @@
         "Manager"
       ],
       "keywords": [
-        "FastAPI",
+        "fastapi",
         "PostgreSQL",
-        "Mifiel"
+        "Mifiel",
+        "Web development",
+        "TortoiseORM",
+        "e.signature",
+        "blockchain",
+        "aws",
+        "s3",
+        "google cloud",
+        "kubernetes"
       ],
       "summary": "A monolith of services to gather documents for signature, integrate with salesforce and other systems and allow the signature of documents with a mexican electronic fiscal signature.",
       "highlights": [
         "Allows customers to sign legal documents without the need of a physical presence using e.firma and Mifiel Services, without sending documents outside the bank archives",
         "Allows the signature of endosable promissory notes with Mifiel blockchain.",
-        "Using FastAPI to create many portals in a same codebase, including APIs to create frontends in React and integrations with other systems such as Salesforce.",
+        "Using FastAPI to create many micro frontends in a same codebase, including APIs to create frontends in React and integrations with other systems such as Salesforce.",
         "Integrated using Covalto's standard infra in GCP and AWS.",
         "Archive using S3/GCS cloud storage. Indexed in PostgreSQL database",
         "Microservice to provide documentes based on templates filled with an API Request. Document Management System",
@@ -372,7 +390,11 @@
       "keywords": [
         "Business Data",
         "Financial Math",
-        "Accounting"
+        "Accounting",
+        "Financial libraries",
+        "dataclasses",
+        "pandas",
+        "jupyter"
       ],
       "highlights": [
         "A library with modules to calculate interest, work with cashflows and time value, handle payments,  keep accounting, and calculate and solve amortization tables (schedules).",
@@ -396,14 +418,19 @@
       "endDate": "2022-12-31",
       "description": "A system designed to make calculations on loans",
       "keywords": [
+        "business data",
         "SQLAlchemy",
         "Financial Math",
-        "Accounting"
+        "Accounting",
+        "dataclasses",
+        "pandas",
+        "jupyter",
+        "sqlite3"
       ],
       "highlights": [
-        "Problem: Credijusto Loan Management system is a non-transactional system that register balances instead of transactions.",
-        "Main goal is to create a data structure that allows getting the different balances for each loan in any point of time aggregating all the transactions up to that day.",
-        "Connect to the existing systems, Loan Management System and CRM, to gather existing data and convert it to transactions.",
+        "Problem: Credijusto Loan Management system is a non-transactional system that registers balances instead of transactions.",
+        "Main goal is to create a data structure that allows getting the different balances for each loan at any point of time aggregating all the transactions up to that day.",
+        "Connect to the existing systems, Loan Management System and CRM, to gathered existing data and convert it to transactions.",
         "Using the data from those transactions calculate the regular interest, moratory interest, penalties, fees and balances in time using different algorithms of calculation depending on rules for products while maintaining accounting consistency, and using debits and credits.",
         "Develop connectors that allow us to fetch information from different sources and convert data to transactions",
         "Develop an accesible SQLAlchemy Python API to allow easy reporting."
@@ -521,8 +548,8 @@
     "canonical": "https://github.com/luisfernandobarrera/resume",
     "display": "https://cv.luisfernandobarrera.com",
     "gh-pages-domain": "cv.luisfernandobarrera.com",
-    "version": "v0.3.4",
-    "lastModified": "2024-03-19T00:30:00-06:00",
+    "version": "v0.4.0",
+    "lastModified": "2024-03-24T01:11:00-06:00",
     "theme": "spartan",
     "notes": ""
   }

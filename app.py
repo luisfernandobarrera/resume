@@ -1,5 +1,5 @@
 import jinja2
-from flask import Flask, render_template, Response, jsonify, url_for
+from flask import Flask, render_template, Response, jsonify, url_for, make_response
 import json
 import sass
 import os
@@ -21,10 +21,17 @@ except (ImportError, OSError):
     logging.info("* PDF support disabled")
 
 app = Flask(__name__, template_folder="templates")
+
 if files := glob.glob("*.resume.json"):
     RESUME = files[0]
 else:
     assert False, "Cannot load resume.json"
+
+
+if files := glob.glob("resume.pdf"):
+    RESUME_PDF = files[0]
+else:
+    assert False, "Cannot load resume.pdf"
 
 
 @app.route("/")
@@ -74,10 +81,15 @@ if PDF_SUPPORT:
     def cv_pdf():
         return render_pdf(url_for('print_cv'))
 
-    #
-    # @app.route('/resume.pdf')
-    # def resume_pdf():
-    #     return render_pdf(url_for('print_resume'))
+
+@app.route('/resume.pdf')
+def resume_pdf():
+    with open(RESUME_PDF, "rb") as resume_pdf:
+        binary_pdf = resume_pdf.read()
+    response = make_response(binary_pdf)
+    response.headers['Content-Type'] = 'application/pdf'
+    response.headers['Content-Disposition'] = 'inline; filename=yourfilename.pdf'
+    return response
 
 # For GitHub Pages
 with open(RESUME, encoding="utf-8") as o:
