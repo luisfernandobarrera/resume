@@ -315,7 +315,7 @@
     {
       "name": "Treasury API",
       "entity": "Banco Covalto",
-      "type": "Backend API",
+      "type": "Banking API",
       "description": "Treasury API to expose movements to bank customers",
       "startDate": "2024-02-01",
       "endDate": "2024-03-15",
@@ -549,8 +549,8 @@
     "canonical": "https://github.com/luisfernandobarrera/resume",
     "display": "https://cv.luisfernandobarrera.com",
     "gh-pages-domain": "cv.luisfernandobarrera.com",
-    "version": "v0.4.1",
-    "lastModified": "2024-03-24T01:50:00-06:00",
+    "version": "v0.4.3",
+    "lastModified": "2024-03-24T03:13:00-06:00",
     "theme": "spartan",
     "notes": ""
   }
