@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,900|Source+Sans+Pro|Raleway:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,900|Source+Sans+Pro:300,400,700|Raleway:100,300,400,700&display=swap");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 /* Reset */
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -93,6 +93,11 @@
     header h2.label {
       font-size: 1.2em;
       font-weight: 400;
+      color: #757575; }
+    header h3.speciality {
+      font-size: 1.1em;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 300;
       color: #757575; }
     header .name {
       line-height: 1;
@@ -273,7 +278,7 @@
     padding: 1em; }
     #resume > header, #resume > section {
       margin-bottom: 1em; }
-    #resume h2.label, #resume h2.section-title, #resume h1.name {
+    #resume h2.label, #resume h2.section-title, #resume h1.name, #resume h3.speciality {
       font-family: "Source Sans Pro", sans-serif;
       color: #003D5D; }
     #resume h2 {
@@ -438,6 +443,12 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", Helvetica, Calibri, sans-serif;
     font-weight: 700; }
+  h2.label {
+    margin-bottom: 0.5em; }
+  h3.speciality {
+    margin-top: 0;
+    font-family: "Source Sans Pro", Helvetica, Calibri, sans-serif;
+    font-weight: 400; }
   .section {
     padding: 0;
     clear: both;

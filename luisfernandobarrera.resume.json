@@ -3,7 +3,8 @@
     "name": "Luis Fernando Barrera",
     "email": "luisfernando@informind.com",
     "image": "https://avatars2.githubusercontent.com/u/1202547?s=460&v=4",
-    "label": "Senior Software Engineering Manager (Financial, Accounting, Business, Python)",
+    "label": "Senior Software Engineering Manager",
+    "speciality": "(Financial, Accounting, Business and Python)",
     "phone": "+52 55 4848 1150",
     "location": {
       "city": "Mexico City",
@@ -548,8 +549,8 @@
     "canonical": "https://github.com/luisfernandobarrera/resume",
     "display": "https://cv.luisfernandobarrera.com",
     "gh-pages-domain": "cv.luisfernandobarrera.com",
-    "version": "v0.4.0",
-    "lastModified": "2024-03-24T01:11:00-06:00",
+    "version": "v0.4.1",
+    "lastModified": "2024-03-24T01:50:00-06:00",
     "theme": "spartan",
     "notes": ""
   }

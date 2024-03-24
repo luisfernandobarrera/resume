@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900|Source+Sans+Pro|Raleway:700&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,900|Source+Sans+Pro:300,400,700|Raleway:100,300,400,700&display=swap')
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
 
 
@@ -132,6 +132,12 @@ $secondary-proportion: 100% - $main-proportion
     h2.label
       font-size: 1.2em
       font-weight: 400
+      color: #757575
+
+    h3.speciality
+      font-size: 1.1em
+      font-family: $main-font
+      font-weight: 300
       color: #757575
 
     .name
@@ -392,7 +398,7 @@ $secondary-proportion: 100% - $main-proportion
       & > header, & > section
         margin-bottom: 1em
 
-      h2.label, h2.section-title, h1.name
+      h2.label, h2.section-title, h1.name, h3.speciality
         font-family: $title-font
         color: $title-color
 
@@ -608,6 +614,14 @@ $secondary-proportion: 100% - $main-proportion
   h1, h2, h3, h4, h5, h6
     font-family: $print-title-font-family
     font-weight: 700
+
+  h2.label
+    margin-bottom: 0.5em
+
+  h3.speciality
+    margin-top: 0
+    font-family: $print-non-text-font-family
+    font-weight: 400
 
   .section
     padding: 0
