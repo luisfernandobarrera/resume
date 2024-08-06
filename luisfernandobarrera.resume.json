@@ -154,6 +154,19 @@
   ],
   "work": [
     {
+      "company": "Sofía Salud",
+      "description": "Mexican Health Insurance Tech Company",
+      "position": "Sr. Backend Engineer (Payments)",
+      "location": "Remote and Mexico City",
+      "startDate": "2024-05-26",
+      "url": "https://sofiasalud.com/",
+      "summary": "Working in the Payments and Claims department",
+      "highlights": [
+          "Using Python, Django and GraphQL.",
+          "Refactoring code and implementing new features."
+      ]
+    },
+    {
       "company": "Banco Covalto",
       "description": "Mexican Fintech Bank",
       "position": "Senior Engineering Manager (Integration and Legacy Services)",

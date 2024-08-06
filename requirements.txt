@@ -1,5 +1,0 @@
-jinja2
-flask
-libsass
-Frozen-Flask
-Flask-WeasyPrint
