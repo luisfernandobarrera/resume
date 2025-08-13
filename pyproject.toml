@@ -1,20 +1,22 @@
-[tool.poetry]
+[project]
 name = "resume"
 version = "0.1.0"
 description = "Luis Fernando Barrera's personal resumé system"
-authors = ["Luis Fernando Barrera <luisfernando@informind.com>"]
-license = "MIT"
+authors = [
+    {name = "Luis Fernando Barrera", email = "luisfernando@informind.com"}
+]
+license = {text = "MIT"}
 readme = "README.md"
-package-mode = false
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "flask>=3.0.3",
+    "libsass>=0.23.0",
+    "frozen-flask>=1.0.2",
+    "flask-weasyprint>=1.1.0",
+]
 
-[tool.poetry.dependencies]
-python = "^3.12"
-flask = "^3.0.3"
-libsass = "^0.23.0"
-frozen-flask = "^1.0.2"
-flask-weasyprint = "^1.1.0"
+[tool.hatch.build.targets.wheel]
+packages = []
 
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.uv]
+dev-dependencies = []

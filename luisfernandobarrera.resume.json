@@ -4,7 +4,7 @@
     "email": "luisfernando@informind.com",
     "image": "https://avatars2.githubusercontent.com/u/1202547?s=460&v=4",
     "label": "Senior Software Engineering Manager",
-    "speciality": "(Financial, Accounting, Business and Python)",
+    "speciality": "(Financial, Accounting, Business and Python, now doing Clojure and React)",
     "phone": "+52 55 4848 1150",
     "location": {
       "city": "Mexico City",
@@ -153,17 +153,40 @@
     }
   ],
   "work": [
+    {"company": "Nubank",
+      "description": "Brazilian Global Fintech Bank",
+      "position": "Senior Software Engineer",
+      "location": "Remote and Mexico City",
+      "startDate": "2024-12-10",
+      "url": "https://nubank.com.mx",
+      "summary": "Working in the Global Money-In squad building amazing experiences for our customers to bring money to Nubank in Brazil, Mexico and Colombia. Using Clojure, Datomic, microservices and other propietary technologies from Nubank.",
+      "highlights": [
+        "Working in a full-stack environment using Clojure to deliver in-app experiences with the Nubank's propietary framework in Clojure / Flutter (BDC).",
+        "Using knowledge of banking systems in Brazil (Pix, TED, Boleto), Colombia (Bre-B, ACH, PSE), and Mexico (SPEI) to help solve problems in the Nubank microservices.",
+        "Delivered hybrid app / widget in React and Clojure to help the CX team to check details of the transfer-in transactions in Colombia and Mexico, connecting them to the relevant microservices and GraphQL platforms",
+        "Working with AI Coding (Cursor, Claude, Gemini) to learn and deliver quickly features and debugging issues",
+        "Using Grafana and other tools to monitor the microservices and the Nubank's propietary platform.",
+        "Studying and creating documentation to understand better the Nubank's propietary platform. Learning Clojure, Datomic, BDC to onboard to the team.",
+        "Collaborating in a multi-country team, using skills in English, Spanish and Portuguese."
+      ]
+    },
+
     {
       "company": "Sofía Salud",
       "description": "Mexican Health Insurance Tech Company",
       "position": "Sr. Backend Engineer (Payments)",
       "location": "Remote and Mexico City",
       "startDate": "2024-05-26",
+      "endDate": "2024-12-09",
       "url": "https://sofiasalud.com/",
-      "summary": "Working in the Payments and Claims department",
+      "summary": "Working in the Payments and Claims department with Django and GraphQL.",
       "highlights": [
           "Using Python, Django and GraphQL.",
-          "Refactoring code and implementing new features."
+          "Refactoring code and implementing new features.",
+          "Working to improve the codebase and the architecture of the project, CICD, libraries, etc.",
+          "Doing refactorings on a big monolith codebase related to payments and claims.",
+          "Working with CFDI (Mexican electronic fiscal invoice) and the Accounts Payable systems.",
+          "Implemented an AI service to automate the dictamination of claims for labs and medicines."
       ]
     },
     {
@@ -562,8 +585,8 @@
     "canonical": "https://github.com/luisfernandobarrera/resume",
     "display": "https://cv.luisfernandobarrera.com",
     "gh-pages-domain": "cv.luisfernandobarrera.com",
-    "version": "v0.4.3",
-    "lastModified": "2024-03-24T03:13:00-06:00",
+    "version": "v0.5.1",
+    "lastModified": "2025-08-12T12:00:00-06:00",
     "theme": "spartan",
     "notes": ""
   }

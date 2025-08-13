@@ -6,25 +6,55 @@ I adapted one of the themes and modified it to my needs using SASS, Jinja2 and F
 
 The CSS is optimized for screen and print.
 
-To install just execute:
+## Quick Start
+
+This project uses **uv** for dependency management and includes a helper script for common tasks:
 
 ```bash
-pip install -r requirements.txt
+# Install dependencies
+./run.sh sync
+
+# Start development server
+./run.sh dev
+
+# Generate static files (including PDF)
+./run.sh build
 ```
 
-To generate the static files
+## Manual Commands
 
-```python
-python gen_static.py
-```
+If you prefer to run commands manually:
 
-To develop your cv
 ```bash
-python -m flask run 
+# Install dependencies
+uv sync
+
+# Generate static files (requires environment setup)
+export DYLD_LIBRARY_PATH="/opt/homebrew/lib:$DYLD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/opt/homebrew/lib/pkgconfig"
+uv run python gen_static.py
+
+# Start development server
+uv run python -m flask run 
 ```
 
-To have PDF support you have to install WeasyPrint that requires the GTK Library. 
-[Instructions to install](https://weasyprint.readthedocs.io/en/stable/install.html#gtk64installer)
+## PDF Support
+
+For PDF generation, you need:
+
+1. **System dependencies** (automatically installed during setup):
+   ```bash
+   brew install gtk+3 gobject-introspection
+   ```
+
+2. **Fonts** (for optimal rendering):
+   ```bash
+   brew install font-merriweather font-source-sans-3 font-raleway
+   ```
+
+The `./run.sh build` command handles the environment setup automatically.
+
+More info: [WeasyPrint Installation Guide](https://weasyprint.readthedocs.io/en/stable/install.html#gtk64installer)
 
 Inside the `templates` folder you will find the template and the SASS file.
 
