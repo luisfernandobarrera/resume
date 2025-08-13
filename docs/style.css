@@ -94,7 +94,7 @@
       font-size: 1.2em;
       font-weight: 400;
       color: #757575; }
-    header h3.speciality {
+    header h3.specialty {
       font-size: 1.1em;
       font-family: "Source Sans Pro", sans-serif;
       font-weight: 300;
@@ -278,7 +278,7 @@
     padding: 1em; }
     #resume > header, #resume > section {
       margin-bottom: 1em; }
-    #resume h2.label, #resume h2.section-title, #resume h1.name, #resume h3.speciality {
+    #resume h2.label, #resume h2.section-title, #resume h1.name, #resume h3.specialty {
       font-family: "Source Sans Pro", sans-serif;
       color: #003D5D; }
     #resume h2 {
@@ -445,7 +445,7 @@
     font-weight: 700; }
   h2.label {
     margin-bottom: 0.5em; }
-  h3.speciality {
+  h3.specialty {
     margin-top: 0;
     font-family: "Source Sans Pro", Helvetica, Calibri, sans-serif;
     font-weight: 400; }

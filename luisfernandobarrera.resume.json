@@ -4,7 +4,7 @@
     "email": "luisfernando@informind.com",
     "image": "https://avatars2.githubusercontent.com/u/1202547?s=460&v=4",
     "label": "Senior Software Engineering Manager",
-    "speciality": "(Financial, Accounting, Business and Python, now doing Clojure and React)",
+    "specialty": "(Financial, Accounting, Business and Python, now doing Clojure and React)",
     "phone": "+52 55 4848 1150",
     "location": {
       "city": "Mexico City",
@@ -12,13 +12,13 @@
       "countryCode": "MX",
       "country": "Mexico"
     },
-    "summary": "Senior Software Engineering Manager with proven experience building teams and mentoring people. Skilled and enthusiastic Python Programmer with a solid background in Finance, Accounting and Business their Data and Applications.",
+    "summary": "Senior Software Engineering Manager with proven experience building teams and mentoring people. Skilled and enthusiastic Python programmer with a solid background in Finance, Accounting, and Business Data Applications. Now doing Clojure and React.",
     "about": [
       "Senior Software Engineering Manager with a strong drive for building software, leading teams, structuring chaos, organizing complexity. I achieve team objectives by fostering discussions to deeply understand problems and tackle them with a practical, hands-on approach, engage in coding and problem-solving alongside the team, focus on collective success and foster a collaborative environment. Experienced in building teams and mentoring people.",
-      "Have the strong belief that the success of a team is not only a function of will and skills from the people but from the culture, the organization and the management team of the company. Enthusiastic about improving within a team, a company and myself.",
-      "Skilled and enthusiastic Python Programmer with a solid background in Finance, Accounting and Business their Data and Applications. Love to design and to analyze data through building applications and libraries. I just don't develop projects, I am proud to craft them.",
-      "Hopelessly curious and eclectic. Love to learn about any topic to solve problems. I use Getting Things Done (GTD) as personal workflow, practice mindfulness to keep my mind clear, calm and handle stress, and have kept a personal ledger for 10 years.",
-      "If your data or project has symbols like '$¢£€¥%', you would probably like to share a coffee or interview me."
+      "I have the strong belief that the success of a team is not only a function of will and skills of the people but also of the culture, the organization, and the management team of the company. Enthusiastic about improving within a team, a company, and myself.",
+      "Skilled and enthusiastic Python programmer with a solid background in Finance, Accounting, and Business Data Applications. Love to design and analyze data through building applications and libraries. I don't just develop projects, I am proud to craft them.",
+      "Hopelessly curious and eclectic. Love to learn about any topic to solve problems. I use Getting Things Done (GTD) as my personal workflow, practice mindfulness to keep my mind clear and calm while handling stress, and have kept a personal ledger for 10 years.",
+      "If your data or project involves symbols like '$¢£€¥%', you would probably like to share a coffee with me or interview me."
     ],
     "profiles": [
       {
@@ -34,17 +34,17 @@
     ]
   },
   "skills": [
+    
     {
-      "name": "Engineering Management",
+      "name": "Clojure",
+      "level": "Intermediate",
       "keywords": [
-        "team building",
-        "OKRs and KPIs",
-        "mentoring",
-        "DevOps",
-        "agile methodologies",
-        "product requirements",
-        "software architecture & design",
-        "project management"
+        "clojure",
+        "clojurescript",
+        "re-frame",
+        "reagent",
+        "datomic",
+        "datascript"
       ]
     },
     {
@@ -71,11 +71,24 @@
         "tortoiseORM",
         "REST API",
         "GraphQL",
-        "javascript",
+        "JavaScript",
         "VueJS",
         "React",
         "HTMX",
         "SASS"
+      ]
+    },
+    {
+      "name": "Engineering Management",
+      "keywords": [
+        "team building",
+        "OKRs and KPIs",
+        "mentoring",
+        "DevOps",
+        "agile methodologies",
+        "product requirements",
+        "software architecture & design",
+        "project management"
       ]
     },
     {
@@ -96,11 +109,13 @@
     {
       "name": "Tools",
       "keywords": [
+        "AI-Powered Coding",
         "docker",
         "kubernetes",
+        "observability with Grafana",
         "bash",
         "linux",
-        "excel VBA",
+        "Excel VBA",
         "CircleCI",
         "SDLC",
         "code quality",
@@ -161,12 +176,12 @@
       "url": "https://nubank.com.mx",
       "summary": "Working in the Global Money-In squad building amazing experiences for our customers to bring money to Nubank in Brazil, Mexico and Colombia. Using Clojure, Datomic, microservices and other propietary technologies from Nubank.",
       "highlights": [
-        "Working in a full-stack environment using Clojure to deliver in-app experiences with the Nubank's propietary framework in Clojure / Flutter (BDC).",
+        "Working in a full-stack environment using Clojure to deliver in-app experiences with the Nubank's proprietary framework in Clojure / Flutter (BDC).",
         "Using knowledge of banking systems in Brazil (Pix, TED, Boleto), Colombia (Bre-B, ACH, PSE), and Mexico (SPEI) to help solve problems in the Nubank microservices.",
         "Delivered hybrid app / widget in React and Clojure to help the CX team to check details of the transfer-in transactions in Colombia and Mexico, connecting them to the relevant microservices and GraphQL platforms",
-        "Working with AI Coding (Cursor, Claude, Gemini) to learn and deliver quickly features and debugging issues",
-        "Using Grafana and other tools to monitor the microservices and the Nubank's propietary platform.",
-        "Studying and creating documentation to understand better the Nubank's propietary platform. Learning Clojure, Datomic, BDC to onboard to the team.",
+        "Working with AI-powered coding tools (Cursor, Claude, Gemini) to learn and deliver features quickly while debugging issues",
+        "Using Grafana and other tools to monitor the microservices and the Nubank's proprietary platform.",
+        "Studying and creating documentation to better understand the Nubank's proprietary platform. Learning Clojure, Datomic, BDC to onboard to the team.",
         "Collaborating in a multi-country team, using skills in English, Spanish and Portuguese."
       ]
     },
@@ -186,7 +201,7 @@
           "Working to improve the codebase and the architecture of the project, CICD, libraries, etc.",
           "Doing refactorings on a big monolith codebase related to payments and claims.",
           "Working with CFDI (Mexican electronic fiscal invoice) and the Accounts Payable systems.",
-          "Implemented an AI service to automate the dictamination of claims for labs and medicines."
+          "Implemented an AI service to automate the adjudication of claims for labs and medicines."
       ]
     },
     {
@@ -202,11 +217,11 @@
         "Assumed the responsibilities of the Director of Banking Services Engineering to design the technical architecture considering the functional architecture designed by the CTO. Served as a liaison between Financial Product Managers and other people in Operations such as the Chief Operations Officer, the Legal Team and Sales to translate those requirements to Technical teams reviewing needs and ideas and creating or reviewing projects ans their specifications.",
         "Proposed solutions to various integration issues and systems within the Bank by leveraging the capabilities of all teams and compensating for their weaknesses through the use of components such as aligning catalogs and data types. Discussing things like the implementations of BIAN (Banking Industry Architecture Network).",
         "Led the design of two new operation architectures and ideal one with minimal changes and another tailored to the budgetary, temporal, and functional constraints of the bank, always seeking to optimize best engineering practices and address the bank's technological and operational challenges.",
-        "Led the requirements to have an architecture that allows the bank to have a efficient, successful and cost-effective implementation of Electronic Banking. Audited the architecture and concluded that changes should be done in order to to that. Proposed to reestructure the Technology team to achieve efficiently those objectives.",
+        "Led the requirements to have an architecture that allows the bank to have an efficient, successful and cost-effective implementation of Electronic Banking. Audited the architecture and concluded that changes should be done in order to do that. Proposed to restructure the Technology team to efficiently achieve those objectives.",
         "Managed a team of 4 people designing and implementing projects such as the financial product quoting system, the electronic signature service with e.firma for contracts, template and document services, and promissory note endorsements with Mifiel blockchain.",
-        "Optimized my team to take initiatives to develop projects to help operational areas, apply technology and achieve efficiency in those processes. Promoted an open team dynamic to get ideas and feedback from the team and the rest of the bank to design and achieve maximum impact projects that benefited our internal users and customer.",
+        "Optimized my team to take initiatives to develop projects to help operational areas, apply technology and achieve efficiency in those processes. Promoted an open team dynamic to get ideas and feedback from the team and the rest of the bank to design and achieve maximum impact projects that benefited our internal users and customers.",
         "Led the development of services with Salesforce and Topaz (core banking) to expose APIs that allow for the automation of data flows from origination channel processes by connecting most of the bank's systems. Integrating them through the middleware-based legacy integration platform developed within my team.",
-        "Proposed, designed, gather requirements with potential customers, planned, and led the Treasury API project for real-time bank account movement consultation via REST or Webhook using Kafka, Django, and Topaz integration services. Led the consultations to get the customer requirements and gather security and compliance requirements into consideration for the project. Designed the project as a first step in an Open Banking initiative for Covalto."
+        "Proposed, designed, gathered requirements with potential customers, planned, and led the Treasury API project for real-time bank account movement consultation via REST or Webhook using Kafka, Django, and Topaz integration services. Led the consultations to get the customer requirements and gather security and compliance requirements into consideration for the project. Designed the project as a first step in an Open Banking initiative for Covalto."
       ],
       "resumeVerbose": true
     },
@@ -221,9 +236,9 @@
       "summary": "Engineering Manager (Fincore/ESB Squad). Portfolio Migration Leader in all the quantitative data as a consultant and Data Engineer.",
       "highlights": [
         "Successfully achieved the Portfolio from SOFOM to Banco Covalto (Lender company to regulated bank). 2 billion Mexican pesos (100 million USD). Migrating from SOFOM's in-house system Loan Management System to Stefanini's Topaz in Banco Covalto. Regulated operation by the Comisión Nacional Bancaria y de Valores (CNBV, Mexican equivalent to the U.S. SEC).",
-        "Migration was necessary step to business growth and merger between Credijusto and Banco Covalto (former Finterra) and to get NASDAQ IPO.",
+        "Migration was a necessary step for business growth and the merger between Credijusto and Banco Covalto (former Finterra) and to achieve a NASDAQ IPO.",
         "Led the collaboration across all business areas and departments to gather the logic from legacy systems and the logic to target systems. Creating all the transformations in between.",
-        "Wrote several financial math and accounting modules in a library to calculate, solve, split and do general work with amortization tables, cash flows, accounting, and payment application handling. Written against time with hard deadlines. (More details on the projects section in this CV as pennyworth). Full Coverage. Data testing from source information and in delivered files.",
+        "Wrote several financial math and accounting modules in a library to calculate, solve, split and do general work with amortization tables, cash flows, accounting, and payment application handling. Written against time with hard deadlines. (More details on the projects section in this CV as Pennyworth). Full Coverage. Data testing from source information and in delivered files.",
         "Wrote a library to abstract the Credit Contract to work, fill and share data. Writing multiple extractors to fill these Contracts from different sources: Loan Management Systems, Excel Files, Google Sheet Files, etc.",
         "Delivered normalized data to the business teams for validation and calculations to fill the migration layouts",
         "Worked as Engineering Manager for a team of 6 engineers working with several legacy projects related to payments, financial quotes, loan management systems, and the Enterprise Service Bus (ESB) components.",
