@@ -17,9 +17,17 @@ This project uses **uv** for dependency management and includes a helper script 
 # Start development server
 ./run.sh dev
 
-# Generate static files (including PDF)
+# Generate static files (original layout)
 ./run.sh build
+
+# Generate modern column-based PDF
+./run.sh build-cols
 ```
+
+## Templates Available
+
+1. **Original Template** (`cv.html`) - Single-column web-optimized layout
+2. **Column-Based Template** (`cv-columns.html`) - Professional two-column PDF-optimized layout
 
 ## Manual Commands
 

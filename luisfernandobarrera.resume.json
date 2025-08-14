@@ -4,7 +4,7 @@
     "email": "luisfernando@informind.com",
     "image": "https://avatars2.githubusercontent.com/u/1202547?s=460&v=4",
     "label": "Senior Software Engineering Manager",
-    "specialty": "(Financial, Accounting, Business and Python, now doing Clojure and React)",
+    "specialty": "(Finance, Accounting, Business and Python, now doing Clojure and React)",
     "phone": "+52 55 4848 1150",
     "location": {
       "city": "Mexico City",
@@ -12,7 +12,7 @@
       "countryCode": "MX",
       "country": "Mexico"
     },
-    "summary": "Senior Software Engineering Manager with proven experience building teams and mentoring people. Skilled and enthusiastic Python programmer with a solid background in Finance, Accounting, and Business Data Applications. Now doing Clojure and React.",
+    "summary": "Senior Software Engineering Developer and Manager with proven experience building teams and mentoring people. Skilled and enthusiastic Python programmer with a solid background in Finance, Accounting, and Business Data Applications. Now doing Clojure and React.",
     "about": [
       "Senior Software Engineering Manager with a strong drive for building software, leading teams, structuring chaos, organizing complexity. I achieve team objectives by fostering discussions to deeply understand problems and tackle them with a practical, hands-on approach, engage in coding and problem-solving alongside the team, focus on collective success and foster a collaborative environment. Experienced in building teams and mentoring people.",
       "I have the strong belief that the success of a team is not only a function of will and skills of the people but also of the culture, the organization, and the management team of the company. Enthusiastic about improving within a team, a company, and myself.",
@@ -173,8 +173,8 @@
       "position": "Senior Software Engineer",
       "location": "Remote and Mexico City",
       "startDate": "2024-12-10",
-      "url": "https://nubank.com.mx",
-      "summary": "Working in the Global Money-In squad building amazing experiences for our customers to bring money to Nubank in Brazil, Mexico and Colombia. Using Clojure, Datomic, microservices and other propietary technologies from Nubank.",
+      "url": "https://nu.com.mx",
+      "summary": "Senior Engineer in the Global Money-In squad building amazing experiences for our customers to bring money to Nubank in Brazil, Mexico and Colombia. Using Clojure, Datomic, microservices and other proprietary technologies from Nubank.",
       "highlights": [
         "Working in a full-stack environment using Clojure to deliver in-app experiences with the Nubank's proprietary framework in Clojure / Flutter (BDC).",
         "Using knowledge of banking systems in Brazil (Pix, TED, Boleto), Colombia (Bre-B, ACH, PSE), and Mexico (SPEI) to help solve problems in the Nubank microservices.",
@@ -194,9 +194,8 @@
       "startDate": "2024-05-26",
       "endDate": "2024-12-09",
       "url": "https://sofiasalud.com/",
-      "summary": "Working in the Payments and Claims department with Django and GraphQL.",
+      "summary": "Engineer in the Payments and Claims department in Sofía Salud, a health insurance & health company. Using Python, Django and GraphQL. Refactoring code and implementing new features.",
       "highlights": [
-          "Using Python, Django and GraphQL.",
           "Refactoring code and implementing new features.",
           "Working to improve the codebase and the architecture of the project, CICD, libraries, etc.",
           "Doing refactorings on a big monolith codebase related to payments and claims.",

@@ -13,14 +13,16 @@ usage() {
     echo "Usage: $0 [command]"
     echo ""
     echo "Commands:"
-    echo "  dev     - Start Flask development server"
-    echo "  build   - Generate static files"
-    echo "  sync    - Install/sync dependencies"
-    echo "  shell   - Open shell with proper environment"
+    echo "  dev         - Start Flask development server"
+    echo "  build       - Generate static files (original layout)"
+    echo "  build-cols  - Generate column-based PDF"
+    echo "  sync        - Install/sync dependencies"
+    echo "  shell       - Open shell with proper environment"
     echo ""
     echo "Examples:"
-    echo "  $0 dev    # Start development server"
-    echo "  $0 build  # Generate static site"
+    echo "  $0 dev         # Start development server"
+    echo "  $0 build       # Generate original static site"
+
 }
 
 # Execute based on command
@@ -34,6 +36,7 @@ case "${1:-help}" in
         uv run python gen_static.py
         echo "✅ Static files generated in docs/"
         ;;
+    
     "sync"|"install")
         echo "📥 Syncing dependencies..."
         uv sync

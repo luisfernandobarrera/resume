@@ -75,6 +75,7 @@ def style():
     return Response(css, mimetype="text/css")
 
 
+
 # PDF Support
 if PDF_SUPPORT:
     @app.route('/cv.pdf')
