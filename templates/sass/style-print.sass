@@ -1,0 +1,301 @@
+@import 'variables'
+
+@page
+  size: letter
+  margin: 1cm 1.2cm
+
+.no-page-break
+  page-break-inside: avoid
+
+a
+  text-decoration-line: none
+  color: inherit
+
+body
+  text-align: justify
+  font: $print-font-size $print-font-family
+  line-height: $print-line-height
+  background: #fff !important
+  color: #000
+
+// Compact ATS styling
+body.ats-resume
+  font-size: 9.5pt
+  line-height: 1.4
+  text-align: left
+
+  #work section.job
+    &:not(:last-child)
+      margin-bottom: 0.6em
+    
+    &.same-company
+      margin-bottom: 0.35em
+      
+      h3.name
+        font-size: 1.05em
+        font-weight: 700
+
+  h1.name
+    font-size: 1.55em
+    margin-top: 0
+    margin-bottom: 0.05em
+    font-weight: 700
+    font-family: $print-title-font-family
+    text-align: center
+
+  h2.label
+    font-size: 1.25em
+    margin-bottom: 0.05em
+    font-weight: 600
+    font-family: $print-title-font-family
+    text-align: center
+
+  h3.specialty
+    font-size: 1em
+    margin-top: 0
+    margin-bottom: 0.2em
+    font-weight: 400
+    font-family: $print-non-text-font-family
+    text-align: center
+
+  .languages-line
+    font-size: 0.85em
+    margin-top: 0
+    margin-bottom: 0.5em
+    font-weight: 400
+    text-align: center
+    color: #555
+
+  h2.section-title
+    font-size: 1.2em
+    margin-top: 0.5em
+    margin-bottom: 0.25em
+    font-weight: 700
+    font-family: $print-title-font-family
+
+  h3.name
+    font-size: 1.1em
+    margin-bottom: 0.05em
+    font-weight: 800
+    font-family: $print-title-font-family
+
+  #basics
+    margin-bottom: 0.5em
+    font-size: 0.9em
+
+    .contact-info
+      text-align: center
+
+      .contact-line
+        display: block
+        margin-bottom: 0.1em
+        line-height: 1.3
+
+  .section
+    margin-bottom: 0.6em
+    padding-top: 0.05em
+
+  .main-summary
+    margin-bottom: 0.5em
+
+    p
+      text-align: left
+      line-height: 1.4
+
+  .entry
+    margin-bottom: 0.4em
+
+  .job.entry
+    margin-bottom: 0.4em
+
+    header
+      padding: 0
+
+    .position
+      font-size: 1.05em
+      margin-bottom: 0.12em
+      font-weight: 600
+
+    .date, .location
+      font-size: 0.9em
+      margin-bottom: 0.12em
+
+    .item p
+      margin-top: 0.35em
+      margin-bottom: 0.3em
+      line-height: 1.4
+
+.fa, #print-me
+  display: none
+
+#site-nav, #theme-toggle
+  display: none
+
+body:not(.ats-resume)
+  h1, h2, h3, h4, h5, h6
+    font-family: $print-title-font-family
+    font-weight: 700
+
+  h2.label
+    margin-bottom: 0.5em
+
+  h3.specialty
+    margin-top: 0
+    font-family: $print-non-text-font-family
+    font-weight: 400
+
+.section
+  padding: 0
+  clear: both
+  width: 100%
+  margin-bottom: 1em
+
+
+#basics
+  #profiles
+    ul
+      list-style: none
+      padding-left: 0
+      margin: 0
+  .contact-block
+    display: inline-block
+    width: 50%
+  #contact, #contact-languages
+    float: right
+    text-align: right
+    div .fa
+      float: left
+
+#work, #projects, #volunteer
+  section.job, section.project
+    .item
+      padding-top: 0.1em
+      clear: both
+    &:not(:last-child)
+      margin-bottom: 3em
+
+  h3.name
+    width: $proportion / (1 + $proportion) * 100%
+    display: block
+    float: left
+    margin: 0
+
+  .website, .date, .location, .working-for
+    width: 100% - ($proportion / (1 + $proportion) * 100%)
+    display: block
+    float: right
+    text-align: right
+
+  .company-description, .position, .project-description
+    display: block
+    width: $proportion / (1 + $proportion) * 100%
+    float: left
+
+  .company-description, .project-description
+    font-style: italic
+    font-family: $print-non-text-font-family
+
+  .position, .roles, .working-for
+    font-weight: 800
+
+  .roles, .summary
+    clear: both
+
+  .summary, .extras
+    margin-bottom: 1em
+
+  .location
+    &:before
+      content: "Location: "
+
+
+.education
+  header
+    .name
+      margin: 0 auto
+      display: block
+      width: 100% - ($proportion / (1 + $proportion) * 100%)
+      vertical-align: bottom
+      float: left
+
+    .area
+      width: $proportion / (1 + $proportion) * 100%
+      vertical-align: bottom
+      float: left
+
+  .item
+    .institution
+      width: 100% - ($proportion / (1 + $proportion) * 100%)
+      font-weight: 800
+      float: left
+
+    .date
+      width: $proportion / (1 + $proportion) * 100%
+      float: left
+
+  &:after
+    content: ''
+    display: block
+    clear: both
+
+#languages
+  display: flex
+  flex-flow: row wrap
+  justify-content: flex-start
+  padding-bottom: 1em
+  font-family: $print-non-text-font-family
+
+  .item
+    padding: 0 1em 1em 0
+    border-bottom: none
+
+  .language
+    font-weight: 700
+    font-size: 110%
+    font-family: $print-font-family
+
+
+#interests, #skills
+  .name
+    font-weight: 700
+    font-size: 110%
+
+  .item
+    display: block
+    width: 100%
+    clear: both
+    margin-bottom: 2em
+
+    &:after
+      display: block
+      border-bottom: 1px solid slategray
+
+    .name, .level
+      display: inline-block
+      vertical-align: text-bottom
+      text-align: left
+      font-size: 1em
+
+    .name
+      padding-right: 1em
+
+    .keywords
+      font-family: $print-non-text-font-family
+
+    ul, ol
+      list-style: none
+      padding-left: 0
+      margin: 0
+
+      li
+        display: inline-block
+        padding: 0 0.5em
+        border-left: 1px solid lightgray
+
+        &:first-of-type
+          margin-left: 0
+
+        &:last-of-type
+          margin-right: 0
+          border-right: 1px solid lightgray
+
