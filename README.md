@@ -8,37 +8,39 @@ The CSS is optimized for screen and print.
 
 ## Quick Start
 
-This project uses **uv** for dependency management and includes a helper script for common tasks:
+This project uses **uv** for dependency management and includes a **Makefile** for common tasks:
 
 ```bash
+# See all available commands
+make help
+
 # Install dependencies
-./run.sh sync
+make install
 
-# Start development server
-./run.sh dev
+# Start development server (port 8080)
+make dev
 
-# Generate static files (original layout)
-./run.sh build
+# Generate static files for GitHub Pages
+make build
 
-# Generate modern column-based PDF
-./run.sh build-cols
+# Run tests (verify PDF page counts)
+make test
+
+# Build and test everything
+make all
 ```
 
-### Using uv directly
+### Alternative: Using run.sh or uv directly
 
 ```bash
-# Install / sync
+# Using run.sh (legacy)
+./run.sh dev
+./run.sh build
+
+# Using uv directly
 uv sync
-
-# Start dev server
 uv run python -m flask run
-
-# Build static site
 uv run python gen_static.py
-
-# Lint / format
-uv run ruff check .
-uv run ruff format .
 ```
 
 ## Templates Available
