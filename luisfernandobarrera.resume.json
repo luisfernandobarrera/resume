@@ -14,7 +14,8 @@
     },
     "summary": "Senior Software Engineering Developer and Manager with proven experience building teams and mentoring people. Skilled and enthusiastic Python programmer with a solid background in Finance, Accounting, and Business Data Applications. Now doing Clojure and React.",
     "about": [
-      "Senior Software Engineering Manager with a strong drive for building software, leading teams, structuring chaos, organizing complexity. I achieve team objectives by fostering discussions to deeply understand problems and tackle them with a practical, hands-on approach, engage in coding and problem-solving alongside the team, focus on collective success and foster a collaborative environment. Experienced in building teams and mentoring people.",
+      "Senior Software Engineer and Engineering Manager with a track record building high-performing teams and shipping complex systems in finance, banking, and data-intensive products. Expert in Python and Backend development and; proficient in modern web stacks. I translate business and regulatory requirements into robust architectures and deliver reliable software at scale.",
+      "I have a strong drive for building software, leading teams, structuring chaos, organizing complexity. I achieve team objectives by fostering discussions to deeply understand problems and tackle them with a practical, hands-on approach, engage in coding and problem-solving alongside the team, focus on collective success and foster a collaborative environment. I am experienced in building teams and mentoring people.",
       "I have the strong belief that the success of a team is not only a function of will and skills of the people but also of the culture, the organization, and the management team of the company. Enthusiastic about improving within a team, a company, and myself.",
       "Skilled and enthusiastic Python programmer with a solid background in Finance, Accounting, and Business Data Applications. Love to design and analyze data through building applications and libraries. I don't just develop projects, I am proud to craft them.",
       "Hopelessly curious and eclectic. Love to learn about any topic to solve problems. I use Getting Things Done (GTD) as my personal workflow, practice mindfulness to keep my mind clear and calm while handling stress, and have kept a personal ledger for 10 years.",
@@ -170,7 +171,7 @@
       "startDate": "2024-12-10",
       "endDate": "2025-09-12",
       "url": "https://nu.com.mx",
-      "summary": "Senior Engineer in the Global Money-In squad building amazing experiences for our customers to bring money to Nubank in Brazil, Mexico and Colombia. Using Clojure, Datomic, microservices and other proprietary technologies from Nubank.",
+      "summary": "Building amazing experiences for our customers to bring money to Nubank in Brazil, Mexico and Colombia. Using Clojure, Datomic, microservices and other proprietary technologies from Nubank.",
       "highlights": [
         "Worked in a full-stack environment using Clojure to deliver in-app experiences with the Nubank's proprietary framework in Clojure / Flutter (BDC).",
         "Used knowledge of banking systems in Brazil (Pix, TED, Boleto), Colombia (Bre-B, ACH, PSE), and Mexico (SPEI) to help solve problems in the Nubank microservices.",
@@ -190,9 +191,9 @@
       "startDate": "2024-05-26",
       "endDate": "2024-12-09",
       "url": "https://sofiasalud.com/",
-      "summary": "Engineer in the Payments and Claims department in Sofía Salud, a health insurance & health company. Using Python, Django and GraphQL. Refactoring code and implementing new features.",
+      "summary": "Modernized payments and claims services in a Django/GraphQL monolith and introduced AI‑assisted claims adjudication to streamline operations. Updated and refactored the monolith for all Sofia Salud's operations.",
       "highlights": [
-          "Refactoring code and implementing new features.",
+          "Refactoring code and implementing new features",
           "Working to improve the codebase and the architecture of the project, CICD, libraries, etc.",
           "Doing refactorings on a big monolith codebase related to payments and claims.",
           "Working with CFDI (Mexican electronic fiscal invoice) and the Accounts Payable systems.",
@@ -207,7 +208,7 @@
       "startDate": "2023-12-01",
       "endDate": "2024-03-15",
       "url": "https://covalto.com",
-      "summary": "Worked as a de facto Engineering Director for Backend and Integration Services. Reporting directly to the CTO. Kept the role of Manager and Technical Leader with a hands-on approach and programming and structuring code when necessary.",
+      "summary": "Led backend and integration engineering (acting director) to define target architectures, align banking operations, and deliver critical integration and signing services. Kept the role of Manager and Technical Leader with a hands-on approach and programming and structuring code when necessary.",
       "highlights": [
         "Assumed the responsibilities of the Director of Banking Services Engineering to design the technical architecture considering the functional architecture designed by the CTO. Served as a liaison between Financial Product Managers and other people in Operations such as the Chief Operations Officer, the Legal Team and Sales to translate those requirements to Technical teams reviewing needs and ideas and creating or reviewing projects and their specifications.",
         "Proposed solutions to various integration issues and systems within the Bank by leveraging the capabilities of all teams and compensating for their weaknesses through the use of components such as aligning catalogs and data types. Discussing things like the implementations of BIAN (Banking Industry Architecture Network).",
@@ -226,7 +227,7 @@
       "position": "Engineering Manager, Data Engineer, Tech Lead",
       "location": "Remote and Mexico City",
       "startDate": "2022-05-01",
-      "endDate": "2023-11-30",
+      "endDate": "2024-03-15",
       "url": "https://covalto.com",
       "summary": "Engineering Manager (Fincore/ESB Squad). Portfolio Migration Leader in all the quantitative data as a consultant and Data Engineer.",
       "highlights": [
