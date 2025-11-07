@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,900|Source+Sans+Pro:300,400,700|Raleway:100,300,400,700&display=swap')
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap')
 
 
-$main-font: 'Source Sans Pro', sans-serif
+$screen-font: 'IBM Plex Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif
+$main-font: $screen-font
 $title-font: Merriweather, serif
 $print-font-size: 10pt
 $print-line-height: 1.5em
 $print-font-family: "Merriweather", Georgia, "Times New Roman", Times, serif
 $print-title-font-family: "Raleway", Helvetica, Calibri, sans-serif
 $print-non-text-font-family: "Source Sans Pro", Helvetica, Calibri, sans-serif
+
+$accent-indigo: #3F51B5
+$accent-terracotta: #E07A5F
+$title-color: $accent-indigo
 
 $proportion: 1.618
 $main-proportion: 100% / $proportion
@@ -87,6 +93,7 @@ $secondary-proportion: 100% - $main-proportion
     line-height: 1.6
     font-size: 16px
     font-family: $main-font
+    text-align: left
 
   #resume
     padding: 1rem 0
@@ -187,7 +194,7 @@ $secondary-proportion: 100% - $main-proportion
     font-size: 1.2rem
     font-family: $title-font
     font-weight: 900
-    color: #757575
+    color: $title-color
     margin-bottom: 0.1275em
 
   .date
@@ -249,13 +256,13 @@ $secondary-proportion: 100% - $main-proportion
 
   .courses li, .keywords li
     display: inline-block
-    background: #f0f0f0
+    background: rgba(63, 81, 181, 0.08)
     font-size: 0.9em
     line-height: 1
-    color: #333
+    color: #1f2a44
     padding: 0.4em 0.8em
-    border-bottom: 1px solid #ddd
-    border-right: 1px solid #ddd
+    border-bottom: 1px solid rgba(63, 81, 181, 0.2)
+    border-right: 1px solid rgba(63, 81, 181, 0.2)
     border-radius: 3px
 
   #publications .date
@@ -382,8 +389,8 @@ $secondary-proportion: 100% - $main-proportion
 
   @media screen and (max-width: 601px)
     $title-font: 'Source Sans Pro', sans-serif
-    $main-font: Merriweather, serif
-    $title-color: #003D5D
+    $main-font: $screen-font
+    $title-color: $accent-indigo
 
     body
       font-size: 95%
@@ -417,7 +424,7 @@ $secondary-proportion: 100% - $main-proportion
 
     .item
       margin: 1.5rem 0
-      text-align: justify
+      text-align: left
 
       .summary, .extras
         margin-bottom: 0.5rem
@@ -440,7 +447,8 @@ $secondary-proportion: 100% - $main-proportion
    ****************
   @media screen and (min-width: 602px)
     #resume
-      width: 550px
+      width: auto
+      max-width: 720px
       margin: 0 auto
 
     .item
@@ -466,24 +474,24 @@ $secondary-proportion: 100% - $main-proportion
       $separation: 0.5em
 
       h3.name
-        width: $main-proportion + 5%
+        width: auto
         display: block
-        float: left
+        float: none
         vertical-align: top
         margin-top: 0
         margin-bottom: $separation
 
       .website, .date, .location, .working-for
-        width: $secondary-proportion - 5%
+        width: auto
         display: block
-        float: right
+        float: none
         text-align: right
         margin-bottom: $separation
 
       .company-description, .position, .project-description
         display: block
-        width: $main-proportion + 5%
-        float: left
+        width: auto
+        float: none
         margin-bottom: $separation
 
       .company-description, .project-description
@@ -494,7 +502,19 @@ $secondary-proportion: 100% - $main-proportion
         font-weight: 800
 
       .roles
-        clear: both
+        clear: none
+
+      .entry > header
+        display: flex
+        flex-wrap: wrap
+        align-items: baseline
+
+        .name
+          flex: 1 1 55%
+
+        .website, .date, .location, .working-for
+          flex: 1 1 45%
+          text-align: right
 
     .education
       .name, .institution
@@ -527,7 +547,8 @@ $secondary-proportion: 100% - $main-proportion
 
   @media screen and (min-width: 1025px)
     #resume
-      width: 650px
+      width: auto
+      max-width: 860px
       padding: 3em
       margin: 3em auto
       background: #fff
@@ -588,6 +609,31 @@ $secondary-proportion: 100% - $main-proportion
       margin-top: 0
 
 
+    #site-nav
+      position: sticky
+      top: 0
+      display: flex
+      gap: .75rem
+      justify-content: flex-end
+      padding: .75rem 1rem
+      background: rgba(255, 255, 255, 0.8)
+      -webkit-backdrop-filter: saturate(180%) blur(8px)
+      backdrop-filter: saturate(180%) blur(8px)
+
+      .nav-link
+        padding: .5rem .75rem
+        border-bottom: 2px solid transparent
+        color: $accent-indigo
+        text-decoration: none
+        font-weight: 600
+
+        &:hover, &:focus
+          border-bottom-color: $accent-terracotta
+          outline: none
+
+        &[aria-current="page"]
+          border-bottom-color: $accent-indigo
+
 @media print
 
   @page
@@ -608,7 +654,111 @@ $secondary-proportion: 100% - $main-proportion
     background: #fff !important
     color: #000
 
+  // Compact ATS styling
+  body.ats-resume
+    font-size: 9pt
+    line-height: 1.4
+    text-align: left
+
+    #work section.job
+      &:not(:last-child)
+        margin-bottom: 0.7em
+      
+      &.same-company
+        margin-bottom: 0.4em
+        
+        h3.name
+          font-size: 1.05em
+          font-weight: 700
+
+    h1.name
+      font-size: 1.6em
+      margin-bottom: 0.2em
+      font-weight: 700
+      text-align: center
+
+    h2.label
+      font-size: 1.3em
+      margin-bottom: 0.2em
+      font-weight: 600
+      text-align: center
+
+    h3.specialty
+      font-size: 0.95em
+      margin-top: 0
+      margin-bottom: 0.3em
+      font-weight: 400
+      text-align: center
+
+    .languages-line
+      font-size: 0.9em
+      margin-top: 0
+      margin-bottom: 0.6em
+      font-weight: 400
+      text-align: center
+      color: #555
+
+    h2.section-title
+      font-size: 1.25em
+      margin-top: 0.8em
+      margin-bottom: 0.3em
+      font-weight: 700
+
+    h3.name
+      font-size: 1.15em
+      margin-bottom: 0.2em
+      font-weight: 800
+
+    #basics
+      margin-bottom: 0.8em
+      font-size: 0.9em
+
+      .contact-info
+        text-align: center
+
+        .contact-line
+          display: block
+          margin-bottom: 0.15em
+          line-height: 1.4
+
+    .section
+      margin-bottom: 0.8em
+      padding-top: 0.1em
+
+    .main-summary
+      margin-bottom: 0.85em
+
+      p
+        text-align: left
+        line-height: 1.4
+
+    .entry
+      margin-bottom: 0.45em
+
+    .job.entry
+      margin-bottom: 0.45em
+
+      header
+        padding: 0
+
+      .position
+        font-size: 1.05em
+        margin-bottom: 0.15em
+        font-weight: 600
+
+      .date, .location
+        font-size: 0.9em
+        margin-bottom: 0.15em
+
+      .item p
+        margin-top: 0.35em
+        margin-bottom: 0.3em
+        line-height: 1.4
+
   .fa, #print-me
+    display: none
+
+  #site-nav
     display: none
 
   h1, h2, h3, h4, h5, h6

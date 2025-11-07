@@ -1,0 +1,109 @@
+{% extends "template.html" %}
+
+{% block title %}
+<title>{{ resume.basics.name }} — ATS Resume</title>
+{% endblock %}
+
+{% block body_class %} class="ats-resume"{% endblock %}
+
+{% block header %}
+<header id="header">
+    <div>
+        <h1 class="name">{{ resume.basics.name }}</h1>
+        <h2 class="label">{{ resume.basics.label }}</h2>
+        {% if resume.basics.specialty %}
+        <h3 class="specialty">{{ resume.basics.specialty }}</h3>
+        {% endif %}
+        <div class="languages-line">
+            {% for language in resume.languages %}{{ language.language }} ({{ language.fluency }}){% if not loop.last %}, {% endif %}{% endfor %}
+        </div>
+    </div>
+</header>
+
+<section id="basics" class="no-page-break">
+    <div class="contact-info">
+        <div class="contact-line">
+            {% for profile in resume.basics.profiles %}<span>{{ profile.url }}</span>{% if not loop.last %} | {% endif %}{% endfor %}
+        </div>
+        <div class="contact-line">{{ resume.basics.email }} | {{ resume.basics.phone }} | {{ resume.basics.location.city }}, {{ resume.basics.location.country }}</div>
+    </div>
+</section>
+{% endblock header %}
+
+{% block about %}
+    <section>
+        {% set ns = namespace(earliest_year=9999) %}
+        {% for job in resume.work %}
+            {% set year = job.startDate[:4] | int %}
+            {% if year < ns.earliest_year %}
+                {% set ns.earliest_year = year %}
+            {% endif %}
+        {% endfor %}
+        {% set current_year = 2025 %}
+        {% set years_experience = current_year - ns.earliest_year %}
+        <p><strong>{{ years_experience }}+ years of experience</strong> building high-performing teams and shipping complex systems in finance, banking, and data-intensive products. Expert in Python and Backend development; proficient in modern web stacks. Translate business and regulatory requirements into robust architectures and deliver reliable software at scale.</p>
+    </section>
+{% endblock about %}
+
+{% block jobs %}
+    {% set visible_jobs = resume.work | selectattr('hide', 'ne', True) | selectattr('resumeHide', 'ne', True) | list %}
+    {% for job in visible_jobs[:5] %}
+        {% set prev_company = visible_jobs[loop.index0 - 1].company if loop.index0 > 0 else '' %}
+        {% set is_same_company = 'Covalto' in job.company and 'Covalto' in prev_company %}
+        <section class="job entry{% if is_same_company %} same-company{% endif %}">
+            <header class="no-page-break">
+                <h3 class="name">{{ job.company }}</h3>
+                <div class="date">
+                    <span class="startDate">{{ job.startDate }} -</span>
+                    {% if job.endDate %}
+                    <span class="endDate">{{ job.endDate }}</span>
+                    {% else %}
+                    <span class="endDate">current</span>
+                    {% endif %}
+                </div>
+                <div class="position">{{ job.position }}</div>
+                <div class="location">{{ job.location }}</div>
+            </header>
+            {% if job.summary %}
+            <div class="item">
+                <p>{{ job.summary }}</p>
+            </div>
+            {% endif %}
+        </section>
+    {% endfor %}
+{% endblock jobs %}
+
+{% block skills %}
+    <section class="section no-page-break">
+        <h2 class='section-title'>Technical Skills</h2>
+        <div style="margin-top: 0.4em; font-size: 0.95em; line-height: 1.5;">
+            <p style="margin-bottom: 0.35em;"><strong>Backend & Languages:</strong> Python, Django, FastAPI, Flask, Clojure, ClojureScript, TypeScript, React, Vue.js</p>
+            <p style="margin-bottom: 0.35em;"><strong>Data & Infrastructure:</strong> PostgreSQL, SQLAlchemy, Docker, Kubernetes, AWS, Google Cloud, GraphQL, REST APIs, Microservices</p>
+            <p style="margin-bottom: 0.35em;"><strong>Domain Expertise:</strong> Financial Math, Accounting Systems, ERP, Banking Systems, Payment Processing, Loan Management, Electronic Invoicing (CFDI), Financial Regulation & Compliance</p>
+            <p style="margin-bottom: 0;"><strong>Leadership:</strong> Team Leadership, Engineering Management, OKRs, Agile Methodologies</p>
+        </div>
+    </section>
+{% endblock skills %}
+
+{% block projects %}{% endblock projects %}
+
+{% block education %}
+    {% if resume.education %}
+    <section class="section no-page-break">
+        <h2 class='section-title'>Education</h2>
+        <p style="margin-top: 0.5em;">
+        {% for study in resume.education %}
+            <strong>{{ study.studyType }} in {{ study.area }}</strong> — {{ study.institution }} ({{ study.startDate }}{% if study.endDate %} - {{ study.endDate }}{% endif %}){% if not loop.last %}; {% endif %}
+        {% endfor %}
+        </p>
+    </section>
+    {% endif %}
+{% endblock education %}
+
+{% block languages %}
+{% endblock languages %}
+
+{% block interests %}{% endblock interests %}
+{% block volunteer %}{% endblock volunteer %}
+
+
