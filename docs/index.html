@@ -108,6 +108,7 @@
             <a href="#about" class="section-link" data-section="about">About</a>
             <a href="#experience" class="section-link" data-section="experience">Experience</a>
             <a href="#skills" class="section-link" data-section="skills">Skills</a>
+            <a href="#projects" class="section-link" data-section="projects">Projects</a>
             <a href="#education" class="section-link" data-section="education">Education</a>
             <a href="#volunteer" class="section-link" data-section="volunteer">Community</a>
         </nav>
@@ -116,7 +117,7 @@
         <!-- About -->
         <section id="about" class="section main-summary">
             <h2 class="section-title">About</h2>
-            Senior Software Engineer and Engineering Manager with a track record building high-performing teams and shipping complex systems in finance, banking, and data-intensive products. Expert in Python and Backend development and; proficient in modern web stacks. I translate business and regulatory requirements into robust architectures and deliver reliable software at scale.
+            <p>Senior Software Engineer and Engineering Manager with a track record building high-performing teams and shipping complex systems in finance, banking, and data-intensive products. Expert in Python and Backend development and; proficient in modern web stacks. I translate business and regulatory requirements into robust architectures and deliver reliable software at scale.</p>
             <div class="collapsible-content" id="about-more">
                 
                     <p>I have a strong drive for building software, leading teams, structuring chaos, organizing complexity. I achieve team objectives by fostering discussions to deeply understand problems and tackle them with a practical, hands-on approach, engage in coding and problem-solving alongside the team, focus on collective success and foster a collaborative environment. I am experienced in building teams and mentoring people.</p>
@@ -131,10 +132,12 @@
                 
             </div>
             
-            <button class="toggle-section" onclick="toggleContent('about-more', this)">
-                <i class="fa fa-angle-down"></i>
-                <span class="toggle-text">Show more</span>
-            </button>
+            <div class="toggle-wrapper">
+                <a class="toggle-link" onclick="toggleContent('about-more', this)">
+                    <span class="toggle-text">Show more</span>
+                    <i class="fa fa-angle-down"></i>
+                </a>
+            </div>
             
         </section>
         
@@ -175,10 +178,12 @@
                                     
                                 </ul>
                             </div>
-                            <button class="toggle-section" onclick="toggleContent('job-1', this)">
-                                <i class="fa fa-angle-down"></i>
-                                <span class="toggle-text">Show details</span>
-                            </button>
+                            <div class="toggle-wrapper">
+                                <a class="toggle-link" onclick="toggleContent('job-1', this)">
+                                    <span class="toggle-text">Show details</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            </div>
                             
                         </article>
                     
@@ -211,10 +216,12 @@
                                     
                                 </ul>
                             </div>
-                            <button class="toggle-section" onclick="toggleContent('job-2', this)">
-                                <i class="fa fa-angle-down"></i>
-                                <span class="toggle-text">Show details</span>
-                            </button>
+                            <div class="toggle-wrapper">
+                                <a class="toggle-link" onclick="toggleContent('job-2', this)">
+                                    <span class="toggle-text">Show details</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            </div>
                             
                         </article>
                     
@@ -255,10 +262,12 @@
                                     
                                 </ul>
                             </div>
-                            <button class="toggle-section" onclick="toggleContent('job-3', this)">
-                                <i class="fa fa-angle-down"></i>
-                                <span class="toggle-text">Show details</span>
-                            </button>
+                            <div class="toggle-wrapper">
+                                <a class="toggle-link" onclick="toggleContent('job-3', this)">
+                                    <span class="toggle-text">Show details</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            </div>
                             
                         </article>
                     
@@ -297,10 +306,12 @@
                                     
                                 </ul>
                             </div>
-                            <button class="toggle-section" onclick="toggleContent('job-4', this)">
-                                <i class="fa fa-angle-down"></i>
-                                <span class="toggle-text">Show details</span>
-                            </button>
+                            <div class="toggle-wrapper">
+                                <a class="toggle-link" onclick="toggleContent('job-4', this)">
+                                    <span class="toggle-text">Show details</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            </div>
                             
                         </article>
                     
@@ -337,10 +348,12 @@
                                     
                                 </ul>
                             </div>
-                            <button class="toggle-section" onclick="toggleContent('job-5', this)">
-                                <i class="fa fa-angle-down"></i>
-                                <span class="toggle-text">Show details</span>
-                            </button>
+                            <div class="toggle-wrapper">
+                                <a class="toggle-link" onclick="toggleContent('job-5', this)">
+                                    <span class="toggle-text">Show details</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            </div>
                             
                         </article>
                     
@@ -375,10 +388,12 @@
                                     
                                 </ul>
                             </div>
-                            <button class="toggle-section" onclick="toggleContent('job-6', this)">
-                                <i class="fa fa-angle-down"></i>
-                                <span class="toggle-text">Show details</span>
-                            </button>
+                            <div class="toggle-wrapper">
+                                <a class="toggle-link" onclick="toggleContent('job-6', this)">
+                                    <span class="toggle-text">Show details</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            </div>
                             
                         </article>
                     
@@ -417,10 +432,12 @@
                                     
                                 </ul>
                             </div>
-                            <button class="toggle-section" onclick="toggleContent('job-10', this)">
-                                <i class="fa fa-angle-down"></i>
-                                <span class="toggle-text">Show details</span>
-                            </button>
+                            <div class="toggle-wrapper">
+                                <a class="toggle-link" onclick="toggleContent('job-10', this)">
+                                    <span class="toggle-text">Show details</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            </div>
                             
                         </article>
                     
@@ -432,8 +449,8 @@
         
         <!-- Skills -->
         <section id="skills" class="section">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-list">
                 
                 
                 
@@ -622,31 +639,512 @@
                 
                 
                 
-                <div class="skill-category">
-                    <h3 class="skill-category-title">
-                        <i class="fa fa-code"></i>
-                        Technical Skills
-                    </h3>
-                    
-                    <div class="skill-summary">
-                        <p><strong>Backend:</strong> Python, TypeScript, Django, FastAPI</p>
-                        <div class="collapsible-content" id="skills-more">
-                            <p><strong>Databases:</strong> pandas, dataclasses, numpy, SQLAlchemy, advanced SQL, PostgreSQL, SQLite3</p>
-                            <p><strong>Frontend:</strong> JavaScript, TypeScript, Vue.js, React, HTMX, SASS</p>
-                            <p><strong>Infrastructure:</strong> AI-Powered Coding, docker, kubernetes, observability with Grafana, bash, linux, CircleCI, continuous integration</p>
-                            <p><strong>Leadership & Management:</strong> team building, OKRs and KPIs, mentoring, DevOps, agile methodologies, product requirements, software architecture &amp; design, project management</p>
-                            <p><strong>Business Domain:</strong> administration, accounting, finance, software for SMB, ERP, CRM, taxes, electronic invoicing (CFDI), electronic signature, financial math</p>
-                        </div>
+                <div class="skill-row">
+                    <h3><i class="fa fa-server"></i> Backend</h3>
+                    <div class="skill-tags">
+                        
+                        <span class="skill-tag">Python</span>
+                        
+                        <span class="skill-tag">TypeScript</span>
+                        
+                        <span class="skill-tag">Django</span>
+                        
+                        <span class="skill-tag">FastAPI</span>
+                        
+                        <span class="skill-tag">Flask</span>
+                        
+                        <span class="skill-tag">Django REST Framework</span>
+                        
+                        <span class="skill-tag">REST API</span>
+                        
+                        <span class="skill-tag">GraphQL</span>
+                        
                     </div>
-                    <button class="toggle-section" onclick="toggleContent('skills-more', this)">
-                        <i class="fa fa-angle-down"></i>
-                        <span class="toggle-text">Show all skills</span>
-                    </button>
+                </div>
+                
+                <div class="skill-row">
+                    <h3><i class="fa fa-database"></i> Databases</h3>
+                    <div class="skill-tags">
+                        
+                        <span class="skill-tag">pandas</span>
+                        
+                        <span class="skill-tag">dataclasses</span>
+                        
+                        <span class="skill-tag">numpy</span>
+                        
+                        <span class="skill-tag">SQLAlchemy</span>
+                        
+                        <span class="skill-tag">advanced SQL</span>
+                        
+                        <span class="skill-tag">PostgreSQL</span>
+                        
+                        <span class="skill-tag">SQLite3</span>
+                        
+                    </div>
+                </div>
+                
+                <div class="skill-row">
+                    <h3><i class="fa fa-desktop"></i> Frontend</h3>
+                    <div class="skill-tags">
+                        
+                        <span class="skill-tag">JavaScript</span>
+                        
+                        <span class="skill-tag">TypeScript</span>
+                        
+                        <span class="skill-tag">Vue.js</span>
+                        
+                        <span class="skill-tag">React</span>
+                        
+                        <span class="skill-tag">HTMX</span>
+                        
+                        <span class="skill-tag">SASS</span>
+                        
+                    </div>
+                </div>
+                
+                <div class="skill-row">
+                    <h3><i class="fa fa-cogs"></i> Infrastructure</h3>
+                    <div class="skill-tags">
+                        
+                        <span class="skill-tag">AI-Powered Coding</span>
+                        
+                        <span class="skill-tag">docker</span>
+                        
+                        <span class="skill-tag">kubernetes</span>
+                        
+                        <span class="skill-tag">observability with Grafana</span>
+                        
+                        <span class="skill-tag">bash</span>
+                        
+                        <span class="skill-tag">linux</span>
+                        
+                        <span class="skill-tag">CircleCI</span>
+                        
+                        <span class="skill-tag">continuous integration</span>
+                        
+                    </div>
+                </div>
+                
+                <div class="skill-row">
+                    <h3><i class="fa fa-users"></i> Leadership & Management</h3>
+                    <div class="skill-tags">
+                        
+                        <span class="skill-tag">team building</span>
+                        
+                        <span class="skill-tag">OKRs and KPIs</span>
+                        
+                        <span class="skill-tag">mentoring</span>
+                        
+                        <span class="skill-tag">DevOps</span>
+                        
+                        <span class="skill-tag">agile methodologies</span>
+                        
+                        <span class="skill-tag">product requirements</span>
+                        
+                        <span class="skill-tag">software architecture &amp; design</span>
+                        
+                        <span class="skill-tag">project management</span>
+                        
+                    </div>
+                </div>
+                
+                <div class="skill-row">
+                    <h3><i class="fa fa-briefcase"></i> Business Domain</h3>
+                    <div class="skill-tags">
+                        
+                        <span class="skill-tag">administration</span>
+                        
+                        <span class="skill-tag">accounting</span>
+                        
+                        <span class="skill-tag">finance</span>
+                        
+                        <span class="skill-tag">software for SMB</span>
+                        
+                        <span class="skill-tag">ERP</span>
+                        
+                        <span class="skill-tag">CRM</span>
+                        
+                        <span class="skill-tag">taxes</span>
+                        
+                        <span class="skill-tag">electronic invoicing (CFDI)</span>
+                        
+                        <span class="skill-tag">electronic signature</span>
+                        
+                        <span class="skill-tag">financial math</span>
+                        
+                    </div>
                 </div>
             </div>
         </section>
         
-        <!-- Projects - Hidden in web view -->
+        <!-- Projects -->
+        
+        <section id="projects" class="section">
+            <h2 class="section-title">Key Projects</h2>
+            <div>
+                
+                    
+                    <article class="project entry">
+                        <header>
+                            <div class="project-header-row">
+                                <h3 class="name">Treasury API</h3>
+                                
+                            </div>
+                            
+                            <div class="roles">Banco Covalto - Product Designer, Architect, Manager</div>
+                            
+                            <div class="project-description">Treasury API to expose movements to bank customers</div>
+                            
+                            <div class="summary">Real-time bank account movement queries via REST API or Webhook. Integrated with financial core vía Kafka and services</div>
+                            
+                        </header>
+                        
+                        <div class="collapsible-content" id="project-1">
+                            
+                            <div class="keywords">
+                                
+                                <span class="keyword-tag">kafka</span>
+                                
+                                <span class="keyword-tag">django</span>
+                                
+                                <span class="keyword-tag">accounting</span>
+                                
+                                <span class="keyword-tag">reconciliation systems</span>
+                                
+                                <span class="keyword-tag">product design</span>
+                                
+                                <span class="keyword-tag">webhooks</span>
+                                
+                                <span class="keyword-tag">customer requirements</span>
+                                
+                                <span class="keyword-tag">auth0</span>
+                                
+                                <span class="keyword-tag">regulations &amp; compliance</span>
+                                
+                            </div>
+                            
+                            
+                            <ul class="highlights">
+                                
+                                <li>Proposed, designed, gathered requirements with potential customers, planned, and led the project for real-time bank account movement queries via REST or Webhook.</li>
+                                
+                                <li>Designed the project as a first step in an Open Banking initiative for Covalto.</li>
+                                
+                            </ul>
+                            
+                        </div>
+                        
+                        
+                        <div class="toggle-wrapper">
+                            <a class="toggle-link" onclick="toggleContent('project-1', this)">
+                                <span class="toggle-text">Show details</span>
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </div>
+                        
+                    </article>
+                    
+                
+                    
+                    <article class="project entry">
+                        <header>
+                            <div class="project-header-row">
+                                <h3 class="name">firmas / mifiel</h3>
+                                
+                            </div>
+                            
+                            <div class="roles">Banco Covalto - Python Developer, Frontend Developer, Manager</div>
+                            
+                            <div class="project-description">Electronic Signature System</div>
+                            
+                            <div class="summary">A monolith of services to gather documents for signature, integrate with salesforce and other systems and allow the signature of documents with a mexican electronic fiscal signature.</div>
+                            
+                        </header>
+                        
+                        <div class="collapsible-content" id="project-2">
+                            
+                            <div class="keywords">
+                                
+                                <span class="keyword-tag">Fastapi</span>
+                                
+                                <span class="keyword-tag">PostgreSQL</span>
+                                
+                                <span class="keyword-tag">Mifiel</span>
+                                
+                                <span class="keyword-tag">Web development</span>
+                                
+                                <span class="keyword-tag">TortoiseORM</span>
+                                
+                                <span class="keyword-tag">e.signature</span>
+                                
+                                <span class="keyword-tag">blockchain</span>
+                                
+                                <span class="keyword-tag">AWS</span>
+                                
+                                <span class="keyword-tag">google cloud</span>
+                                
+                                <span class="keyword-tag">kubernetes</span>
+                                
+                            </div>
+                            
+                            
+                            <ul class="highlights">
+                                
+                                <li>Allows customers to sign legal documents without the need of a physical presence using e.firma and Mifiel Services, without sending documents outside the bank archives</li>
+                                
+                                <li>Allows the signature of endosable promissory notes with Mifiel blockchain.</li>
+                                
+                                <li>Using FastAPI to create many micro frontends in a same codebase, including APIs to create frontends in React and integrations with other systems such as Salesforce.</li>
+                                
+                                <li>Integrated using Covalto&#39;s standard infra in GCP and AWS.</li>
+                                
+                                <li>Archive using S3/GCS cloud storage. Indexed in PostgreSQL database</li>
+                                
+                                <li>Microservice to provide documents based on templates filled with an API Request. Document Management System</li>
+                                
+                                <li>After designing the project, successfully inherited the project to a programmer and just managed, reviewed the code, and gather specifications from the business team to improve it.</li>
+                                
+                            </ul>
+                            
+                        </div>
+                        
+                        
+                        <div class="toggle-wrapper">
+                            <a class="toggle-link" onclick="toggleContent('project-2', this)">
+                                <span class="toggle-text">Show details</span>
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </div>
+                        
+                    </article>
+                    
+                
+                    
+                    <article class="project entry">
+                        <header>
+                            <div class="project-header-row">
+                                <h3 class="name">Pennyworth</h3>
+                                
+                            </div>
+                            
+                            <div class="roles">Covalto, Inc. - Designer, Python Developer</div>
+                            
+                            <div class="project-description">A full-fledged multipurpose financial and accounting library.</div>
+                            
+                        </header>
+                        
+                        <div class="collapsible-content" id="project-3">
+                            
+                            <div class="keywords">
+                                
+                                <span class="keyword-tag">Business Data</span>
+                                
+                                <span class="keyword-tag">Financial Math</span>
+                                
+                                <span class="keyword-tag">Accounting</span>
+                                
+                                <span class="keyword-tag">Financial libraries</span>
+                                
+                                <span class="keyword-tag">dataclasses</span>
+                                
+                                <span class="keyword-tag">pandas</span>
+                                
+                                <span class="keyword-tag">jupyter</span>
+                                
+                            </div>
+                            
+                            
+                            <ul class="highlights">
+                                
+                                <li>A library with modules to calculate interest, work with cashflows and time value, handle payments,  keep accounting, and calculate and solve amortization tables (schedules).</li>
+                                
+                                <li>Calculator: A module to calculate amortization tables given some parameters as interest rate, principal, duration, etc.</li>
+                                
+                                <li>Table Module: A Schedule table object to make calculations. Works dynamically ordering calculations as a linked list with caches since records depended on previous record values. Can do operations on it as tables&#39; addition and subtractions, table splits into many tables (for multiloan or complex tables), final payment adjustments, discount ious on time value, and roundings and adjustments.</li>
+                                
+                                <li>Solver: A solver working on the table module trying to imitate the GoalSeek module in Excel to change a value until getting another expected one as close as possible. Used to adjust interest rate to different method calculations, until getting zero in balance.</li>
+                                
+                                <li>Contract module: An abstraction to handle the Credit Contracts. Using a Contract-Version-Loan structure that contained all the information that the contract could have as: IOUs, Payments, Advance Payments, Restructures, Write-offs, Charges. Used as interchange format in business.</li>
+                                
+                                <li>Kardex: A system to generate an Account Statement based on the Contract Structure and applying it to get the correct balance per different scopes such as loan, date, iou, version.</li>
+                                
+                                <li>Using numpy_financial, dataclasses, pandas, jupyter.</li>
+                                
+                            </ul>
+                            
+                        </div>
+                        
+                        
+                        <div class="toggle-wrapper">
+                            <a class="toggle-link" onclick="toggleContent('project-3', this)">
+                                <span class="toggle-text">Show details</span>
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </div>
+                        
+                    </article>
+                    
+                
+                    
+                    <article class="project entry">
+                        <header>
+                            <div class="project-header-row">
+                                <h3 class="name">Kardex</h3>
+                                
+                            </div>
+                            
+                            <div class="roles">Credijusto &amp; Covalto, Inc. - Designer, Python Developer</div>
+                            
+                            <div class="project-description">A system designed to make calculations on loans</div>
+                            
+                        </header>
+                        
+                        <div class="collapsible-content" id="project-4">
+                            
+                            <div class="keywords">
+                                
+                                <span class="keyword-tag">business data</span>
+                                
+                                <span class="keyword-tag">SQLAlchemy</span>
+                                
+                                <span class="keyword-tag">Financial Math</span>
+                                
+                                <span class="keyword-tag">Accounting</span>
+                                
+                                <span class="keyword-tag">dataclasses</span>
+                                
+                                <span class="keyword-tag">pandas</span>
+                                
+                                <span class="keyword-tag">jupyter</span>
+                                
+                                <span class="keyword-tag">sqlite3</span>
+                                
+                            </div>
+                            
+                            
+                            <ul class="highlights">
+                                
+                                <li>Problem: Credijusto Loan Management system is a non-transactional system that registers balances instead of transactions.</li>
+                                
+                                <li>Main goal is to create a data structure that allows getting the different balances for each loan at any point of time aggregating all the transactions up to that day.</li>
+                                
+                                <li>Connect to the existing systems, Loan Management System and CRM, to gathered existing data and convert it to transactions.</li>
+                                
+                                <li>Using the data from those transactions calculate the regular interest, moratory interest, penalties, fees and balances in time using different algorithms of calculation depending on rules for products while maintaining accounting consistency, and using debits and credits.</li>
+                                
+                                <li>Develop connectors that allow us to fetch information from different sources and convert data to transactions</li>
+                                
+                                <li>Develop an accesible SQLAlchemy Python API to allow easy reporting.</li>
+                                
+                            </ul>
+                            
+                        </div>
+                        
+                        
+                        <div class="toggle-wrapper">
+                            <a class="toggle-link" onclick="toggleContent('project-4', this)">
+                                <span class="toggle-text">Show details</span>
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </div>
+                        
+                    </article>
+                    
+                
+                    
+                    <article class="project entry">
+                        <header>
+                            <div class="project-header-row">
+                                <h3 class="name">This CV</h3>
+                                
+                                <a href="https://github.com/luisfernandobarrera/resume" target="_blank" rel="noopener" class="project-link" title="View on GitHub">
+                                    <i class="fa fa-github"></i> View Repo
+                                </a>
+                                
+                            </div>
+                            
+                            <div class="project-description">Curriculum Vitae Production System</div>
+                            
+                            <div class="summary">A system that builds a Github page with my CV, including a PDF.</div>
+                            
+                        </header>
+                        
+                        <div class="collapsible-content" id="project-5">
+                            
+                            
+                            <ul class="highlights">
+                                
+                                <li>Using resume.json format as the basis for storing the CV data.</li>
+                                
+                                <li>Using jinja2 as template format.</li>
+                                
+                                <li>Using SASS with a stylesheet that formats the template for screen and print media.</li>
+                                
+                            </ul>
+                            
+                        </div>
+                        
+                        
+                        <div class="toggle-wrapper">
+                            <a class="toggle-link" onclick="toggleContent('project-5', this)">
+                                <span class="toggle-text">Show details</span>
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </div>
+                        
+                    </article>
+                    
+                
+                    
+                
+                    
+                    <article class="project entry">
+                        <header>
+                            <div class="project-header-row">
+                                <h3 class="name">Experos</h3>
+                                
+                            </div>
+                            
+                            <div class="roles">Nextor Telecom - Backend Developer, Frontend Engineer, Project Owner and Manager</div>
+                            
+                            <div class="project-description">Custom ERP with Accounting Functionality</div>
+                            
+                        </header>
+                        
+                        <div class="collapsible-content" id="project-7">
+                            
+                            
+                            <ul class="highlights">
+                                
+                                <li>A micro-ERP with Invoicing, Purchases, Accounts Payable and Receivable capabilities to manage the company and automate processes, and eventually to merchandise it.</li>
+                                
+                                <li>Using Django-PostgreSQL, APIs and Knockout for developing mockups and allow frontend engineers to easily integrate it into a previously developed mocked up interface.</li>
+                                
+                                <li>Backend: Django, PostgreSQL, Django REST Framework  APIs. M2Crypto, tablib, XML.</li>
+                                
+                                <li>Frontend: Knockout.js, Django.js. Bootstrap, React, Redux.</li>
+                                
+                                <li>Integrations with Mexican Electronic Invoicing, Electronic Accounting and various banks and payment systems</li>
+                                
+                            </ul>
+                            
+                        </div>
+                        
+                        
+                        <div class="toggle-wrapper">
+                            <a class="toggle-link" onclick="toggleContent('project-7', this)">
+                                <span class="toggle-text">Show details</span>
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </div>
+                        
+                    </article>
+                    
+                
+                    
+                
+            </div>
+        </section>
         
         
         <!-- Education -->
@@ -720,19 +1218,19 @@ function updateThemeIcon(theme) {
 }
 
 // Toggle individual sections
-function toggleContent(contentId, button) {
+function toggleContent(contentId, link) {
     const content = document.getElementById(contentId);
-    const icon = button.querySelector('.fa');
-    const text = button.querySelector('.toggle-text');
+    const icon = link.querySelector('.fa');
+    const text = link.querySelector('.toggle-text');
     
     if (content.classList.contains('expanded')) {
         content.classList.remove('expanded');
         icon.className = 'fa fa-angle-down';
-        text.textContent = text.textContent.replace('less', 'more').replace('Hide', 'Show');
+        text.textContent = text.textContent.replace('less', 'more').replace('Hide', 'Show').replace('fewer skills', 'all skills');
     } else {
         content.classList.add('expanded');
         icon.className = 'fa fa-angle-up';
-        text.textContent = text.textContent.replace('more', 'less').replace('Show', 'Hide');
+        text.textContent = text.textContent.replace('more', 'less').replace('Show', 'Hide').replace('details', 'less').replace('all skills', 'fewer skills');
     }
 }
 

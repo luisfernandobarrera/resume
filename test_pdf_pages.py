@@ -51,4 +51,3 @@ def test_pdfs():
 if __name__ == '__main__':
     sys.exit(test_pdfs())
 
-
