@@ -24,6 +24,23 @@ This project uses **uv** for dependency management and includes a helper script 
 ./run.sh build-cols
 ```
 
+### Using uv directly
+
+```bash
+# Install / sync
+uv sync
+
+# Start dev server
+uv run python -m flask run
+
+# Build static site
+uv run python gen_static.py
+
+# Lint / format
+uv run ruff check .
+uv run ruff format .
+```
+
 ## Templates Available
 
 1. **Original Template** (`cv.html`) - Single-column web-optimized layout

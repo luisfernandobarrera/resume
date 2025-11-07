@@ -1,3 +1,18 @@
+# uv / Python environments
+.venv/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Test / tooling
+.pytest_cache/
+.ruff_cache/
+
+# macOS
+.DS_Store
 # Created by .ignore support plugin (hsz.mobi)
 ### Python template
 # Byte-compiled / optimized / DLL files

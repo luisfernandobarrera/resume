@@ -1,6 +1,6 @@
 [project]
 name = "resume"
-version = "0.1.0"
+version = "0.2.0"
 description = "Luis Fernando Barrera's personal resumé system"
 authors = [
     {name = "Luis Fernando Barrera", email = "luisfernando@informind.com"}
@@ -19,4 +19,9 @@ dependencies = [
 packages = []
 
 [tool.uv]
-dev-dependencies = []
+
+[dependency-groups]
+dev = [
+    "ruff",
+    "pytest",
+]
