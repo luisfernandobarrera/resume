@@ -1,6 +1,6 @@
 @page {
   size: letter;
-  margin: 1cm 1.2cm; }
+  margin: 0.9cm 1.2cm; }
 
 .no-page-break {
   page-break-inside: avoid; }
@@ -18,87 +18,88 @@ body {
 
 body.ats-resume {
   font-size: 9.5pt;
-  line-height: 1.4;
+  line-height: 1.35;
   text-align: left; }
   body.ats-resume #work section.job:not(:last-child) {
-    margin-bottom: 0.6em; }
+    margin-bottom: 0.5em; }
   body.ats-resume #work section.job.same-company {
-    margin-bottom: 0.35em; }
+    margin-bottom: 0.3em; }
     body.ats-resume #work section.job.same-company h3.name {
       font-size: 1.05em;
       font-weight: 700; }
   body.ats-resume h1.name {
-    font-size: 1.55em;
-    margin-top: 0;
+    font-size: 1.5em;
+    margin: 0;
     margin-bottom: 0.05em;
     font-weight: 700;
     font-family: "Raleway", Helvetica, Calibri, sans-serif;
     text-align: center; }
   body.ats-resume h2.label {
-    font-size: 1.25em;
+    font-size: 1.2em;
+    margin: 0;
     margin-bottom: 0.05em;
     font-weight: 600;
     font-family: "Raleway", Helvetica, Calibri, sans-serif;
     text-align: center; }
   body.ats-resume h3.specialty {
-    font-size: 1em;
-    margin-top: 0;
-    margin-bottom: 0.2em;
+    font-size: 0.95em;
+    margin: 0;
+    margin-bottom: 0.15em;
     font-weight: 400;
     font-family: "Source Sans Pro", Helvetica, Calibri, sans-serif;
     text-align: center; }
   body.ats-resume .languages-line {
-    font-size: 0.85em;
+    font-size: 0.8em;
     margin-top: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.4em;
     font-weight: 400;
     text-align: center;
     color: #555; }
   body.ats-resume h2.section-title {
-    font-size: 1.2em;
-    margin-top: 0.5em;
-    margin-bottom: 0.25em;
+    font-size: 1.15em;
+    margin-top: 0.45em;
+    margin-bottom: 0.2em;
     font-weight: 700;
     font-family: "Raleway", Helvetica, Calibri, sans-serif; }
   body.ats-resume h3.name {
-    font-size: 1.1em;
+    font-size: 1.05em;
     margin-bottom: 0.05em;
     font-weight: 800;
     font-family: "Raleway", Helvetica, Calibri, sans-serif; }
   body.ats-resume #basics {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.4em;
     font-size: 0.9em; }
     body.ats-resume #basics .contact-info {
       text-align: center; }
       body.ats-resume #basics .contact-info .contact-line {
         display: block;
-        margin-bottom: 0.1em;
-        line-height: 1.3; }
+        margin-bottom: 0.08em;
+        line-height: 1.25; }
   body.ats-resume .section {
-    margin-bottom: 0.6em;
+    margin-bottom: 0.5em;
     padding-top: 0.05em; }
   body.ats-resume .main-summary {
-    margin-bottom: 0.5em; }
+    margin-bottom: 0.4em; }
     body.ats-resume .main-summary p {
       text-align: left;
-      line-height: 1.4; }
+      line-height: 1.35; }
   body.ats-resume .entry {
-    margin-bottom: 0.4em; }
+    margin-bottom: 0.35em; }
   body.ats-resume .job.entry {
-    margin-bottom: 0.4em; }
+    margin-bottom: 0.35em; }
     body.ats-resume .job.entry header {
       padding: 0; }
     body.ats-resume .job.entry .position {
-      font-size: 1.05em;
-      margin-bottom: 0.12em;
+      font-size: 1em;
+      margin-bottom: 0.1em;
       font-weight: 600; }
     body.ats-resume .job.entry .date, body.ats-resume .job.entry .location {
-      font-size: 0.9em;
-      margin-bottom: 0.12em; }
+      font-size: 0.85em;
+      margin-bottom: 0.1em; }
     body.ats-resume .job.entry .item p {
-      margin-top: 0.35em;
-      margin-bottom: 0.3em;
-      line-height: 1.4; }
+      margin-top: 0.3em;
+      margin-bottom: 0.25em;
+      line-height: 1.35; }
 
 .fa, #print-me {
   display: none; }

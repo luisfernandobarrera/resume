@@ -47,7 +47,7 @@
 
 {% block jobs %}
     {% set visible_jobs = resume.work | selectattr('hide', 'ne', True) | selectattr('resumeHide', 'ne', True) | list %}
-    {% for job in visible_jobs[:5] %}
+    {% for job in visible_jobs[:4] %}
         {% set prev_company = visible_jobs[loop.index0 - 1].company if loop.index0 > 0 else '' %}
         {% set is_same_company = 'Covalto' in job.company and 'Covalto' in prev_company %}
         <section class="job entry{% if is_same_company %} same-company{% endif %}">
@@ -75,7 +75,7 @@
 
 {% block skills %}
     <section class="section no-page-break">
-        <h2 class='section-title'>Technical Skills</h2>
+        <h2 class='section-title'>Skills</h2>
         <div style="margin-top: 0.3em; font-size: 1em; line-height: 1.4;">
             {# Build skill categories from JSON #}
             {% set ns = namespace(backend=[], database=[], frontend=[], infra=[], mgmt=[], business=[]) %}
@@ -125,13 +125,13 @@
             {# Leadership & Management #}
             <p style="margin-bottom: 0.25em;">
                 <strong>Leadership & Management:</strong> 
-                {% for kw in ns.mgmt %}{{ kw | title }}{% if not loop.last %}, {% endif %}{% endfor %}
+                {% for kw in ns.mgmt %}{{ kw }}{% if not loop.last %}, {% endif %}{% endfor %}
             </p>
             
             {# Business Domain #}
             <p style="margin-bottom: 0;">
                 <strong>Business Domain:</strong> 
-                {% for kw in ns.business %}{{ kw | title }}{% if not loop.last %}, {% endif %}{% endfor %}
+                {% for kw in ns.business %}{{ kw }}{% if not loop.last %}, {% endif %}{% endfor %}
             </p>
         </div>
     </section>
