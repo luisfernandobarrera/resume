@@ -215,8 +215,8 @@
                             <p><strong>Databases:</strong> {{ ns.database | join(', ') }}</p>
                             <p><strong>Frontend:</strong> {{ ns.frontend | join(', ') }}</p>
                             <p><strong>Infrastructure:</strong> {{ ns.infra | join(', ') }}</p>
-                            <p><strong>Leadership & Management:</strong> {% for skill in ns.mgmt %}{{ skill | title }}{% if not loop.last %}, {% endif %}{% endfor %}</p>
-                            <p><strong>Business Domain:</strong> {% for skill in ns.business %}{{ skill | title }}{% if not loop.last %}, {% endif %}{% endfor %}</p>
+                            <p><strong>Leadership & Management:</strong> {% for skill in ns.mgmt %}{{ skill }}{% if not loop.last %}, {% endif %}{% endfor %}</p>
+                            <p><strong>Business Domain:</strong> {% for skill in ns.business %}{{ skill }}{% if not loop.last %}, {% endif %}{% endfor %}</p>
                         </div>
                     </div>
                     <button class="toggle-section" onclick="toggleContent('skills-more', this)">

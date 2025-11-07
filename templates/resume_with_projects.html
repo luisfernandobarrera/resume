@@ -125,13 +125,13 @@
             {# Leadership & Management #}
             <p style="margin-bottom: 0.25em;">
                 <strong>Leadership & Management:</strong> 
-                {% for kw in ns.mgmt %}{{ kw | title }}{% if not loop.last %}, {% endif %}{% endfor %}
+                {% for kw in ns.mgmt %}{{ kw }}{% if not loop.last %}, {% endif %}{% endfor %}
             </p>
             
             {# Business Domain #}
             <p style="margin-bottom: 0;">
                 <strong>Business Domain:</strong> 
-                {% for kw in ns.business %}{{ kw | title }}{% if not loop.last %}, {% endif %}{% endfor %}
+                {% for kw in ns.business %}{{ kw }}{% if not loop.last %}, {% endif %}{% endfor %}
             </p>
         </div>
     </section>
