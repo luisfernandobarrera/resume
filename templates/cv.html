@@ -64,26 +64,66 @@
 
 {% block skills %}
     <section class="section no-page-break">
-        <h2 class='section-title'>Skills</h2>
+        <h2 class='section-title'>Technical Skills</h2>
         <section id="skills">
+            {# Build skill categories from JSON #}
+            {% set ns = namespace(backend=[], database=[], frontend=[], infra=[], mgmt=[], business=[]) %}
+            
             {% for skill in resume.skills %}
-                <div class="item no-page-break">
-                    <div class="name">
-                        {{ skill.name }}
-                    </div>
-                    <div class="level {{ skill.level }}">
-                        <span class="bar" aria-hidden="true"></span>
-                        <em>{{ skill.level }}</em>
-                    </div>
-                    {% if skill.keywords %}
-                        <ul class="keywords">
-                            {% for kw in skill.keywords %}
-                                <li>{{ kw }}</li>
-                            {% endfor %}
-                        </ul>
-                    {% endif %}
-                </div>
+                {% if 'Python' in skill.name %}
+                    {# Extract from Python sections #}
+                    {% for kw in skill.keywords %}
+                        {% if kw in ['Django', 'FastAPI', 'Flask', 'Django REST Framework', 'REST API', 'GraphQL'] %}
+                            {% set _ = ns.backend.append(kw) %}
+                        {% elif kw in ['pandas', 'dataclasses', 'numpy', 'SQLAlchemy', 'advanced SQL', 'PostgreSQL', 'SQLite3'] %}
+                            {% set _ = ns.database.append(kw) %}
+                        {% elif kw in ['JavaScript', 'TypeScript', 'Vue.js', 'React', 'HTMX', 'SASS'] %}
+                            {% set _ = ns.frontend.append(kw) %}
+                        {% endif %}
+                    {% endfor %}
+                {% elif 'Engineering Management' in skill.name %}
+                    {% for kw in skill.keywords %}
+                        {% set _ = ns.mgmt.append(kw) %}
+                    {% endfor %}
+                {% elif 'Business' in skill.name %}
+                    {% for kw in skill.keywords %}
+                        {% set _ = ns.business.append(kw) %}
+                    {% endfor %}
+                {% elif 'Tools' in skill.name %}
+                    {# Extract infrastructure from Tools #}
+                    {% for kw in skill.keywords %}
+                        {% if kw in ['docker', 'kubernetes', 'bash', 'linux', 'continuous integration', 'CircleCI', 'DevOps', 'AI-Powered Coding', 'observability with Grafana'] %}
+                            {% set _ = ns.infra.append(kw) %}
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
             {% endfor %}
+            
+            {# Add Python and TypeScript to backend #}
+            {% set backend_skills = ['Python', 'TypeScript'] + ns.backend %}
+            
+            <div class="item no-page-break">
+                {# Technical line with subcategories #}
+                <p style="margin-bottom: 0.5em; line-height: 1.6;">
+                    <strong>Technical:</strong> 
+                    <strong>Backend:</strong> {{ backend_skills | join(', ') }} · 
+                    <strong>Databases:</strong> {{ ns.database | join(', ') }} · 
+                    <strong>Frontend:</strong> {{ ns.frontend | join(', ') }} · 
+                    <strong>Infrastructure:</strong> {{ ns.infra | join(', ') }}
+                </p>
+                
+                {# Leadership & Management #}
+                <p style="margin-bottom: 0.5em; line-height: 1.6;">
+                    <strong>Leadership & Management:</strong> 
+                    {% for kw in ns.mgmt %}{{ kw | title }}{% if not loop.last %}, {% endif %}{% endfor %}
+                </p>
+                
+                {# Business Domain #}
+                <p style="margin-bottom: 0; line-height: 1.6;">
+                    <strong>Business Domain:</strong> 
+                    {% for kw in ns.business %}{{ kw | title }}{% if not loop.last %}, {% endif %}{% endfor %}
+                </p>
+            </div>
         </section>
     </section>
 {% endblock skills %}

@@ -1,7 +1,7 @@
 {% extends "template.html" %}
 
 {% block title %}
-<title>{{ resume.basics.name }} — ATS Resume</title>
+<title>{{ resume.basics.name }} — Resume with Projects</title>
 {% endblock %}
 
 {% block body_class %} class="ats-resume"{% endblock %}
@@ -137,7 +137,38 @@
     </section>
 {% endblock skills %}
 
-{% block projects %}{% endblock projects %}
+{% block projects %}
+    {% if resume.projects %}
+        <section class="section">
+            <h2 class="section-title">Key Projects</h2>
+            <section id="projects">
+                {% for project in resume.projects %}
+                    {% if not project.hide %}
+                        <section class="project entry no-page-break">
+                            <header>
+                                <h3 class="name">{{ project.name }}</h3>
+                                {% if project.entity %}
+                                    <div class="working-for">{{ project.entity }}</div>
+                                {% endif %}
+                                <div class="project-description">{{ project.description }}</div>
+                            </header>
+                            <div class="item">
+                                {% if project.keywords %}
+                                    <div class="extras">
+                                        <span class="keywords">{% for keyword in project.keywords %}{{ keyword|lower }}{% if not loop.last %} · {% endif %}{% endfor %}</span>
+                                    </div>
+                                {% endif %}
+                                {% if project.summary %}
+                                    <p>{{ project.summary }}</p>
+                                {% endif %}
+                            </div>
+                        </section>
+                    {% endif %}
+                {% endfor %}
+            </section>
+        </section>
+    {% endif %}
+{% endblock projects %}
 
 {% block education %}
     {% if resume.education %}
@@ -157,5 +188,4 @@
 
 {% block interests %}{% endblock interests %}
 {% block volunteer %}{% endblock volunteer %}
-
 

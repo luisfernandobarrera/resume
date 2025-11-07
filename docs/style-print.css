@@ -1,0 +1,255 @@
+@page {
+  size: letter;
+  margin: 1cm 1.2cm; }
+
+.no-page-break {
+  page-break-inside: avoid; }
+
+a {
+  text-decoration-line: none;
+  color: inherit; }
+
+body {
+  text-align: justify;
+  font: 10pt "Merriweather", Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5em;
+  background: #fff !important;
+  color: #000; }
+
+body.ats-resume {
+  font-size: 9.5pt;
+  line-height: 1.4;
+  text-align: left; }
+  body.ats-resume #work section.job:not(:last-child) {
+    margin-bottom: 0.6em; }
+  body.ats-resume #work section.job.same-company {
+    margin-bottom: 0.35em; }
+    body.ats-resume #work section.job.same-company h3.name {
+      font-size: 1.05em;
+      font-weight: 700; }
+  body.ats-resume h1.name {
+    font-size: 1.55em;
+    margin-top: 0;
+    margin-bottom: 0.05em;
+    font-weight: 700;
+    font-family: "Raleway", Helvetica, Calibri, sans-serif;
+    text-align: center; }
+  body.ats-resume h2.label {
+    font-size: 1.25em;
+    margin-bottom: 0.05em;
+    font-weight: 600;
+    font-family: "Raleway", Helvetica, Calibri, sans-serif;
+    text-align: center; }
+  body.ats-resume h3.specialty {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+    font-weight: 400;
+    font-family: "Source Sans Pro", Helvetica, Calibri, sans-serif;
+    text-align: center; }
+  body.ats-resume .languages-line {
+    font-size: 0.85em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    text-align: center;
+    color: #555; }
+  body.ats-resume h2.section-title {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+    font-weight: 700;
+    font-family: "Raleway", Helvetica, Calibri, sans-serif; }
+  body.ats-resume h3.name {
+    font-size: 1.1em;
+    margin-bottom: 0.05em;
+    font-weight: 800;
+    font-family: "Raleway", Helvetica, Calibri, sans-serif; }
+  body.ats-resume #basics {
+    margin-bottom: 0.5em;
+    font-size: 0.9em; }
+    body.ats-resume #basics .contact-info {
+      text-align: center; }
+      body.ats-resume #basics .contact-info .contact-line {
+        display: block;
+        margin-bottom: 0.1em;
+        line-height: 1.3; }
+  body.ats-resume .section {
+    margin-bottom: 0.6em;
+    padding-top: 0.05em; }
+  body.ats-resume .main-summary {
+    margin-bottom: 0.5em; }
+    body.ats-resume .main-summary p {
+      text-align: left;
+      line-height: 1.4; }
+  body.ats-resume .entry {
+    margin-bottom: 0.4em; }
+  body.ats-resume .job.entry {
+    margin-bottom: 0.4em; }
+    body.ats-resume .job.entry header {
+      padding: 0; }
+    body.ats-resume .job.entry .position {
+      font-size: 1.05em;
+      margin-bottom: 0.12em;
+      font-weight: 600; }
+    body.ats-resume .job.entry .date, body.ats-resume .job.entry .location {
+      font-size: 0.9em;
+      margin-bottom: 0.12em; }
+    body.ats-resume .job.entry .item p {
+      margin-top: 0.35em;
+      margin-bottom: 0.3em;
+      line-height: 1.4; }
+
+.fa, #print-me {
+  display: none; }
+
+#site-nav, #theme-toggle {
+  display: none; }
+
+body:not(.ats-resume) h1, body:not(.ats-resume) h2, body:not(.ats-resume) h3, body:not(.ats-resume) h4, body:not(.ats-resume) h5, body:not(.ats-resume) h6 {
+  font-family: "Raleway", Helvetica, Calibri, sans-serif;
+  font-weight: 700; }
+
+body:not(.ats-resume) h2.label {
+  margin-bottom: 0.5em; }
+
+body:not(.ats-resume) h3.specialty {
+  margin-top: 0;
+  font-family: "Source Sans Pro", Helvetica, Calibri, sans-serif;
+  font-weight: 400; }
+
+.section {
+  padding: 0;
+  clear: both;
+  width: 100%;
+  margin-bottom: 1em; }
+
+#basics #profiles ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0; }
+
+#basics .contact-block {
+  display: inline-block;
+  width: 50%; }
+
+#basics #contact, #basics #contact-languages {
+  float: right;
+  text-align: right; }
+  #basics #contact div .fa, #basics #contact-languages div .fa {
+    float: left; }
+
+#work section.job .item, #work section.project .item, #projects section.job .item, #projects section.project .item, #volunteer section.job .item, #volunteer section.project .item {
+  padding-top: 0.1em;
+  clear: both; }
+
+#work section.job:not(:last-child), #work section.project:not(:last-child), #projects section.job:not(:last-child), #projects section.project:not(:last-child), #volunteer section.job:not(:last-child), #volunteer section.project:not(:last-child) {
+  margin-bottom: 3em; }
+
+#work h3.name, #projects h3.name, #volunteer h3.name {
+  width: 61.8029%;
+  display: block;
+  float: left;
+  margin: 0; }
+
+#work .website, #work .date, #work .location, #work .working-for, #projects .website, #projects .date, #projects .location, #projects .working-for, #volunteer .website, #volunteer .date, #volunteer .location, #volunteer .working-for {
+  width: 38.1971%;
+  display: block;
+  float: right;
+  text-align: right; }
+
+#work .company-description, #work .position, #work .project-description, #projects .company-description, #projects .position, #projects .project-description, #volunteer .company-description, #volunteer .position, #volunteer .project-description {
+  display: block;
+  width: 61.8029%;
+  float: left; }
+
+#work .company-description, #work .project-description, #projects .company-description, #projects .project-description, #volunteer .company-description, #volunteer .project-description {
+  font-style: italic;
+  font-family: "Source Sans Pro", Helvetica, Calibri, sans-serif; }
+
+#work .position, #work .roles, #work .working-for, #projects .position, #projects .roles, #projects .working-for, #volunteer .position, #volunteer .roles, #volunteer .working-for {
+  font-weight: 800; }
+
+#work .roles, #work .summary, #projects .roles, #projects .summary, #volunteer .roles, #volunteer .summary {
+  clear: both; }
+
+#work .summary, #work .extras, #projects .summary, #projects .extras, #volunteer .summary, #volunteer .extras {
+  margin-bottom: 1em; }
+
+#work .location:before, #projects .location:before, #volunteer .location:before {
+  content: "Location: "; }
+
+.education header .name {
+  margin: 0 auto;
+  display: block;
+  width: 38.1971%;
+  vertical-align: bottom;
+  float: left; }
+
+.education header .area {
+  width: 61.8029%;
+  vertical-align: bottom;
+  float: left; }
+
+.education .item .institution {
+  width: 38.1971%;
+  font-weight: 800;
+  float: left; }
+
+.education .item .date {
+  width: 61.8029%;
+  float: left; }
+
+.education:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+#languages {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding-bottom: 1em;
+  font-family: "Source Sans Pro", Helvetica, Calibri, sans-serif; }
+  #languages .item {
+    padding: 0 1em 1em 0;
+    border-bottom: none; }
+  #languages .language {
+    font-weight: 700;
+    font-size: 110%;
+    font-family: "Merriweather", Georgia, "Times New Roman", Times, serif; }
+
+#interests .name, #skills .name {
+  font-weight: 700;
+  font-size: 110%; }
+
+#interests .item, #skills .item {
+  display: block;
+  width: 100%;
+  clear: both;
+  margin-bottom: 2em; }
+  #interests .item:after, #skills .item:after {
+    display: block;
+    border-bottom: 1px solid slategray; }
+  #interests .item .name, #interests .item .level, #skills .item .name, #skills .item .level {
+    display: inline-block;
+    vertical-align: text-bottom;
+    text-align: left;
+    font-size: 1em; }
+  #interests .item .name, #skills .item .name {
+    padding-right: 1em; }
+  #interests .item .keywords, #skills .item .keywords {
+    font-family: "Source Sans Pro", Helvetica, Calibri, sans-serif; }
+  #interests .item ul, #interests .item ol, #skills .item ul, #skills .item ol {
+    list-style: none;
+    padding-left: 0;
+    margin: 0; }
+    #interests .item ul li, #interests .item ol li, #skills .item ul li, #skills .item ol li {
+      display: inline-block;
+      padding: 0 0.5em;
+      border-left: 1px solid lightgray; }
+      #interests .item ul li:first-of-type, #interests .item ol li:first-of-type, #skills .item ul li:first-of-type, #skills .item ol li:first-of-type {
+        margin-left: 0; }
+      #interests .item ul li:last-of-type, #interests .item ol li:last-of-type, #skills .item ul li:last-of-type, #skills .item ol li:last-of-type {
+        margin-right: 0;
+        border-right: 1px solid lightgray; }

@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+<head>
+    <title>{{ resume.basics.name }} - CV</title>
+    <link href="/style-screen.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" media="print" href="/style-print.css">
+    
+    {% if not print %}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDK62BL9J5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-EDK62BL9J5');
+    </script>
+    {% endif %}
+</head>
+
+<body>
+
+{% if not print %}
+<!-- Theme Toggle -->
+<button id="theme-toggle" aria-label="Toggle dark mode">
+    <i class="fa fa-moon-o"></i>
+</button>
+
+<!-- View Mode Toggle -->
+<button id="view-toggle" aria-label="Toggle compact/extended view">
+    <i class="fa fa-compress"></i>
+    <span class="toggle-label">Compact</span>
+</button>
+
+<!-- Download Navigation -->
+<nav id="site-nav" aria-label="Download resume">
+    <span class="nav-label">Download:</span>
+    <a href="/resume.pdf" class="nav-link" target="_blank" rel="noopener" title="Download 1-page resume">
+        <i class="fa fa-file-text-o"></i>
+        <span>Resume</span>
+    </a>
+    <a href="/resume-projects.pdf" class="nav-link" target="_blank" rel="noopener" title="Download resume with projects">
+        <i class="fa fa-file-text"></i>
+        <span>+ Projects</span>
+    </a>
+    <a href="/cv.pdf" class="nav-link" target="_blank" rel="noopener" title="Download full CV">
+        <i class="fa fa-file-pdf-o"></i>
+        <span>Full CV</span>
+    </a>
+</nav>
+{% endif %}
+
+<div id="resume">
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        {% if resume.basics.image %}
+        <img src="{{ resume.basics.image }}" alt="{{ resume.basics.name }}" class="profile-photo">
+        {% endif %}
+        
+        <h1 class="name">{{ resume.basics.name }}</h1>
+        <h2 class="label">{{ resume.basics.label }}</h2>
+        <h3 class="specialty">{{ resume.basics.specialty }}</h3>
+        
+        <!-- Social Links -->
+        <div class="social-links">
+            {% for profile in resume.basics.profiles %}
+            <a href="{{ profile.url }}" class="social-link" target="_blank" rel="noopener" title="{{ profile.network }}">
+                <i class="fa fa-{{ profile.network }}"></i>
+            </a>
+            {% endfor %}
+        </div>
+        
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fa fa-map-marker"></i>
+                <span>{{ resume.basics.location.city }}, {{ resume.basics.location.country }}</span>
+            </div>
+            
+            <div class="contact-item">
+                <i class="fa fa-language"></i>
+                <span>{% for lang in resume.languages %}{{ lang.language }}{% if not loop.last %}, {% endif %}{% endfor %}</span>
+            </div>
+            
+            <div class="contact-item">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:{{ resume.basics.email }}">{{ resume.basics.email }}</a>
+            </div>
+            
+            <div class="contact-item">
+                <i class="fa fa-phone"></i>
+                <a href="tel:{{ resume.basics.phone }}">{{ resume.basics.phone }}</a>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        {% if not print %}
+        <!-- Section Navigation (Sticky within content) -->
+        <nav id="content-section-nav" aria-label="Navigate sections">
+            <a href="#about" class="section-link" data-section="about">About</a>
+            <a href="#experience" class="section-link" data-section="experience">Experience</a>
+            <a href="#skills" class="section-link" data-section="skills">Skills</a>
+            <a href="#education" class="section-link" data-section="education">Education</a>
+            <a href="#volunteer" class="section-link" data-section="volunteer">Community</a>
+        </nav>
+        {% endif %}
+        
+        <!-- About -->
+        <section id="about" class="section main-summary">
+            <h2 class="section-title">About</h2>
+            {{ resume.basics.about[0] }}
+            <div class="collapsible-content" id="about-more">
+                {% for paragraph in resume.basics.about[1:] %}
+                    <p>{{ paragraph }}</p>
+                {% endfor %}
+            </div>
+            {% if resume.basics.about|length > 1 %}
+            <button class="toggle-section" onclick="toggleContent('about-more', this)">
+                <i class="fa fa-angle-down"></i>
+                <span class="toggle-text">Show more</span>
+            </button>
+            {% endif %}
+        </section>
+        
+        <!-- Work Experience -->
+        <section id="experience" class="section">
+            <h2 class="section-title">Experience</h2>
+            <div id="work">
+                {% for job in resume.work %}
+                    {% if not job.hide and not job.resumeHide %}
+                        <article class="job entry">
+                            <header>
+                                <h3 class="name">{{ job.company }}</h3>
+                                <div class="position">{{ job.position }}</div>
+                                <div class="date">
+                                    {{ job.startDate }} - {% if job.endDate %}{{ job.endDate }}{% else %}Present{% endif %}
+                                </div>
+                                {% if job.summary %}
+                                <div class="summary">{{ job.summary }}</div>
+                                {% endif %}
+                            </header>
+                            {% if job.highlights %}
+                            <div class="collapsible-content" id="job-{{ loop.index }}">
+                                <ul class="highlights">
+                                    {% for highlight in job.highlights %}
+                                    <li>{{ highlight }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            <button class="toggle-section" onclick="toggleContent('job-{{ loop.index }}', this)">
+                                <i class="fa fa-angle-down"></i>
+                                <span class="toggle-text">Show details</span>
+                            </button>
+                            {% endif %}
+                        </article>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+        
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                {# Build skill categories from JSON #}
+                {% set ns = namespace(backend=[], database=[], frontend=[], infra=[], mgmt=[], business=[]) %}
+                
+                {% for skill in resume.skills %}
+                    {% if 'Python' in skill.name %}
+                        {# Extract from Python sections #}
+                        {% for kw in skill.keywords %}
+                            {% if kw in ['Django', 'FastAPI', 'Flask', 'Django REST Framework', 'REST API', 'GraphQL'] %}
+                                {% set _ = ns.backend.append(kw) %}
+                            {% elif kw in ['pandas', 'dataclasses', 'numpy', 'SQLAlchemy', 'advanced SQL', 'PostgreSQL', 'SQLite3'] %}
+                                {% set _ = ns.database.append(kw) %}
+                            {% elif kw in ['JavaScript', 'TypeScript', 'Vue.js', 'React', 'HTMX', 'SASS'] %}
+                                {% set _ = ns.frontend.append(kw) %}
+                            {% endif %}
+                        {% endfor %}
+                    {% elif 'Engineering Management' in skill.name %}
+                        {% for kw in skill.keywords %}
+                            {% set _ = ns.mgmt.append(kw) %}
+                        {% endfor %}
+                    {% elif 'Business' in skill.name %}
+                        {% for kw in skill.keywords %}
+                            {% set _ = ns.business.append(kw) %}
+                        {% endfor %}
+                    {% elif 'Tools' in skill.name %}
+                        {# Extract infrastructure from Tools #}
+                        {% for kw in skill.keywords %}
+                            {% if kw in ['docker', 'kubernetes', 'bash', 'linux', 'continuous integration', 'CircleCI', 'DevOps', 'AI-Powered Coding', 'observability with Grafana'] %}
+                                {% set _ = ns.infra.append(kw) %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+                
+                {# Add Python and TypeScript to backend #}
+                {% set backend_skills = ['Python', 'TypeScript'] + ns.backend %}
+                
+                {# Technical Skills Summary #}
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fa fa-code"></i>
+                        Technical Skills
+                    </h3>
+                    
+                    <div class="skill-summary">
+                        <p><strong>Backend:</strong> {{ backend_skills[:4] | join(', ') }}</p>
+                        <div class="collapsible-content" id="skills-more">
+                            <p><strong>Databases:</strong> {{ ns.database | join(', ') }}</p>
+                            <p><strong>Frontend:</strong> {{ ns.frontend | join(', ') }}</p>
+                            <p><strong>Infrastructure:</strong> {{ ns.infra | join(', ') }}</p>
+                            <p><strong>Leadership & Management:</strong> {% for skill in ns.mgmt %}{{ skill | title }}{% if not loop.last %}, {% endif %}{% endfor %}</p>
+                            <p><strong>Business Domain:</strong> {% for skill in ns.business %}{{ skill | title }}{% if not loop.last %}, {% endif %}{% endfor %}</p>
+                        </div>
+                    </div>
+                    <button class="toggle-section" onclick="toggleContent('skills-more', this)">
+                        <i class="fa fa-angle-down"></i>
+                        <span class="toggle-text">Show all skills</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects - Hidden in web view -->
+        {% if false %}
+        <section id="projects" class="section extended-only">
+            <h2 class="section-title">Key Projects</h2>
+            <div>
+                {% for project in resume.projects %}
+                    {% if not project.hide %}
+                    <article class="project entry">
+                        <header>
+                            <h3 class="name">{{ project.name }}</h3>
+                            {% if project.entity %}
+                            <div class="roles">{{ project.entity }}{% if project.roles %} - {{ project.roles | join(', ') }}{% endif %}</div>
+                            {% endif %}
+                            <div class="project-description">{{ project.description }}</div>
+                        </header>
+                        {% if project.keywords %}
+                        <ul class="keywords">
+                            {% for kw in project.keywords %}
+                            <li>{{ kw }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                        {% if project.highlights %}
+                        <ul class="highlights">
+                            {% for highlight in project.highlights %}
+                            <li>{{ highlight }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </article>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
+        
+        <!-- Education -->
+        {% if resume.education %}
+        <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            {% for study in resume.education %}
+            <article class="education entry">
+                <h3 class="name">{{ study.area }}</h3>
+                <div class="area">{{ study.studyType }}</div>
+                <div class="institution">{{ study.institution }}</div>
+                <div class="date">
+                    {{ study.startDate }}{% if study.endDate %} - {{ study.endDate }}{% endif %}
+                </div>
+            </article>
+            {% endfor %}
+        </section>
+        {% endif %}
+        
+        <!-- Volunteer -->
+        {% if resume.volunteer %}
+        <section id="volunteer" class="section">
+            <h2 class="section-title">Volunteer & Community</h2>
+            {% for org in resume.volunteer %}
+            <article class="volunteer entry">
+                <h3 class="name">{{ org.organization }}</h3>
+                <div class="position">{{ org.position }}</div>
+                <div class="date">
+                    {{ org.startDate }}{% if org.endDate %} - {{ org.endDate }}{% else %} - Present{% endif %}
+                </div>
+                <div class="summary">{{ org.summary }}</div>
+            </article>
+            {% endfor %}
+        </section>
+        {% endif %}
+    </main>
+</div>
+
+{% if not print %}
+<script>
+// Dark mode toggle
+const themeToggle = document.getElementById('theme-toggle');
+const htmlElement = document.documentElement;
+const icon = themeToggle.querySelector('.fa');
+
+// Check for saved theme preference or default to 'light'
+const currentTheme = localStorage.getItem('theme') || 'light';
+htmlElement.setAttribute('data-theme', currentTheme);
+updateThemeIcon(currentTheme);
+
+// Force light mode for better readability on first visit
+if (!localStorage.getItem('theme')) {
+    htmlElement.setAttribute('data-theme', 'light');
+}
+
+themeToggle.addEventListener('click', () => {
+    let theme = htmlElement.getAttribute('data-theme');
+    let newTheme = theme === 'light' ? 'dark' : 'light';
+    
+    htmlElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeIcon(newTheme);
+});
+
+function updateThemeIcon(theme) {
+    if (theme === 'dark') {
+        icon.className = 'fa fa-sun-o'; // Sun icon in dark mode (light colored)
+    } else {
+        icon.className = 'fa fa-moon-o'; // Moon icon in light mode (dark colored)
+    }
+}
+
+// Toggle individual sections
+function toggleContent(contentId, button) {
+    const content = document.getElementById(contentId);
+    const icon = button.querySelector('.fa');
+    const text = button.querySelector('.toggle-text');
+    
+    if (content.classList.contains('expanded')) {
+        content.classList.remove('expanded');
+        icon.className = 'fa fa-angle-down';
+        text.textContent = text.textContent.replace('less', 'more').replace('Hide', 'Show');
+    } else {
+        content.classList.add('expanded');
+        icon.className = 'fa fa-angle-up';
+        text.textContent = text.textContent.replace('more', 'less').replace('Show', 'Hide');
+    }
+}
+
+// Section Navigation - Scroll Spy
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('#content-section-nav .section-link');
+
+function updateNavigation() {
+    let scrollY = window.scrollY + 150; // Offset for better triggering
+    let currentIndex = -1;
+    
+    sections.forEach((section, index) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            currentIndex = index;
+        }
+    });
+    
+    navLinks.forEach((link, index) => {
+        link.classList.remove('active');
+        
+        // Mark sections as visited if we've scrolled past them
+        if (index < currentIndex) {
+            link.classList.add('visited');
+        } else {
+            link.classList.remove('visited');
+        }
+        
+        // Highlight current section
+        if (index === currentIndex) {
+            link.classList.add('active');
+        }
+    });
+    
+    // If at the very top, reset
+    if (scrollY < 100) {
+        navLinks.forEach(link => {
+            link.classList.remove('active', 'visited');
+        });
+    }
+}
+
+// Smooth scroll to sections
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+            const offsetTop = targetSection.offsetTop - 120;
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+window.addEventListener('scroll', updateNavigation);
+window.addEventListener('load', updateNavigation);
+window.addEventListener('resize', updateNavigation);
+</script>
+{% endif %}
+
+</body>
+</html>
+
