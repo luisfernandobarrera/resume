@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,900|Source+Sans+Pro:300,400,700|Raleway:100,300,400,700&display=swap");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap");
 /* Reset */
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -60,7 +61,8 @@
     background: #f2f2f2;
     line-height: 1.6;
     font-size: 16px;
-    font-family: "Source Sans Pro", sans-serif; }
+    font-family: "IBM Plex Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    text-align: left; }
   #resume {
     padding: 1rem 0;
     margin: 1rem auto; }
@@ -96,7 +98,7 @@
       color: #757575; }
     header h3.specialty {
       font-size: 1.1em;
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: "IBM Plex Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
       font-weight: 300;
       color: #757575; }
     header .name {
@@ -131,7 +133,7 @@
     font-size: 1.2rem;
     font-family: Merriweather, serif;
     font-weight: 900;
-    color: #757575;
+    color: #3F51B5;
     margin-bottom: 0.1275em; }
   .date {
     font-weight: 700;
@@ -169,13 +171,13 @@
     font-style: italic; }
   .courses li, .keywords li {
     display: inline-block;
-    background: #f0f0f0;
+    background: rgba(63, 81, 181, 0.08);
     font-size: 0.9em;
     line-height: 1;
-    color: #333;
+    color: #1f2a44;
     padding: 0.4em 0.8em;
-    border-bottom: 1px solid #ddd;
-    border-right: 1px solid #ddd;
+    border-bottom: 1px solid rgba(63, 81, 181, 0.2);
+    border-right: 1px solid rgba(63, 81, 181, 0.2);
     border-radius: 3px; }
   #publications .date {
     font-weight: normal;
@@ -270,7 +272,7 @@
 @media screen and (max-width: 601px) {
   body {
     font-size: 95%;
-    font-family: Merriweather, serif;
+    font-family: "IBM Plex Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     font-weight: 400;
     background-color: #ffffff;
     color: #333333; }
@@ -280,7 +282,7 @@
       margin-bottom: 1em; }
     #resume h2.label, #resume h2.section-title, #resume h1.name, #resume h3.specialty {
       font-family: "Source Sans Pro", sans-serif;
-      color: #003D5D; }
+      color: #3F51B5; }
     #resume h2 {
       font-size: 1.3rem; }
     #resume h3 {
@@ -290,7 +292,7 @@
       font-weight: 400; }
   .item {
     margin: 1.5rem 0;
-    text-align: justify; }
+    text-align: left; }
     .item .summary, .item .extras {
       margin-bottom: 0.5rem; }
     .item ul, .item ol {
@@ -308,7 +310,8 @@
 
 @media screen and (min-width: 602px) {
   #resume {
-    width: 550px;
+    width: auto;
+    max-width: 720px;
     margin: 0 auto; }
   .item ul, .item ol {
     margin-left: 3em;
@@ -323,22 +326,22 @@
   #basics #contact, #basics #contact-languages {
     float: right; }
   #work h3.name, #projects h3.name, #volunteer h3.name {
-    width: 66.8047%;
+    width: auto;
     display: block;
-    float: left;
+    float: none;
     vertical-align: top;
     margin-top: 0;
     margin-bottom: 0.5em; }
   #work .website, #work .date, #work .location, #work .working-for, #projects .website, #projects .date, #projects .location, #projects .working-for, #volunteer .website, #volunteer .date, #volunteer .location, #volunteer .working-for {
-    width: 33.1953%;
+    width: auto;
     display: block;
-    float: right;
+    float: none;
     text-align: right;
     margin-bottom: 0.5em; }
   #work .company-description, #work .position, #work .project-description, #projects .company-description, #projects .position, #projects .project-description, #volunteer .company-description, #volunteer .position, #volunteer .project-description {
     display: block;
-    width: 66.8047%;
-    float: left;
+    width: auto;
+    float: none;
     margin-bottom: 0.5em; }
   #work .company-description, #work .project-description, #projects .company-description, #projects .project-description, #volunteer .company-description, #volunteer .project-description {
     font-style: italic;
@@ -346,7 +349,16 @@
   #work .position, #work .roles, #work .working-for, #projects .position, #projects .roles, #projects .working-for, #volunteer .position, #volunteer .roles, #volunteer .working-for {
     font-weight: 800; }
   #work .roles, #projects .roles, #volunteer .roles {
-    clear: both; }
+    clear: none; }
+  #work .entry > header, #projects .entry > header, #volunteer .entry > header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline; }
+    #work .entry > header .name, #projects .entry > header .name, #volunteer .entry > header .name {
+      flex: 1 1 55%; }
+    #work .entry > header .website, #work .entry > header .date, #work .entry > header .location, #work .entry > header .working-for, #projects .entry > header .website, #projects .entry > header .date, #projects .entry > header .location, #projects .entry > header .working-for, #volunteer .entry > header .website, #volunteer .entry > header .date, #volunteer .entry > header .location, #volunteer .entry > header .working-for {
+      flex: 1 1 45%;
+      text-align: right; }
   .education .name, .education .institution {
     width: 38.1953%;
     float: left;
@@ -374,7 +386,8 @@
 
 @media screen and (min-width: 1025px) {
   #resume {
-    width: 650px;
+    width: auto;
+    max-width: 860px;
     padding: 3em;
     margin: 3em auto;
     background: #fff;
@@ -421,7 +434,28 @@
     padding: 0; }
   #skills .item {
     padding-left: 0;
-    margin-top: 0; } }
+    margin-top: 0; }
+  #site-nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    gap: .75rem;
+    justify-content: flex-end;
+    padding: .75rem 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: saturate(180%) blur(8px);
+    backdrop-filter: saturate(180%) blur(8px); }
+    #site-nav .nav-link {
+      padding: .5rem .75rem;
+      border-bottom: 2px solid transparent;
+      color: #3F51B5;
+      text-decoration: none;
+      font-weight: 600; }
+      #site-nav .nav-link:hover, #site-nav .nav-link:focus {
+        border-bottom-color: #E07A5F;
+        outline: none; }
+      #site-nav .nav-link[aria-current="page"] {
+        border-bottom-color: #3F51B5; } }
 
 @media print {
   @page {
@@ -439,6 +473,8 @@
     background: #fff !important;
     color: #000; }
   .fa, #print-me {
+    display: none; }
+  #site-nav {
     display: none; }
   h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", Helvetica, Calibri, sans-serif;

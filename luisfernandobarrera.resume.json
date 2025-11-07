@@ -4,7 +4,7 @@
     "email": "luisfernando@informind.com",
     "image": "https://avatars2.githubusercontent.com/u/1202547?s=460&v=4",
     "label": "Senior Software Engineer and Manager",
-    "specialty": "Finance, Accounting, Business and Python and TypeScript",
+    "specialty": "Python, TypeScript, Databases | Finance, Accounting, Business",
     "phone": "+52 55 4848 1150",
     "location": {
       "city": "Mexico City",
@@ -166,7 +166,7 @@
   "work": [
     {"company": "Nubank",
       "description": "Brazilian Global Fintech Bank",
-      "position": "Senior Software Engineer",
+      "position": "Senior Software Engineer (Money-In Team)",
       "location": "Remote and Mexico City",
       "startDate": "2024-12-10",
       "endDate": "2025-09-12",
@@ -208,9 +208,10 @@
       "startDate": "2023-12-01",
       "endDate": "2024-03-15",
       "url": "https://covalto.com",
-      "summary": "Led backend and integration engineering (acting director) to define target architectures, align banking operations, and deliver critical integration and signing services. Kept the role of Manager and Technical Leader with a hands-on approach and programming and structuring code when necessary.",
+      "summary": "Led backend and integration engineering (acting director) to define target architectures, align banking operations, and deliver critical integration.",
       "highlights": [
         "Assumed the responsibilities of the Director of Banking Services Engineering to design the technical architecture considering the functional architecture designed by the CTO. Served as a liaison between Financial Product Managers and other people in Operations such as the Chief Operations Officer, the Legal Team and Sales to translate those requirements to Technical teams reviewing needs and ideas and creating or reviewing projects and their specifications.",
+        "Kept the role of Manager and Technical Leader with a hands-on approach and programming and structuring code when necessary.",
         "Proposed solutions to various integration issues and systems within the Bank by leveraging the capabilities of all teams and compensating for their weaknesses through the use of components such as aligning catalogs and data types. Discussing things like the implementations of BIAN (Banking Industry Architecture Network).",
         "Led the design of two new operation architectures and ideal one with minimal changes and another tailored to the budgetary, temporal, and functional constraints of the bank, always seeking to optimize best engineering practices and address the bank's technological and operational challenges.",
         "Led the requirements to have an architecture that allows the bank to have an efficient, successful and cost-effective implementation of Electronic Banking. Audited the architecture and concluded that changes should be done in order to do that. Proposed to restructure the Technology team to efficiently achieve those objectives.",
@@ -596,8 +597,8 @@
     "canonical": "https://github.com/luisfernandobarrera/resume",
     "display": "https://cv.luisfernandobarrera.com",
     "gh-pages-domain": "cv.luisfernandobarrera.com",
-    "version": "v0.6.1",
-    "lastModified": "2025-11-07T12:00:00-06:00",
+    "version": "v0.7.0",
+    "lastModified": "2025-11-07T12:06:00-06:00",
     "theme": "spartan",
     "notes": ""
   }

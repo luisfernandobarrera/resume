@@ -40,12 +40,11 @@ def cv():
         document = json.load(o)
     return render_template("cv.html", resume=document, print=False)
 
-#
-# @app.route("/resume/")
-# def resume():
-#     with open(RESUME, encoding="utf-8") as o:
-#         document = json.load(o)
-#     return render_template("resume.html", resume=document, print=False)
+@app.route("/resume/")
+def resume():
+    with open(RESUME, encoding="utf-8") as o:
+        document = json.load(o)
+    return render_template("resume_ats.html", resume=document, print=False)
 
 
 @app.route("/print-cv.html")
@@ -54,12 +53,11 @@ def print_cv():
         document = json.load(o)
     return render_template("cv.html", resume=document, print=True)
 
-#
-# @app.route("/print-resume.html")
-# def print_resume():
-#     with open(RESUME, encoding="utf-8") as o:
-#         document = json.load(o)
-#     return render_template("resume.html", resume=document, print=True)
+@app.route("/print-resume.html")
+def print_resume():
+    with open(RESUME, encoding="utf-8") as o:
+        document = json.load(o)
+    return render_template("resume_ats.html", resume=document, print=True)
 
 
 @app.route("/resume.json")
@@ -82,6 +80,10 @@ if PDF_SUPPORT:
     def cv_pdf():
         return render_pdf(url_for('print_cv'))
 
+    @app.route('/resume-ats.pdf')
+    def resume_ats_pdf():
+        return render_pdf(url_for('print_resume'))
+
 
 @app.route('/resume.pdf')
 def resume_pdf():
@@ -89,7 +91,7 @@ def resume_pdf():
         binary_pdf = resume_pdf.read()
     response = make_response(binary_pdf)
     response.headers['Content-Type'] = 'application/pdf'
-    response.headers['Content-Disposition'] = 'inline; filename=yourfilename.pdf'
+    response.headers['Content-Disposition'] = 'inline; filename=resume.pdf'
     return response
 
 # For GitHub Pages

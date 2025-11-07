@@ -28,8 +28,8 @@ usage() {
 # Execute based on command
 case "${1:-help}" in
     "dev"|"serve")
-        echo "🚀 Starting Flask development server..."
-        uv run python -m flask run
+        echo "🚀 Starting Flask development server on port 8080..."
+        FLASK_RUN_PORT=8080 uv run python -m flask run
         ;;
     "build"|"static")
         echo "📦 Generating static files..."

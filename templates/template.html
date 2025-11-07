@@ -32,7 +32,7 @@
 </head>
 
 
-<body>
+<body{% block body_class %}{% endblock %}>
 
 {% if not print %}
     <!-- Google Tag Manager (noscript) -->
@@ -42,11 +42,12 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <div id="print-me">
-        <a href="/cv.pdf" title="print" target="_blank">
-            <span class="fa fa-print"></span>
-        </a>
-    </div>
+    <nav id="site-nav" aria-label="Resume views">
+        <a href="/" class="nav-link">CV</a>
+        <a href="/resume/" class="nav-link">ATS (1‑page)</a>
+        <a href="/cv.pdf" class="nav-link">CV PDF</a>
+        <a href="/resume-ats.pdf" class="nav-link">ATS PDF</a>
+    </nav>
 {% endif %}
 
 
