@@ -3,8 +3,8 @@
     "name": "Luis Fernando Barrera",
     "email": "luisfernando@informind.com",
     "image": "https://avatars2.githubusercontent.com/u/1202547?s=460&v=4",
-    "label": "Senior Software Engineering Manager",
-    "specialty": "(Finance, Accounting, Business and Python, now doing Clojure and React)",
+    "label": "Senior Software Engineer and Manager",
+    "specialty": "Finance, Accounting, Business and Python and TypeScript",
     "phone": "+52 55 4848 1150",
     "location": {
       "city": "Mexico City",
@@ -64,15 +64,15 @@
       "name": "Python Web Development",
       "level": "Expert",
       "keywords": [
-        "django",
-        "fastAPI",
-        "flask",
-        "django-REST",
-        "tortoiseORM",
+        "Django",
+        "FastAPI",
+        "Flask",
+        "Django REST Framework",
         "REST API",
         "GraphQL",
         "JavaScript",
-        "VueJS",
+        "TypeScript",
+        "Vue.js",
         "React",
         "HTMX",
         "SASS"
@@ -130,6 +130,7 @@
       "name": "General",
       "keywords": [
         "Finance",
+        "Accounting",
         "Money",
         "Administration",
         "Business",
@@ -137,8 +138,6 @@
         "Entrepreneurship",
         "Markets",
         "Personal Finance",
-        "Accounting",
-        "Administration",
         "Team Building & Management",
         "Inventories"
       ]
@@ -158,10 +157,6 @@
     {
       "name": "Learning",
       "keywords": [
-        "Mindfulness",
-        "Management Techniques",
-        "React",
-        "Progressive Web Apps",
         "Serverless Apps",
         "Personal Improvement"
       ]
@@ -173,15 +168,16 @@
       "position": "Senior Software Engineer",
       "location": "Remote and Mexico City",
       "startDate": "2024-12-10",
+      "endDate": "2025-09-12",
       "url": "https://nu.com.mx",
       "summary": "Senior Engineer in the Global Money-In squad building amazing experiences for our customers to bring money to Nubank in Brazil, Mexico and Colombia. Using Clojure, Datomic, microservices and other proprietary technologies from Nubank.",
       "highlights": [
-        "Working in a full-stack environment using Clojure to deliver in-app experiences with the Nubank's proprietary framework in Clojure / Flutter (BDC).",
-        "Using knowledge of banking systems in Brazil (Pix, TED, Boleto), Colombia (Bre-B, ACH, PSE), and Mexico (SPEI) to help solve problems in the Nubank microservices.",
+        "Worked in a full-stack environment using Clojure to deliver in-app experiences with the Nubank's proprietary framework in Clojure / Flutter (BDC).",
+        "Used knowledge of banking systems in Brazil (Pix, TED, Boleto), Colombia (Bre-B, ACH, PSE), and Mexico (SPEI) to help solve problems in the Nubank microservices.",
         "Delivered hybrid app / widget in React and Clojure to help the CX team to check details of the transfer-in transactions in Colombia and Mexico, connecting them to the relevant microservices and GraphQL platforms",
-        "Working with AI-powered coding tools (Cursor, Claude, Gemini) to learn and deliver features quickly while debugging issues",
-        "Using Grafana and other tools to monitor the microservices and the Nubank's proprietary platform.",
-        "Studying and creating documentation to better understand the Nubank's proprietary platform. Learning Clojure, Datomic, BDC to onboard to the team.",
+        "Worked with AI-powered coding tools (Cursor, Claude, Gemini) to learn and deliver features quickly while debugging issues",
+        "Used Grafana and other tools to monitor the microservices and the Nubank's proprietary platform.",
+        "Studied and created documentation to better understand the Nubank's proprietary platform. Learning Clojure, Datomic, BDC to onboard to the team.",
         "Collaborating in a multi-country team, using skills in English, Spanish and Portuguese."
       ]
     },
@@ -213,7 +209,7 @@
       "url": "https://covalto.com",
       "summary": "Worked as a de facto Engineering Director for Backend and Integration Services. Reporting directly to the CTO. Kept the role of Manager and Technical Leader with a hands-on approach and programming and structuring code when necessary.",
       "highlights": [
-        "Assumed the responsibilities of the Director of Banking Services Engineering to design the technical architecture considering the functional architecture designed by the CTO. Served as a liaison between Financial Product Managers and other people in Operations such as the Chief Operations Officer, the Legal Team and Sales to translate those requirements to Technical teams reviewing needs and ideas and creating or reviewing projects ans their specifications.",
+        "Assumed the responsibilities of the Director of Banking Services Engineering to design the technical architecture considering the functional architecture designed by the CTO. Served as a liaison between Financial Product Managers and other people in Operations such as the Chief Operations Officer, the Legal Team and Sales to translate those requirements to Technical teams reviewing needs and ideas and creating or reviewing projects and their specifications.",
         "Proposed solutions to various integration issues and systems within the Bank by leveraging the capabilities of all teams and compensating for their weaknesses through the use of components such as aligning catalogs and data types. Discussing things like the implementations of BIAN (Banking Industry Architecture Network).",
         "Led the design of two new operation architectures and ideal one with minimal changes and another tailored to the budgetary, temporal, and functional constraints of the bank, always seeking to optimize best engineering practices and address the bank's technological and operational challenges.",
         "Led the requirements to have an architecture that allows the bank to have an efficient, successful and cost-effective implementation of Electronic Banking. Audited the architecture and concluded that changes should be done in order to do that. Proposed to restructure the Technology team to efficiently achieve those objectives.",
@@ -326,6 +322,7 @@
         "Developed Mango Analytics a comprehensive solution for Call Detail Record, managing and processing large volumes of calls and storing and making available for search call recordings.",
         "Developed a method to quickly setup and create webapps with REST, Django and Bootstrap."
       ],
+      "hide": true,
       "resumeHide": true
     },
     {
@@ -404,15 +401,14 @@
         "Manager"
       ],
       "keywords": [
-        "fastapi",
+        "Fastapi",
         "PostgreSQL",
         "Mifiel",
         "Web development",
         "TortoiseORM",
         "e.signature",
         "blockchain",
-        "aws",
-        "s3",
+        "AWS",
         "google cloud",
         "kubernetes"
       ],
@@ -423,7 +419,7 @@
         "Using FastAPI to create many micro frontends in a same codebase, including APIs to create frontends in React and integrations with other systems such as Salesforce.",
         "Integrated using Covalto's standard infra in GCP and AWS.",
         "Archive using S3/GCS cloud storage. Indexed in PostgreSQL database",
-        "Microservice to provide documentes based on templates filled with an API Request. Document Management System",
+        "Microservice to provide documents based on templates filled with an API Request. Document Management System",
         "After designing the project, successfully inherited the project to a programmer and just managed, reviewed the code, and gather specifications from the business team to improve it."
       ]
     },
@@ -599,8 +595,8 @@
     "canonical": "https://github.com/luisfernandobarrera/resume",
     "display": "https://cv.luisfernandobarrera.com",
     "gh-pages-domain": "cv.luisfernandobarrera.com",
-    "version": "v0.5.1",
-    "lastModified": "2025-08-12T12:00:00-06:00",
+    "version": "v0.6.1",
+    "lastModified": "2025-11-07T12:00:00-06:00",
     "theme": "spartan",
     "notes": ""
   }
