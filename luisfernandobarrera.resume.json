@@ -3,8 +3,8 @@
     "name": "Luis Fernando Barrera",
     "email": "luisfernando@informind.com",
     "image": "https://avatars2.githubusercontent.com/u/1202547?s=460&v=4",
-    "label": "Senior Software Engineer and Manager",
-    "specialty": "Python, TypeScript, Databases | Finance, Accounting, Business",
+    "label": "Software Engineering Manager — AI-Driven Development",
+    "specialty": "TypeScript, Kotlin, Flutter, Python | Payments, Finance, Accounting",
     "phone": "+52 55 4848 1150",
     "location": {
       "city": "Mexico City",
@@ -12,14 +12,14 @@
       "countryCode": "MX",
       "country": "Mexico"
     },
-    "summary": "Senior Software Engineering Developer and Manager with proven experience building teams and mentoring people. Skilled and enthusiastic Python programmer with a solid background in Finance, Accounting, and Business Data Applications. Now doing Clojure and React.",
+    "summary": "Software Engineering Manager leading AI-agent-driven development teams. Building payments, finance, and accounting platforms on Kubernetes and Cloudflare. Passionate about transitioning traditional developers into product-minded software engineers through agentic programming workflows and AI-augmented delivery.",
     "about": [
-      "Senior Software Engineer and Engineering Manager with a track record building high-performing teams and shipping complex systems in finance, banking, and data-intensive products. Expert in Python and Backend development and; proficient in modern web stacks. I translate business and regulatory requirements into robust architectures and deliver reliable software at scale.",
-      "I have a strong drive for building software, leading teams, structuring chaos, organizing complexity. I achieve team objectives by fostering discussions to deeply understand problems and tackle them with a practical, hands-on approach, engage in coding and problem-solving alongside the team, focus on collective success and foster a collaborative environment. I am experienced in building teams and mentoring people.",
-      "I have the strong belief that the success of a team is not only a function of will and skills of the people but also of the culture, the organization, and the management team of the company. Enthusiastic about improving within a team, a company, and myself.",
-      "Skilled and enthusiastic Python programmer with a solid background in Finance, Accounting, and Business Data Applications. Love to design and analyze data through building applications and libraries. I don't just develop projects, I am proud to craft them.",
-      "Hopelessly curious and eclectic. Love to learn about any topic to solve problems. I use Getting Things Done (GTD) as my personal workflow, practice mindfulness to keep my mind clear and calm while handling stress, and have kept a personal ledger for 10 years.",
-      "If your data or project involves symbols like '$¢£€¥%', you would probably like to share a coffee with me or interview me."
+      "Software Engineering Manager with a track record building and leading AI-augmented engineering teams that deliver payments, finance, and accounting platforms at scale. Expert in TypeScript, Kotlin, Flutter, and Python — architecting full-stack systems on Kubernetes and Cloudflare while adopting agentic programming as a core delivery methodology.",
+      "I lead teams through the transition from traditional development to AI-augmented software engineering: transforming developers into product-minded engineers who ship faster with agents, without losing craft. I build the culture, the tooling, and the architecture that makes this work.",
+      "I have a strong drive for building software, leading teams, structuring chaos, organizing complexity. I achieve team objectives by fostering discussions to deeply understand problems and tackle them with a practical, hands-on approach — engaging in coding and problem-solving alongside the team. I focus on collective success and foster a collaborative environment.",
+      "Deep expertise in payments systems, financial math, accounting, tax compliance (CFDI), and banking operations across Mexico, Brazil, and Colombia. I translate business and regulatory requirements into robust architectures and deliver reliable software at scale.",
+      "Hopelessly curious and eclectic. I maintain multiple open-source projects (openbancor, scoragora, psiconaos) and have kept a personal ledger for 10+ years. I practice Getting Things Done (GTD) and mindfulness to stay clear under pressure.",
+      "If your data involves symbols like '$¢£€¥%' or you're building the next generation of AI-augmented engineering teams, we should talk."
     ],
     "profiles": [
       {
@@ -35,57 +35,71 @@
     ]
   },
   "skills": [
-    
     {
-      "name": "Clojure",
-      "level": "Intermediate",
+      "name": "AI & Agentic Development",
+      "level": "Expert",
       "keywords": [
-        "clojure",
-        "clojurescript",
-        "re-frame",
-        "reagent",
-        "datomic",
-        "datascript"
+        "AI-augmented engineering",
+        "agentic programming",
+        "AI agent orchestration",
+        "AI coding assistants (Cursor, Claude, Gemini)",
+        "workflow automation with agents",
+        "developer productivity via AI"
       ]
     },
     {
-      "name": "Python Data Programming",
+      "name": "Full-Stack Development",
       "level": "Expert",
       "keywords": [
-        "pandas",
-        "dataclasses",
-        "numpy",
-        "SQLAlchemy",
-        "advanced SQL",
-        "PostgreSQL",
-        "SQLite3"
-      ]
-    },
-    {
-      "name": "Python Web Development",
-      "level": "Expert",
-      "keywords": [
+        "TypeScript",
+        "Python",
+        "Kotlin",
+        "Flutter",
         "Django",
         "FastAPI",
-        "Flask",
-        "Django REST Framework",
-        "REST API",
-        "GraphQL",
-        "JavaScript",
-        "TypeScript",
-        "Vue.js",
         "React",
         "HTMX",
-        "SASS"
+        "Vue.js",
+        "REST API",
+        "GraphQL"
+      ]
+    },
+    {
+      "name": "Databases & Data",
+      "level": "Expert",
+      "keywords": [
+        "PostgreSQL",
+        "SQLite",
+        "Datomic",
+        "advanced SQL",
+        "SQLAlchemy",
+        "pandas",
+        "data pipelines",
+        "financial data modeling"
+      ]
+    },
+    {
+      "name": "Infrastructure & DevOps",
+      "level": "Advanced",
+      "keywords": [
+        "Kubernetes",
+        "Terraform",
+        "Cloudflare Workers",
+        "Docker",
+        "CI/CD",
+        "observability with Grafana",
+        "continuous integration",
+        "Linux",
+        "bash"
       ]
     },
     {
       "name": "Engineering Management",
       "keywords": [
         "team building",
+        "developer transition to AI workflows",
         "OKRs and KPIs",
         "mentoring",
-        "DevOps",
         "agile methodologies",
         "product requirements",
         "software architecture & design",
@@ -93,96 +107,113 @@
       ]
     },
     {
-      "name": "Business",
+      "name": "Business & Finance",
       "keywords": [
-        "administration",
         "accounting",
         "finance",
-        "software for SMB",
-        "ERP",
-        "CRM",
-        "taxes",
+        "payments systems",
         "electronic invoicing (CFDI)",
         "electronic signature",
-        "financial math"
+        "financial math",
+        "ERP",
+        "CRM",
+        "tax compliance",
+        "banking operations (SPEI, PIX, ACH, PSE)"
       ]
     },
     {
-      "name": "Tools",
+      "name": "Languages",
       "keywords": [
-        "AI-Powered Coding",
-        "docker",
-        "kubernetes",
-        "observability with Grafana",
-        "bash",
-        "linux",
-        "Excel VBA",
-        "CircleCI",
-        "SDLC",
-        "code quality",
-        "clean code",
-        "networking",
-        "continuous integration"
+        "Spanish (native)",
+        "English (C1)",
+        "Portuguese (C1)"
       ]
     }
   ],
   "interests": [
     {
-      "name": "General",
+      "name": "Finance & Business",
       "keywords": [
-        "Finance",
+        "Payments",
+        "Financial Systems",
         "Accounting",
-        "Money",
-        "Administration",
-        "Business",
-        "Data Management",
-        "Entrepreneurship",
-        "Markets",
-        "Personal Finance",
-        "Team Building & Management",
-        "Inventories"
+        "Tax Technology",
+        "Open Banking",
+        "Personal Finance"
       ]
     },
     {
-      "name": "Data",
+      "name": "AI & Engineering",
       "keywords": [
-        "Financial",
-        "Geographical",
-        "Data collection",
-        "Scraping",
-        "Pipelines",
-        "Designing Catalogues",
-        "Visualization"
+        "Agentic AI",
+        "Developer Productivity",
+        "Software Architecture",
+        "Multi-language Polyglot Development",
+        "Open Source"
       ]
     },
     {
       "name": "Learning",
       "keywords": [
-        "Serverless Apps",
-        "Personal Improvement"
+        "Philosophy",
+        "Theology (Thomism)",
+        "Human-Technology Interaction",
+        "Continuous Improvement"
       ]
     }
   ],
   "work": [
-    {"company": "Nubank",
+    {
+      "company": "Sitespay",
+      "description": "Payments and Financial Technology Platform",
+      "position": "Software Development Manager — AI Agents",
+      "location": "Remote and Mexico City",
+      "startDate": "2025-12-15",
+      "url": "https://sitespay.com",
+      "summary": "Leading a multi-disciplinary engineering team building payment, finance, and accounting platforms with AI-agent-driven development. Transitioning developers from traditional roles to AI-augmented product and software engineers.",
+      "highlights": [
+        "Leading a team of engineers adopting agentic programming as the primary delivery methodology — building payment and financial platforms using AI-augmented workflows.",
+        "Designing and delivering platform architecture on Kubernetes and Cloudflare, integrating payment processing, accounting ledgers, and financial data pipelines.",
+        "Transitioning developers into product-minded software engineers: pairing traditional engineering skills with AI-agent workflows to increase delivery velocity and code quality.",
+        "Architecting multi-service platforms using TypeScript, Kotlin, Flutter, and Python with PostgreSQL and SQLite at the data layer.",
+        "Managing infrastructure with Kubernetes and Terraform, leveraging Cloudflare Workers for edge compute and API gateway patterns.",
+        "Integrating payment systems, tax compliance (CFDI), and accounting modules into a cohesive financial platform."
+      ]
+    },
+    {
+      "company": "informind",
+      "description": "Software Consulting and AI-Augmented Engineering",
+      "position": "Founder — AI-Driven Development & Consulting",
+      "location": "Remote and Mexico City",
+      "startDate": "2025-09-15",
+      "url": "https://informind.com",
+      "summary": "Revived informind as a vehicle for personal and client projects leveraging AI-augmented engineering, multi-language polyglot development, and financial domain expertise.",
+      "highlights": [
+        "Developing openbancor (catalogmx): a multi-language library for Mexican fiscal validation with daily Banxico exchange rate updates, distributed via GitHub Releases.",
+        "Building scoragora: a SvelteKit + Cloudflare Workers application for collaborative scoring and decision-making.",
+        "Developing psiconaos: a personal knowledge galaxy platform integrating Hermes Agent, Cloudflare Workers, and structured reasoning pipelines.",
+        "Consulting on AI-agent workflows, developer tooling, and financial systems architecture.",
+        "Maintaining 11+ GitHub organizations and multiple open-source libraries."
+      ]
+    },
+    {
+      "company": "Nubank",
       "description": "Brazilian Global Fintech Bank",
       "position": "Senior Software Engineer (Money-In Team)",
       "location": "Remote and Mexico City",
       "startDate": "2024-12-10",
       "endDate": "2025-09-12",
       "url": "https://nu.com.mx",
-      "summary": "Building amazing experiences for our customers to bring money to Nubank in Brazil, Mexico and Colombia. Using Clojure, Datomic, microservices and other proprietary technologies from Nubank.",
+      "summary": "Building experiences for customers to bring money into Nubank in Brazil, Mexico, and Colombia. Using Clojure, Datomic, microservices, and proprietary Nubank technologies (BDC Framework).",
       "highlights": [
-        "Worked in a full-stack environment using Clojure to deliver in-app experiences with the Nubank's proprietary framework in Clojure / Flutter (BDC).",
-        "Used knowledge of banking systems in Brazil (Pix, TED, Boleto), Colombia (Bre-B, ACH, PSE), and Mexico (SPEI) to help solve problems in the Nubank microservices.",
-        "Delivered hybrid app / widget in React and Clojure to help the CX team to check details of the transfer-in transactions in Colombia and Mexico, connecting them to the relevant microservices and GraphQL platforms",
-        "Worked with AI-powered coding tools (Cursor, Claude, Gemini) to learn and deliver features quickly while debugging issues",
-        "Used Grafana and other tools to monitor the microservices and the Nubank's proprietary platform.",
-        "Studied and created documentation to better understand the Nubank's proprietary platform. Learning Clojure, Datomic, BDC to onboard to the team.",
-        "Collaborating in a multi-country team, using skills in English, Spanish and Portuguese."
+        "Worked in a full-stack environment using Clojure to deliver in-app experiences with Nubank's proprietary framework in Clojure / Flutter (BDC).",
+        "Applied knowledge of banking systems in Brazil (Pix, TED, Boleto), Colombia (Bre-B, ACH, PSE), and Mexico (SPEI) across Nubank microservices.",
+        "Delivered a hybrid app/widget in React and Clojure helping the CX team check transfer-in transaction details in Colombia and Mexico, connecting to microservices and GraphQL platforms.",
+        "Used AI-powered coding tools (Cursor, Claude, Gemini) to learn and deliver features across unfamiliar tech stacks.",
+        "Used Grafana and observability tools to monitor microservices and the proprietary platform.",
+        "Collaborated in a multi-country team using English, Spanish, and Portuguese."
       ]
     },
-
     {
       "company": "Sofía Salud",
       "description": "Mexican Health Insurance Tech Company",
@@ -191,13 +222,11 @@
       "startDate": "2024-05-26",
       "endDate": "2024-12-09",
       "url": "https://sofiasalud.com/",
-      "summary": "Modernized payments and claims services in a Django/GraphQL monolith and introduced AI‑assisted claims adjudication to streamline operations. Updated and refactored the monolith for all Sofia Salud's operations.",
+      "summary": "Modernized payments and claims services in a Django/GraphQL monolith and introduced AI-assisted claims adjudication to streamline operations.",
       "highlights": [
-          "Refactoring code and implementing new features",
-          "Working to improve the codebase and the architecture of the project, CICD, libraries, etc.",
-          "Doing refactorings on a big monolith codebase related to payments and claims.",
-          "Working with CFDI (Mexican electronic fiscal invoice) and the Accounts Payable systems.",
-          "Implemented an AI service to automate the adjudication of claims for labs and medicines."
+        "Refactored a large monolith codebase related to payments and claims — improving architecture, CI/CD pipelines, and shared libraries.",
+        "Worked with CFDI (Mexican electronic fiscal invoice) and Accounts Payable systems.",
+        "Implemented an AI service to automate adjudication of claims for labs and medicines."
       ]
     },
     {
@@ -208,17 +237,13 @@
       "startDate": "2023-12-01",
       "endDate": "2024-03-15",
       "url": "https://covalto.com",
-      "summary": "Led backend and integration engineering (acting director) to define target architectures, align banking operations, and deliver critical integration.",
+      "summary": "Led backend and integration engineering (acting director) to define target architectures, align banking operations, and deliver critical integrations across the bank's systems.",
       "highlights": [
-        "Assumed the responsibilities of the Director of Banking Services Engineering to design the technical architecture considering the functional architecture designed by the CTO. Served as a liaison between Financial Product Managers and other people in Operations such as the Chief Operations Officer, the Legal Team and Sales to translate those requirements to Technical teams reviewing needs and ideas and creating or reviewing projects and their specifications.",
-        "Kept the role of Manager and Technical Leader with a hands-on approach and programming and structuring code when necessary.",
-        "Proposed solutions to various integration issues and systems within the Bank by leveraging the capabilities of all teams and compensating for their weaknesses through the use of components such as aligning catalogs and data types. Discussing things like the implementations of BIAN (Banking Industry Architecture Network).",
-        "Led the design of two new operation architectures and ideal one with minimal changes and another tailored to the budgetary, temporal, and functional constraints of the bank, always seeking to optimize best engineering practices and address the bank's technological and operational challenges.",
-        "Led the requirements to have an architecture that allows the bank to have an efficient, successful and cost-effective implementation of Electronic Banking. Audited the architecture and concluded that changes should be done in order to do that. Proposed to restructure the Technology team to efficiently achieve those objectives.",
-        "Managed a team of 4 people designing and implementing projects such as the financial product quoting system, the electronic signature service with e.firma for contracts, template and document services, and promissory note endorsements with Mifiel blockchain.",
-        "Optimized my team to take initiatives to develop projects to help operational areas, apply technology and achieve efficiency in those processes. Promoted an open team dynamic to get ideas and feedback from the team and the rest of the bank to design and achieve maximum impact projects that benefited our internal users and customers.",
-        "Led the development of services with Salesforce and Topaz (core banking) to expose APIs that allow for the automation of data flows from origination channel processes by connecting most of the bank's systems. Integrating them through the middleware-based legacy integration platform developed within my team.",
-        "Proposed, designed, gathered requirements with potential customers, planned, and led the Treasury API project for real-time bank account movement consultation via REST or Webhook using Kafka, Django, and Topaz integration services. Led the consultations to get the customer requirements and gather security and compliance requirements into consideration for the project. Designed the project as a first step in an Open Banking initiative for Covalto."
+        "Assumed responsibilities of the Director of Banking Services Engineering — liaising between Financial Product Managers, Operations (COO), Legal, and Sales to translate requirements into technical specifications.",
+        "Designed two operation architectures: an ideal minimal-change architecture and a budget-constrained version optimizing for engineering practices and regulatory constraints.",
+        "Audited Electronic Banking architecture; recommended restructuring the Technology team for efficient implementation.",
+        "Managed a team of 4 designing and implementing: financial product quoting, electronic signature (e.firma) for contracts, document templates, and promissory note endorsements with Mifiel blockchain.",
+        "Led the Treasury API project for real-time bank account movement queries via REST / Webhook using Kafka, Django, and Topaz — designed as the first step in an Open Banking initiative for Covalto."
       ],
       "resumeVerbose": true
     },
@@ -230,16 +255,14 @@
       "startDate": "2022-05-01",
       "endDate": "2024-03-15",
       "url": "https://covalto.com",
-      "summary": "Engineering Manager (Fincore/ESB Squad). Portfolio Migration Leader in all the quantitative data as a consultant and Data Engineer.",
+      "summary": "Engineering Manager (Fincore/ESB Squad). Led the quantitative portfolio migration from SOFOM to regulated bank (CNBV), managing $100M+ in assets.",
       "highlights": [
-        "Successfully achieved the Portfolio from SOFOM to Banco Covalto (Lender company to regulated bank). 2 billion Mexican pesos (100 million USD). Migrating from SOFOM's in-house system Loan Management System to Stefanini's Topaz in Banco Covalto. Regulated operation by the Comisión Nacional Bancaria y de Valores (CNBV, Mexican equivalent to the U.S. SEC).",
-        "Migration was a necessary step for business growth and the merger between Credijusto and Banco Covalto (former Finterra) and to achieve a NASDAQ IPO.",
-        "Led the collaboration across all business areas and departments to gather the logic from legacy systems and the logic to target systems. Creating all the transformations in between.",
-        "Wrote several financial math and accounting modules in a library to calculate, solve, split and do general work with amortization tables, cash flows, accounting, and payment application handling. Written against time with hard deadlines. (More details on the projects section in this CV as Pennyworth). Full Coverage. Data testing from source information and in delivered files.",
-        "Wrote a library to abstract the Credit Contract to work, fill and share data. Writing multiple extractors to fill these Contracts from different sources: Loan Management Systems, Excel Files, Google Sheet Files, etc.",
-        "Delivered normalized data to the business teams for validation and calculations to fill the migration layouts",
-        "Worked as Engineering Manager for a team of 6 engineers working with several legacy projects related to payments, financial quotes, loan management systems, and the Enterprise Service Bus (ESB) components.",
-        "Improved productivity and metrics through communication and setting OKRs; implementing testing, clean code and best coding and architecture practices."
+        "Led the Portfolio Migration from SOFOM to Banco Covalto — 2 billion Mexican pesos ($100M+ USD) — migrating from in-house Loan Management System to Stefanini's Topaz. Regulated by CNBV.",
+        "Wrote financial math and accounting libraries (Pennyworth) to calculate, split, and handle amortization tables, cash flows, and payment application under hard deadlines. Full test coverage.",
+        "Wrote a Credit Contract abstraction library with extractors from multiple sources (Loan Management Systems, Excel, Google Sheets).",
+        "Led collaboration across all business areas to gather logic from legacy and target systems, creating all transformations in between.",
+        "Managed a team of 6 engineers working with legacy payment systems, financial quoting, loan management, and Enterprise Service Bus (ESB) components.",
+        "Improved productivity through OKRs, testing culture, clean code, and best architecture practices."
       ]
     },
     {
@@ -250,98 +273,44 @@
       "startDate": "2020-02-24",
       "endDate": "2022-04-30",
       "url": "https://credijusto.com",
-      "summary": "Python/Django programmer working in the Financial Core (Fincore) team.",
+      "summary": "Python/Django engineer in the Financial Core (Fincore) team, maintaining loan management systems and designing financial data infrastructure.",
       "highlights": [
-        "Maintained and developed Loany, a Portfolio Management System that handles Loans and Leases' transactions and calculations. Using Django and React.",
-        "Refactored the Theoretical Table calculations to handle grace periods.",
-        "Maintained Core Financial Libraries to handle calculations and settings across the company.",
-        "Designed and developed Kardex, a financial transaction database that allows to get reports gathering quantitative and qualitative data. (More details on the projects section in this CV).",
-        "Audited all the Loan contracts to arrive to correct calculations and logic based on each subproduct (revolving and simple credit).",
-        "Developed strong financial math and accounting skills to help Tech team to understand the financial team needs and provide solutions to major company problems.",
-        "Designed the Enterprise Service Bus architecture to message processes across multiple origin and target systems in a sequential process, inspired by the Django middleware architecture."
+        "Maintained and developed Loany, a Portfolio Management System for loans and leases using Django and React.",
+        "Refactored amortization table calculations to handle grace periods and complex subproducts.",
+        "Designed and developed Kardex: a financial transaction database enabling reporting with quantitative and qualitative data.",
+        "Audited all loan contracts to ensure correct calculations per subproduct (revolving and simple credit).",
+        "Designed the Enterprise Service Bus architecture for cross-system message processing, inspired by Django middleware patterns."
       ]
     },
     {
       "company": "CIAL Dun & Bradstreet México",
-      "description": "Latin America’s leading business data and analytics provider",
+      "description": "Latin America's leading business data and analytics provider",
       "position": "Python Data Warehouse Developer",
       "location": "Remote and Mexico City",
       "startDate": "2018-10-01",
       "endDate": "2020-01-15",
       "url": "https://cialdnb.com",
-      "summary": "Python Programmer working with Kubernetes managing clusters and designing APIs to control and integrate CIAL's Data Collection workflow.",
+      "summary": "Python developer managing Kubernetes clusters and designing APIs to control CIAL's data collection workflow across Latin America.",
       "highlights": [
-        "Designed APIs to glue stats, status and control of the tasks in the kubernetes cluster using Python, FastAPI and Airtable as a convenient frontend interface (Hyperkube).",
-        "Installed, Configured and Managed CialDnB's Kubernetes cluster with distributed storage. Configured Docker image to run the scrapers for collection purposes. (Ragnatela project).",
-        "Helped refactoring the in-house designed distributed scrapy-based framework to collect results using redis as a distributed queue with middlewares to send to our data collection pipeline.",
-        "Wrote some scrapers using Selenium and Scrapy.",
-        "Designed Silk in Django. An API and management system for organizing the sources, schemas and tasks to collect data to feed the business users with Latin American companies' data in Portuguese and Spanish.",
-        "Working remotely and asynchronously with a team distributed in Israel, Croatia and Russia."
+        "Designed APIs with Python, FastAPI, and Airtable to control task orchestration on Kubernetes (Hyperkube).",
+        "Installed, configured, and managed the Kubernetes cluster with distributed storage for scrapers (Ragnatela project).",
+        "Refactored a distributed Scrapy-based framework using Redis as a distributed queue.",
+        "Designed Silk in Django: an API and management system for organizing data sources, schemas, and collection tasks for Latin American business data.",
+        "Worked remotely and asynchronously with a distributed team across Israel, Croatia, and Russia."
       ]
-    },
-    {
-      "company": "Shopventory",
-      "description": "E-commerce Inventory Management",
-      "position": "Django developer",
-      "location": "Remote",
-      "startDate": "2018-06-01",
-      "endDate": "2018-09-15",
-      "url": "https://shopventory.com/",
-      "summary": "Python/Django programmer and Javascript/AngularJS programmer. Working on the project temporarily.",
-      "hide": true,
-      "resumeHide": true
-    },
-    {
-      "company": "AdRoll (Tiempo Development)",
-      "description": "Digital Marketing Company",
-      "url": "https://adroll.com",
-      "position": "Software Engineer",
-      "location": "Remote",
-      "startDate": "2017-05-15",
-      "endDate": "2018-01-15",
-      "summary": "Python programmer in the Attribution team creating scripts to process big trails of event data in TrailDB.",
-      "highlights": [
-        "Wrote software to process big trails of advertising events and resume them or transform them in different formats for other internal users.",
-        "Designing tests.",
-        "Creating APIs in Flask and in Jersey (Java).",
-        "Working from home in Mexico City with teams in San Francisco and Monterrey.",
-        "Contract through Tiempo Development (https://tiempodev.com/)."
-      ],
-      "hide": true,
-      "resumeHide": true
-    },
-    {
-      "company": "Nextor Telecom",
-      "description": "A telecom and telecom related software company.",
-      "position": "Lead Software Engineer",
-      "location": "Mexico City, MX",
-      "startDate": "2014-08-10",
-      "endDate": "2017-03-15",
-      "url": "https://nextortelecom.com",
-      "summary": "Lead developer and maintainer of Nextor Telecom’s software infrastructure. It’s portfolio includes products such as: Vozero, a prepaid VoIP conference service with a self-service user page to collect payments and manage conference calls in real-time; NextorProxy, a Cloud VoIP PBX service among others.",
-      "highlights": [
-        "Developed Experos a micro ERP for managing the company's administration.",
-        "Developed Mango Analytics a comprehensive solution for Call Detail Record, managing and processing large volumes of calls and storing and making available for search call recordings.",
-        "Developed a method to quickly setup and create webapps with REST, Django and Bootstrap."
-      ],
-      "hide": true,
-      "resumeHide": true
     },
     {
       "company": "informind",
       "position": "Founder, Software Engineer",
-      "description": "An IT and Software Consulting Company",
+      "description": "IT and Software Consulting Company",
       "location": "Mexico City, MX",
       "startDate": "2009-09-30",
       "endDate": "2014-05-06",
-      "url": "",
-      "summary": "Founder of informind. Python Developer and Software Team Leader. Administrative consultant, Data Management Consultant.",
+      "summary": "Founded informind, providing software development, data management, and IT consulting to SMBs across manufacturing, accounting, retail, healthcare, and publishing industries.",
       "highlights": [
-        "Company chiefly focused in Data management (Catalogue design and sanitation, Document schema design)  and the installation of ERP systems in order to generate meaningful and useful information to the Finance, Administration and Executive departments.",
-        "We offered to every small and medium sized business, solutions such as Websites, Apps, Servers and Networking consultant.",
-        "Our vision was to offer: our customers, a quality and affordable all-in-one IT solution; our employees, the opportunity to learn and grow by offering tailored solutions that are valuable to our customer.",
-        "Our customers were in the Manufacturing, Accounting, Commercial, Retail, Healthcare and Publishing industries.",
-        "Remote support (telephone and mail) and in-site. Software and Hardware sales. Sales and project planning. Python software development. Software Architect.  External Software implementation. Network design and implementation."
+        "Delivered ERP installations, catalogue design, data management, and custom software solutions.",
+        "Developed Python software, websites, and network infrastructure for small and medium businesses.",
+        "Provided remote and on-site support; managed sales and project planning."
       ]
     },
     {
@@ -352,42 +321,105 @@
       "startDate": "2013-04-01",
       "endDate": "2013-07-31",
       "url": "https://bankofamerica.com.mx",
-      "summary": "Unit tester for money market in-house developed software written in Quartz (Bank of America’s Python Development platform).",
+      "summary": "Unit tester for money market software written in Quartz (Bank of America's Python development platform).",
       "highlights": [
-        "Collaboration and teamwork with Indian, Brazilian and American developers.",
-        "Against time project and with adverse situations, objectives met successfully."
+        "Collaborated with Indian, Brazilian, and American developers in a fast-paced, against-deadline project."
       ],
       "hide": true
     }
   ],
   "projects": [
     {
+      "name": "openbancor / catalogmx",
+      "entity": "informind",
+      "type": "Multi-Language Library",
+      "description": "Mexican fiscal validation & Banxico rate library",
+      "url": "https://github.com/luisfernandobarrera/catalogmx",
+      "startDate": "2023-01-01",
+      "roles": ["Creator", "Maintainer"],
+      "keywords": [
+        "CFDI",
+        "Mexican tax",
+        "SAT",
+        "Banxico",
+        "multi-language",
+        "GitHub Releases",
+        "open source"
+      ],
+      "summary": "A multi-language library for Mexican fiscal validation, tax catalog (CFDI), and daily Banxico exchange rate updates. Distributed via GitHub Releases across 11+ organizations.",
+      "highlights": [
+        "Supports multiple programming languages for Mexican fiscal compliance (catalogos del SAT).",
+        "Daily Banxico exchange rate integration for accurate FX in invoicing.",
+        "Distributed as versioned GitHub Releases for easy CI/CD integration.",
+        "Used across 11+ GitHub organizations for consistent fiscal data."
+      ]
+    },
+    {
+      "name": "scoragora",
+      "entity": "informind",
+      "type": "Web Application",
+      "description": "Collaborative scoring and decision-making platform",
+      "startDate": "2025-06-01",
+      "roles": ["Creator", "Full-Stack Developer"],
+      "keywords": [
+        "SvelteKit",
+        "Cloudflare Workers",
+        "PostgreSQL",
+        "OAuth",
+        "D1",
+        "edge compute"
+      ],
+      "summary": "A collaborative platform for scoring and structured decision-making, built on SvelteKit and Cloudflare Workers with edge database (D1) and OAuth integration.",
+      "highlights": [
+        "Built with SvelteKit deployed on Cloudflare Workers for global edge performance.",
+        "OAuth-based authentication with multiple providers (Google, Apple).",
+        "Serverless PostgreSQL (D1) for structured data persistence."
+      ]
+    },
+    {
+      "name": "psiconaos",
+      "entity": "informind",
+      "type": "Personal Knowledge Platform",
+      "description": "AI-augmented knowledge galaxy",
+      "startDate": "2025-09-01",
+      "roles": ["Creator", "Architect"],
+      "keywords": [
+        "Hermes Agent",
+        "Cloudflare Workers",
+        "AI agents",
+        "knowledge management",
+        "RAG",
+        "Celery"
+      ],
+      "summary": "A personal knowledge galaxy platform integrating Hermes Agent with Cloudflare Workers, AI agents, and structured reasoning pipelines for knowledge management and automation.",
+      "highlights": [
+        "Integrates AI agents (Hermes, Codex) with Cloudflare Workers for autonomous task execution.",
+        "RAG-based knowledge retrieval across personal notes, blog (243 posts), and research materials.",
+        "Multi-agent orchestration for complex workflows (Celery + Redis + K8s)."
+      ]
+    },
+    {
       "name": "Treasury API",
       "entity": "Banco Covalto",
       "type": "Banking API",
-      "description": "Treasury API to expose movements to bank customers",
+      "description": "Real-time treasury movements API",
       "startDate": "2024-02-01",
       "endDate": "2024-03-15",
-      "roles": [
-        "Product Designer",
-        "Architect",
-        "Manager"
-      ],
+      "roles": ["Product Designer", "Architect", "Manager"],
       "keywords": [
-        "kafka",
-        "django",
+        "Kafka",
+        "Django",
         "accounting",
-        "reconciliation systems",
-        "product design",
+        "reconciliation",
         "webhooks",
-        "customer requirements",
-        "auth0",
-        "regulations & compliance"
+        "Auth0",
+        "Open Banking",
+        "compliance"
       ],
-      "summary": "Real-time bank account movement queries via REST API or Webhook. Integrated with financial core vía Kafka and services",
+      "summary": "Real-time bank account movement queries via REST API or Webhook, integrated with the financial core via Kafka and services. First step in Covalto's Open Banking initiative.",
       "highlights": [
-        "Proposed, designed, gathered requirements with potential customers, planned, and led the project for real-time bank account movement queries via REST or Webhook.",
-        "Designed the project as a first step in an Open Banking initiative for Covalto."
+        "Proposed, designed, gathered customer requirements, planned, and led the project.",
+        "Integrated security and compliance requirements from the start."
       ]
     },
     {
@@ -397,92 +429,71 @@
       "description": "Electronic Signature System",
       "startDate": "2023-04-10",
       "endDate": "2024-03-15",
-      "roles": [
-        "Python Developer",
-        "Frontend Developer",
-        "Manager"
-      ],
+      "roles": ["Python Developer", "Frontend Developer", "Manager"],
       "keywords": [
-        "Fastapi",
+        "FastAPI",
         "PostgreSQL",
+        "Tortoise ORM",
         "Mifiel",
-        "Web development",
-        "TortoiseORM",
-        "e.signature",
         "blockchain",
         "AWS",
-        "google cloud",
-        "kubernetes"
+        "Google Cloud",
+        "Kubernetes",
+        "e.signature"
       ],
-      "summary": "A monolith of services to gather documents for signature, integrate with salesforce and other systems and allow the signature of documents with a mexican electronic fiscal signature.",
+      "summary": "A monolith of services for document signature with Mexican electronic fiscal signature (e.firma), integrated with Salesforce and other banking systems.",
       "highlights": [
-        "Allows customers to sign legal documents without the need of a physical presence using e.firma and Mifiel Services, without sending documents outside the bank archives",
-        "Allows the signature of endosable promissory notes with Mifiel blockchain.",
-        "Using FastAPI to create many micro frontends in a same codebase, including APIs to create frontends in React and integrations with other systems such as Salesforce.",
-        "Integrated using Covalto's standard infra in GCP and AWS.",
-        "Archive using S3/GCS cloud storage. Indexed in PostgreSQL database",
-        "Microservice to provide documents based on templates filled with an API Request. Document Management System",
-        "After designing the project, successfully inherited the project to a programmer and just managed, reviewed the code, and gather specifications from the business team to improve it."
+        "Enables remote signing of legal documents using e.firma and Mifiel, without physical presence.",
+        "Supports endorsement of promissory notes via Mifiel blockchain.",
+        "FastAPI-based with multiple micro frontends (React) and Salesforce integrations."
       ]
     },
     {
       "name": "Pennyworth",
       "entity": "Covalto, Inc.",
-      "type": "Financial Math/Accounting Library",
-      "roles": [
-        "Designer",
-        "Python Developer"
-      ],
+      "type": "Financial Math / Accounting Library",
+      "roles": ["Designer", "Python Developer"],
       "startDate": "2022-01-01",
       "endDate": "2022-12-31",
-      "description": "A full-fledged multipurpose financial and accounting library.",
+      "description": "Multi-purpose financial and accounting library",
       "keywords": [
-        "Business Data",
         "Financial Math",
         "Accounting",
-        "Financial libraries",
+        "amortization tables",
+        "cash flows",
         "dataclasses",
         "pandas",
-        "jupyter"
+        "Jupyter"
       ],
       "highlights": [
-        "A library with modules to calculate interest, work with cashflows and time value, handle payments,  keep accounting, and calculate and solve amortization tables (schedules).",
-        "Calculator: A module to calculate amortization tables given some parameters as interest rate, principal, duration, etc.",
-        "Table Module: A Schedule table object to make calculations. Works dynamically ordering calculations as a linked list with caches since records depended on previous record values. Can do operations on it as tables' addition and subtractions, table splits into many tables (for multiloan or complex tables), final payment adjustments, discount ious on time value, and roundings and adjustments.",
-        "Solver: A solver working on the table module trying to imitate the GoalSeek module in Excel to change a value until getting another expected one as close as possible. Used to adjust interest rate to different method calculations, until getting zero in balance.",
-        "Contract module: An abstraction to handle the Credit Contracts. Using a Contract-Version-Loan structure that contained all the information that the contract could have as: IOUs, Payments, Advance Payments, Restructures, Write-offs, Charges. Used as interchange format in business.",
-        "Kardex: A system to generate an Account Statement based on the Contract Structure and applying it to get the correct balance per different scopes such as loan, date, iou, version.",
-        "Using numpy_financial, dataclasses, pandas, jupyter."
+        "Modules for interest calculation, cash flow time value, payment handling, accounting, and amortization schedules.",
+        "Dynamic table module with linked-list caching, table addition/subtraction, splits, and rounding operations.",
+        "GoalSeek-style solver for interest rate adjustments and balance zeroing.",
+        "Contract-Version-Loan abstraction for credit contracts with IOUs, payments, restructures, and write-offs."
       ]
     },
     {
       "name": "Kardex",
       "entity": "Credijusto & Covalto, Inc.",
       "type": "Loan Accounting System",
-      "roles": [
-        "Designer",
-        "Python Developer"
-      ],
+      "roles": ["Designer", "Python Developer"],
       "startDate": "2020-08-15",
       "endDate": "2022-12-31",
-      "description": "A system designed to make calculations on loans",
+      "description": "Transactional loan accounting system",
       "keywords": [
-        "business data",
         "SQLAlchemy",
         "Financial Math",
         "Accounting",
         "dataclasses",
         "pandas",
-        "jupyter",
-        "sqlite3"
+        "Jupyter",
+        "SQLite"
       ],
       "highlights": [
-        "Problem: Credijusto Loan Management system is a non-transactional system that registers balances instead of transactions.",
-        "Main goal is to create a data structure that allows getting the different balances for each loan at any point of time aggregating all the transactions up to that day.",
-        "Connect to the existing systems, Loan Management System and CRM, to gathered existing data and convert it to transactions.",
-        "Using the data from those transactions calculate the regular interest, moratory interest, penalties, fees and balances in time using different algorithms of calculation depending on rules for products while maintaining accounting consistency, and using debits and credits.",
-        "Develop connectors that allow us to fetch information from different sources and convert data to transactions",
-        "Develop an accesible SQLAlchemy Python API to allow easy reporting."
+        "Created a transaction-based data structure replacing a non-transactional balance-only system.",
+        "Calculates regular interest, moratory interest, penalties, and fees using product-specific algorithms with accounting consistency (debits and credits).",
+        "Connectors to fetch data from multiple sources and convert to transactions.",
+        "Accessible SQLAlchemy Python API for easy reporting."
       ]
     },
     {
@@ -490,74 +501,27 @@
       "type": "Personal Project",
       "description": "Curriculum Vitae Production System",
       "startDate": "2018-12-17",
-      "summary": "A system that builds a Github page with my CV, including a PDF.",
+      "summary": "A system that builds a GitHub Pages site with my CV, including a PDF.",
       "url": "https://github.com/luisfernandobarrera/resume",
       "highlights": [
-        "Using resume.json format as the basis for storing the CV data.",
-        "Using jinja2 as template format.",
-        "Using SASS with a stylesheet that formats the template for screen and print media."
+        "JSON Resume format as the canonical data source.",
+        "Jinja2 templating with SASS stylesheet optimized for screen and print.",
+        "Flask + Frozen Flask static site generation for GitHub Pages deployment."
       ]
-    },
-    {
-      "name": "Pergamum",
-      "entity": "Letras Libres",
-      "type": "Custom Application",
-      "description": "Document Management System",
-      "startDate": "2016-12-01",
-      "endDate": "2018-07-01",
-      "roles": [
-        "Python Developer",
-        "Frontend Developer",
-        "Deployment and Maintenance"
-      ],
-      "keywords": [
-        "Django",
-        "PostgreSQL",
-        "Apache Tika",
-        "Apache Solr",
-        "Bootstrap"
-      ],
-      "summary": "Search and manage a document database to mine content and cross-reference documents with scrapers to fetch and add new data from news data sources.",
-      "highlights": [
-        "Using Django and Bootstrap to create an Admin View for users.",
-        "Using Apache Tika to fetch metadata.",
-        "Using Solr as Search Backend.",
-        "Deployed on AWS using ECR and CodeShip.",
-        "Code available for review."
-      ],
-      "hide": true
     },
     {
       "name": "Experos",
       "entity": "Nextor Telecom",
       "type": "ERP",
-      "roles": [
-        "Backend Developer",
-        "Frontend Engineer",
-        "Project Owner and Manager"
-      ],
+      "roles": ["Backend Developer", "Frontend Engineer", "Project Owner and Manager"],
       "startDate": "2015-03-01",
       "endDate": "2017-01-15",
       "description": "Custom ERP with Accounting Functionality",
       "highlights": [
-        "A micro-ERP with Invoicing, Purchases, Accounts Payable and Receivable capabilities to manage the company and automate processes, and eventually to merchandise it.",
-        "Using Django-PostgreSQL, APIs and Knockout for developing mockups and allow frontend engineers to easily integrate it into a previously developed mocked up interface.",
-        "Backend: Django, PostgreSQL, Django REST Framework  APIs. M2Crypto, tablib, XML.",
-        "Frontend: Knockout.js, Django.js. Bootstrap, React, Redux.",
-        "Integrations with Mexican Electronic Invoicing, Electronic Accounting and various banks and payment systems"
+        "Micro-ERP with invoicing, purchases, AP/AR capabilities to manage company operations.",
+        "Django-PostgreSQL backend with REST APIs, Knockout.js/Bootstrap/React frontend.",
+        "Integrations with Mexican electronic invoicing, electronic accounting, and bank payment systems."
       ]
-    },
-    {
-      "name": "coringa",
-      "type": "Personal Project",
-      "description": "Expense manager",
-      "url": "https://github.com/luisfernandobarrera/coringa",
-      "highlights": [
-        "An API to store Expenses and Income, Budgeting, Cash Flow and Reporting.",
-        "By the moment only with a Backend.",
-        "Exporting and importing from proprietary system YNAB4."
-      ],
-      "hide": true
     }
   ],
   "education": [
@@ -597,9 +561,9 @@
     "canonical": "https://github.com/luisfernandobarrera/resume",
     "display": "https://cv.luisfernandobarrera.com",
     "gh-pages-domain": "cv.luisfernandobarrera.com",
-    "version": "v0.7.0",
-    "lastModified": "2025-11-07T12:06:00-06:00",
+    "version": "v0.8.0",
+    "lastModified": "2026-06-03T12:00:00-06:00",
     "theme": "spartan",
-    "notes": ""
+    "notes": "Updated: added Sitespay (current), informind revived, openbancor, scoragora, psiconaos projects. Restructured skills with AI/Agentic focus."
   }
 }
