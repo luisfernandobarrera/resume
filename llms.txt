@@ -1,0 +1,41 @@
+# Luis Fernando Barrera — CV
+
+> Software Engineering Manager | AI-Augmented Development | Payments, Finance & Accounting Platforms
+
+## About this repository
+
+This is a Curriculum Vitae production system. The canonical content lives in `luisfernandobarrera.resume.json` (JSON Resume format). The site is generated with Flask + Jinja2 + Frozen Flask as static HTML and deployed to GitHub Pages.
+
+## Quick links
+
+- **Live CV**: https://cv.luisfernandobarrera.com
+- **JSON data**: `luisfernandobarrera.resume.json`
+- **Templates**: `templates/cv.html`, `templates/cv-columns.html`
+- **Styles**: `templates/sass/style.sass`
+- **PDF**: `docs/resume.pdf` (generated externally)
+- **AGENTS.md** includes human+AI collaboration rules
+
+## Key structure
+
+- `luisfernandobarrera.resume.json` — all CV data (basics, work, projects, skills, education, languages)
+- `app.py` — Flask application serving the CV
+- `gen_static.py` — Frozen Flask static site generator
+- `templates/` — Jinja2 HTML templates (cv.html, cv-columns.html, print-cv.html, base.html)
+- `docs/` — generated static site output (GitHub Pages root)
+- `pyproject.toml` — Python dependencies (Flask, Frozen-Flask, libsass, WeasyPrint)
+
+## Tech stack
+
+- Python (Flask, Frozen-Flask)
+- Jinja2 templating
+- SASS (libsass)
+- JSON Resume format
+- WeasyPrint for PDF generation
+
+## Editing conventions
+
+See `AGENTS.md` for full collaboration rules. Key points:
+- `luisfernandobarrera.resume.json` is the source of truth
+- Use past tense for completed roles, present for current
+- Lead highlights with outcomes/impact
+- Small, focused edits preferred
