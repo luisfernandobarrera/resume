@@ -6,6 +6,7 @@ This repository is maintained collaboratively by humans and AI coding assistants
 - `luisfernandobarrera.resume.json` is the canonical CV content.
 - `docs/resume.pdf` is generated externally (Google Docs). Do not overwrite it in automation.
 - The site is served by `app.py`; HTML is in `templates/` and styles compiled from `templates/sass/style.sass`.
+- `llms.txt` provides LLM context about this repo. Keep it in sync with structural changes.
 
 ### Editing Rules
 - Prefer small, focused edits.

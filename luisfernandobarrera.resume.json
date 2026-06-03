@@ -42,9 +42,10 @@
         "AI-augmented engineering",
         "agentic programming",
         "AI agent orchestration",
+        "multi-agent systems",
         "AI coding assistants (Cursor, Claude, Gemini)",
         "workflow automation with agents",
-        "developer productivity via AI"
+        "developer transition to AI workflows"
       ]
     },
     {
@@ -166,7 +167,7 @@
     {
       "company": "Sitespay",
       "description": "Payments and Financial Technology Platform",
-      "position": "Software Development Manager — AI Agents",
+      "position": "Software Engineering Manager — AI-Driven Development",
       "location": "Remote and Mexico City",
       "startDate": "2025-12-15",
       "url": "https://sitespay.com",
@@ -186,7 +187,7 @@
       "position": "Founder — AI-Driven Development & Consulting",
       "location": "Remote and Mexico City",
       "startDate": "2025-09-15",
-      "url": "https://informind.com",
+      "url": "",
       "summary": "Revived informind as a vehicle for personal and client projects leveraging AI-augmented engineering, multi-language polyglot development, and financial domain expertise.",
       "highlights": [
         "Developing openbancor (catalogmx): a multi-language library for Mexican fiscal validation with daily Banxico exchange rate updates, distributed via GitHub Releases.",
