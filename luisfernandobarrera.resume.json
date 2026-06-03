@@ -15,10 +15,10 @@
     "summary": "Software Engineering Manager leading AI-agent-driven development teams. Building payments, finance, and accounting platforms on Kubernetes and Cloudflare. Passionate about transitioning traditional developers into product-minded software engineers through agentic programming workflows and AI-augmented delivery.",
     "about": [
       "I build software the way a craftsman builds furniture — with curiosity, care, and the belief that quality is not a metric but a way of life. For 15 years I've followed the same thread: understanding how money moves, how businesses work, how data tells stories. From ERPs to electronic invoicing, from banking migrations to AI-augmented engineering — the drive has always been the same: see the need, understand the system, and build something beautiful that works.",
-      "I lead engineering teams the same way. Not by assigning tickets, but by fostering curiosity — teaching developers the 'why' behind the code. At Sitespay my team learned double-entry accounting to build payment platforms; at Covalto they learned financial math to migrate $100M+ in loans. Because when people understand the domain, they build better software. And when they use AI agents, they build it faster.",
-      "AI didn't change what I do — it amplified it. I've been building financial systems, tax compliance libraries, and data pipelines for over a decade. Now I do it with agents, and I help my teams do the same. Scoragora, psiconaos, openbancor — these are not side projects. They are the same thread, woven in public.",
-      "I am a polyglot programmer (TypeScript, Python, Kotlin, Flutter), a manager who codes alongside his team, and a lifelong student of how money, data, and technology intersect. I speak Spanish, English, and Portuguese — and I have kept a personal ledger for 10 years. Because if you're going to build financial systems, you should understand the numbers yourself.",
-      "If your project involves symbols like '$¢£€¥%' or you're curious about how AI agents can transform a team without breaking the bank — let's talk."
+      "Today I lead engineering teams where AI agents amplify human potential — not replace it. Multiple models (Kimi, Gemini, GLM, Codex) review each other's code while developers focus on what matters: designing tests, shaping products, and understanding the domain. Double-entry accounting isn't just a business rule — it's our quality gate: if it doesn't balance, it doesn't ship. We test at every level (unit, smoke, integration, E2E) and aim for 100% coverage unless justified otherwise.",
+      "But code coverage is not the goal. The goal is a product people use and enjoy. ControlERP.mx — an accounting and payroll ERP with real clients — was delivered in under 3 months with agentic programming. Not because we cut corners, but because we thought deeply about what to build before building it. Despacio, que voy de prisa.",
+      "I hire for curiosity and enthusiasm over credentials. I teach double-entry accounting to engineers, financial math to developers, and the craft of software to everyone. I lead by coding alongside the team, feeling their pain, and building processes that make quality inevitable. And sometimes I send people home to rest — because creativity needs silence, not overtime.",
+      "I am a polyglot programmer (TypeScript, Python, Kotlin, Flutter), a manager who codes, and a lifelong student of how money, data, and technology intersect. I speak Spanish, English, and Portuguese — and I have kept a personal ledger for 10 years. If your project involves symbols like '$¢£€¥%', let's talk."
     ],
     "profiles": [
       {
@@ -165,8 +165,9 @@
       "summary": "Leading a multi-disciplinary engineering team building payment, finance, and accounting platforms with AI-agent-driven development. Transitioning developers from traditional roles to AI-augmented product and software engineers.",
       "highlights": [
         "Lideré un equipo de 6 ingenieros en la entrega de sistemas de contabilidad y pagos, estableciendo una cultura de desarrollo aumentado por agentes de IA — pasando de features de semanas a features de días sin sacrificar calidad en productos financieros regulados.",
+        "Entregué **ControlERP.mx** — un ERP contable y de nóminas con clientes reales y facturación — en menos de 3 meses (lo que normalmente toma 12) usando Django + TypeScript/React con programación agéntica.",
         "Entrené al equipo en contabilidad de partida doble, cores bancarios y plataformas de pagos — transformando ingenieros sin background financiero en constructores de sistemas bancarios confiables.",
-        "Implementé infraestructura DevOps y procesos de desarrollo para productos regulados con alta confiabilidad financiera, controlando presupuestos y resultados con tolerancia cero a errores.",
+        "Implementé un proceso de calidad multi-agente: Kimi, Gemini, GLM, Codex y otros modelos revisan el código de la IA mientras los developers diseñan pruebas unitarias, smoke, integración y funcionales. La partida doble es la verificación contable fundamental — si no cuadra, no funciona.",
         "Arquitecté plataformas multi-servicio con TypeScript, Kotlin, Flutter y Python, usando PostgreSQL y SQLite como capa de datos sobre Kubernetes y Cloudflare.",
         "Diseñé un modelo de productividad con IA que maximiza resultados controlando costos — multiplicando la velocidad del equipo sin perder calidad, en una empresa pequeña con recursos limitados.",
         "Integré sistemas de pagos, cumplimiento fiscal (CFDI) y módulos contables en una plataforma financiera cohesiva."
@@ -388,6 +389,32 @@
         "Integrates AI agents (Hermes, Codex) with Cloudflare Workers for autonomous task execution.",
         "RAG-based knowledge retrieval across personal notes, blog (243 posts), and research materials.",
         "Multi-agent orchestration for complex workflows (Celery + Redis + K8s)."
+      ]
+    },
+    {
+      "name": "ControlERP.mx",
+      "entity": "Sitespay",
+      "type": "ERP Contable",
+      "description": "Contabilidad, nóminas y control de efectivo",
+      "url": "https://controlerp.mx",
+      "startDate": "2026-01-01",
+      "roles": ["Engineering Manager", "Arquitecto", "Developer"],
+      "keywords": [
+        "Django",
+        "TypeScript",
+        "React",
+        "contabilidad",
+        "nóminas",
+        "CFDI",
+        "SPEI",
+        "partida doble",
+        "programación agéntica"
+      ],
+      "summary": "ERP contable completo con dispersión de nóminas y control de efectivo. Entregado en menos de 3 meses con programación agéntica — lo que normalmente toma 12 meses. Con clientes reales y facturación desde el primer mes.",
+      "highlights": [
+        "Desarrollado con Django + TypeScript/React, usando agentes de IA como fuerza productiva principal.",
+        "Resuelve necesidades reales de clientes: dispersión de nóminas vía SPEI, control de efectivo, contabilidad de partida doble.",
+        "CFDI de nómina y facturación electrónica integrados desde el día uno."
       ]
     },
     {
