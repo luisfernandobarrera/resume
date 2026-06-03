@@ -36,20 +36,7 @@
   },
   "skills": [
     {
-      "name": "AI & Agentic Development",
-      "level": "Expert",
-      "keywords": [
-        "AI-augmented engineering",
-        "agentic programming",
-        "AI agent orchestration",
-        "multi-agent systems",
-        "AI coding assistants (Cursor, Claude, Gemini)",
-        "workflow automation with agents",
-        "developer transition to AI workflows"
-      ]
-    },
-    {
-      "name": "Full-Stack Development",
+      "name": "Python & Full-Stack Development",
       "level": "Expert",
       "keywords": [
         "TypeScript",
@@ -58,31 +45,40 @@
         "Flutter",
         "Django",
         "FastAPI",
+        "Flask",
+        "Django REST Framework",
         "React",
         "HTMX",
         "Vue.js",
         "REST API",
-        "GraphQL"
+        "GraphQL",
+        "SASS"
       ]
     },
     {
-      "name": "Databases & Data",
+      "name": "Python Data Programming",
       "level": "Expert",
       "keywords": [
+        "pandas",
+        "dataclasses",
+        "numpy",
+        "SQLAlchemy",
+        "advanced SQL",
         "PostgreSQL",
         "SQLite",
         "Datomic",
-        "advanced SQL",
-        "SQLAlchemy",
-        "pandas",
         "data pipelines",
         "financial data modeling"
       ]
     },
     {
-      "name": "Infrastructure & DevOps",
+      "name": "Tools",
       "level": "Advanced",
       "keywords": [
+        "AI-Agentic Programming",
+        "AI agent orchestration",
+        "multi-agent systems",
+        "AI coding assistants (Cursor, Claude, Gemini)",
         "Kubernetes",
         "Terraform",
         "Cloudflare Workers",
@@ -99,16 +95,19 @@
       "keywords": [
         "team building",
         "developer transition to AI workflows",
+        "AI-augmented engineering",
+        "workflow automation with agents",
         "OKRs and KPIs",
         "mentoring",
         "agile methodologies",
         "product requirements",
         "software architecture & design",
-        "project management"
+        "project management",
+        "multi-agent orchestration"
       ]
     },
     {
-      "name": "Business & Finance",
+      "name": "Business",
       "keywords": [
         "accounting",
         "finance",
@@ -119,15 +118,8 @@
         "ERP",
         "CRM",
         "tax compliance",
-        "banking operations (SPEI, PIX, ACH, PSE)"
-      ]
-    },
-    {
-      "name": "Languages",
-      "keywords": [
-        "Spanish (native)",
-        "English (C1)",
-        "Portuguese (C1)"
+        "banking operations (SPEI, PIX, ACH, PSE)",
+        "Open Banking"
       ]
     }
   ],
