@@ -165,7 +165,7 @@
       "summary": "Leading a multi-disciplinary engineering team building payment, finance, and accounting platforms with AI-agent-driven development. Transitioning developers from traditional roles to AI-augmented product and software engineers.",
       "highlights": [
         "Lideré un equipo de 6 ingenieros en la entrega de sistemas de contabilidad y pagos, estableciendo una cultura de desarrollo aumentado por agentes de IA — pasando de features de semanas a features de días sin sacrificar calidad en productos financieros regulados.",
-        "Entregué **ControlERP.mx** — un ERP contable y de nóminas con clientes reales y facturación — en menos de 3 meses (lo que normalmente toma 12) usando Django + TypeScript/React con programación agéntica.",
+        "Entregué **ControlERP.mx** — un sistema de pagaduría con control de partida doble, dispersión SPEI, recibos QR y CFDI de nómina — con clientes reales, en 2.5 meses usando programación agéntica con Django + TypeScript/React.",
         "Entrené al equipo en contabilidad de partida doble, cores bancarios y plataformas de pagos — transformando ingenieros sin background financiero en constructores de sistemas bancarios confiables.",
         "Implementé un proceso de calidad multi-agente: Kimi, Gemini, GLM, Codex y otros modelos revisan el código de la IA mientras los developers diseñan pruebas unitarias, smoke, integración y funcionales. La partida doble es la verificación contable fundamental — si no cuadra, no funciona.",
         "Arquitecté plataformas multi-servicio con TypeScript, Kotlin, Flutter y Python, usando PostgreSQL y SQLite como capa de datos sobre Kubernetes y Cloudflare.",
@@ -394,27 +394,30 @@
     {
       "name": "ControlERP.mx",
       "entity": "Sitespay",
-      "type": "ERP Contable",
-      "description": "Contabilidad, nóminas y control de efectivo",
+      "type": "ERP de Pagaduría",
+      "description": "Sistema de pagaduría, nóminas y control de efectivo",
       "url": "https://controlerp.mx",
       "startDate": "2026-01-01",
-      "roles": ["Engineering Manager", "Arquitecto", "Developer"],
+      "roles": ["Engineering Manager", "Arquitecto", "Lead Developer"],
       "keywords": [
         "Django",
         "TypeScript",
         "React",
         "contabilidad",
+        "partida doble",
         "nóminas",
         "CFDI",
         "SPEI",
-        "partida doble",
+        "control de efectivo",
+        "QR",
         "programación agéntica"
       ],
-      "summary": "ERP contable completo con dispersión de nóminas y control de efectivo. Entregado en menos de 3 meses con programación agéntica — lo que normalmente toma 12 meses. Con clientes reales y facturación desde el primer mes.",
+      "summary": "Sistema de pagaduría para empresas que dispersan efectivo: control de partida doble de cuentas por pagar, dispersión vía SPEI (Sitespay/ASP), recibos de nómina con QR y CFDI de nómina integrado. Entregado en 2.5 meses con programación agéntica.",
       "highlights": [
-        "Desarrollado con Django + TypeScript/React, usando agentes de IA como fuerza productiva principal.",
-        "Resuelve necesidades reales de clientes: dispersión de nóminas vía SPEI, control de efectivo, contabilidad de partida doble.",
-        "CFDI de nómina y facturación electrónica integrados desde el día uno."
+        "Construido como ingeniero principal usando programación agéntica con Django + TypeScript/React.",
+        "Resuelve el ciclo completo de pagaduría: a quién le debemos (partida doble) → a quién le pagamos (dispersión SPEI) → control de efectivo con recibos QR → CFDI de nómina.",
+        "Conectado al API de Sitespay para dispersión de pagos.",
+        "Entregado en 2.5 meses; posteriormente delegado a un desarrollador junior que onboardeó gracias a los conceptos de partida doble ya establecidos."
       ]
     },
     {
