@@ -14,12 +14,11 @@
     },
     "summary": "Software Engineering Manager leading AI-agent-driven development teams. Building payments, finance, and accounting platforms on Kubernetes and Cloudflare. Passionate about transitioning traditional developers into product-minded software engineers through agentic programming workflows and AI-augmented delivery.",
     "about": [
-      "Software Engineering Manager with a track record building and leading AI-augmented engineering teams that deliver payments, finance, and accounting platforms at scale. Expert in TypeScript, Kotlin, Flutter, and Python — architecting full-stack systems on Kubernetes and Cloudflare while adopting agentic programming as a core delivery methodology.",
-      "I lead teams through the transition from traditional development to AI-augmented software engineering: transforming developers into product-minded engineers who ship faster with agents, without losing craft. I build the culture, the tooling, and the architecture that makes this work.",
-      "I have a strong drive for building software, leading teams, structuring chaos, organizing complexity. I achieve team objectives by fostering discussions to deeply understand problems and tackle them with a practical, hands-on approach — engaging in coding and problem-solving alongside the team. I focus on collective success and foster a collaborative environment.",
-      "Deep expertise in payments systems, financial math, accounting, tax compliance (CFDI), and banking operations across Mexico, Brazil, and Colombia. I translate business and regulatory requirements into robust architectures and deliver reliable software at scale.",
-      "Hopelessly curious and eclectic. I maintain multiple open-source projects (openbancor, scoragora, psiconaos) and have kept a personal ledger for 10+ years. I practice Getting Things Done (GTD) and mindfulness to stay clear under pressure.",
-      "If your data involves symbols like '$¢£€¥%' or you're building the next generation of AI-augmented engineering teams, we should talk."
+      "I build software the way a craftsman builds furniture — with curiosity, care, and the belief that quality is not a metric but a way of life. For 15 years I've followed the same thread: understanding how money moves, how businesses work, how data tells stories. From ERPs to electronic invoicing, from banking migrations to AI-augmented engineering — the drive has always been the same: see the need, understand the system, and build something beautiful that works.",
+      "I lead engineering teams the same way. Not by assigning tickets, but by fostering curiosity — teaching developers the 'why' behind the code. At Sitespay my team learned double-entry accounting to build payment platforms; at Covalto they learned financial math to migrate $100M+ in loans. Because when people understand the domain, they build better software. And when they use AI agents, they build it faster.",
+      "AI didn't change what I do — it amplified it. I've been building financial systems, tax compliance libraries, and data pipelines for over a decade. Now I do it with agents, and I help my teams do the same. Scoragora, psiconaos, openbancor — these are not side projects. They are the same thread, woven in public.",
+      "I am a polyglot programmer (TypeScript, Python, Kotlin, Flutter), a manager who codes alongside his team, and a lifelong student of how money, data, and technology intersect. I speak Spanish, English, and Portuguese — and I have kept a personal ledger for 10 years. Because if you're going to build financial systems, you should understand the numbers yourself.",
+      "If your project involves symbols like '$¢£€¥%' or you're curious about how AI agents can transform a team without breaking the bank — let's talk."
     ],
     "profiles": [
       {
@@ -165,12 +164,12 @@
       "url": "https://sitespay.com",
       "summary": "Leading a multi-disciplinary engineering team building payment, finance, and accounting platforms with AI-agent-driven development. Transitioning developers from traditional roles to AI-augmented product and software engineers.",
       "highlights": [
-        "Leading a team of engineers adopting agentic programming as the primary delivery methodology — building payment and financial platforms using AI-augmented workflows.",
-        "Designing and delivering platform architecture on Kubernetes and Cloudflare, integrating payment processing, accounting ledgers, and financial data pipelines.",
-        "Transitioning developers into product-minded software engineers: pairing traditional engineering skills with AI-agent workflows to increase delivery velocity and code quality.",
-        "Architecting multi-service platforms using TypeScript, Kotlin, Flutter, and Python with PostgreSQL and SQLite at the data layer.",
-        "Managing infrastructure with Kubernetes and Terraform, leveraging Cloudflare Workers for edge compute and API gateway patterns.",
-        "Integrating payment systems, tax compliance (CFDI), and accounting modules into a cohesive financial platform."
+        "Lideré un equipo de 6 ingenieros en la entrega de sistemas de contabilidad y pagos, estableciendo una cultura de desarrollo aumentado por agentes de IA — pasando de features de semanas a features de días sin sacrificar calidad en productos financieros regulados.",
+        "Entrené al equipo en contabilidad de partida doble, cores bancarios y plataformas de pagos — transformando ingenieros sin background financiero en constructores de sistemas bancarios confiables.",
+        "Implementé infraestructura DevOps y procesos de desarrollo para productos regulados con alta confiabilidad financiera, controlando presupuestos y resultados con tolerancia cero a errores.",
+        "Arquitecté plataformas multi-servicio con TypeScript, Kotlin, Flutter y Python, usando PostgreSQL y SQLite como capa de datos sobre Kubernetes y Cloudflare.",
+        "Diseñé un modelo de productividad con IA que maximiza resultados controlando costos — multiplicando la velocidad del equipo sin perder calidad, en una empresa pequeña con recursos limitados.",
+        "Integré sistemas de pagos, cumplimiento fiscal (CFDI) y módulos contables en una plataforma financiera cohesiva."
       ]
     },
     {
