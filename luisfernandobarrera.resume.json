@@ -118,7 +118,9 @@
         "CRM",
         "tax compliance",
         "banking operations (SPEI, PIX, ACH, PSE)",
-        "Open Banking"
+        "Open Banking",
+        "BIAN (Banking Industry Architecture Network)",
+        "core banking architecture"
       ]
     }
   ],
@@ -165,7 +167,7 @@
       "summary": "Leading a multi-disciplinary engineering team building payment, finance, and accounting platforms with AI-agent-driven development. Transitioning developers from traditional roles to AI-augmented product and software engineers.",
       "highlights": [
         "Lideré un equipo de 6 ingenieros en la entrega de sistemas de contabilidad y pagos, estableciendo una cultura de desarrollo aumentado por agentes de IA — pasando de features de semanas a features de días sin sacrificar calidad en productos financieros regulados.",
-        "Construyo el **core ledger** de Sitespay en Kotlin, TypeScript y Python — un sistema contable transaccional que es el corazón de la infraestructura financiera, continuando 15 años construyendo sistemas de ledger (Pennyworth, Kardex, Treasury API).",
+        "Construyo el **core ledger** de Sitespay — mi propio framework de contabilidad basado en BIAN — en Kotlin, TypeScript y Python. Un sistema contable transaccional que es el corazón de la infraestructura financiera, continuando 15 años construyendo sistemas de ledger (Pennyworth, Kardex, Treasury API).",
         "Entregué **ControlERP.mx** — un sistema de pagaduría con control de partida doble, dispersión SPEI, recibos QR y CFDI de nómina — con clientes reales, en 2.5 meses usando programación agéntica con Django + TypeScript/React.",
         "Entrené al equipo en contabilidad de partida doble, cores bancarios y plataformas de pagos — transformando ingenieros sin background financiero en constructores de sistemas bancarios confiables.",
         "Implementé un proceso de calidad multi-agente: Kimi, Gemini, GLM, Codex y otros modelos revisan el código de la IA mientras los developers diseñan pruebas unitarias, smoke, integración y funcionales. La partida doble es la verificación contable fundamental — si no cuadra, no funciona.",
