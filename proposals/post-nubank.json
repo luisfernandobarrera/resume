@@ -1,0 +1,124 @@
+[
+  {
+    "op": "test",
+    "path": "/work/0/company",
+    "value": "Nubank"
+  },
+  {
+    "op": "test",
+    "path": "/work/0/endDate",
+    "value": "2025-09-12"
+  },
+  {
+    "op": "replace",
+    "path": "/basics/label",
+    "value": "Systems Architecture & Hands-on Engineering Leadership"
+  },
+  {
+    "op": "replace",
+    "path": "/basics/specialty",
+    "value": "Financial & Business Systems | Accounting, Payments, Data & Platforms"
+  },
+  {
+    "op": "replace",
+    "path": "/basics/summary",
+    "value": "Software engineer and technical leader with experience across ERP, data platforms, lending, banking and payments. I combine hands-on development, domain modeling, architecture and engineering management to connect business rules with reliable, testable systems designed to evolve. My current work includes financial-platform development and engineering workflows for collaboration between people and AI-assisted tools."
+  },
+  {
+    "op": "replace",
+    "path": "/basics/about",
+    "value": [
+      "I am a hands-on software engineer and technical leader with experience in ERP, data, lending, banking and payment-related systems. I connect accounting and financial domain knowledge with architecture, implementation, product decisions and operations.",
+      "My approach is that of a systems generalist: understand how a problem works, connect the relevant perspectives and develop deeper expertise where the work requires it. Finance is a strong foundation of my experience, not a restriction to one industry.",
+      "I document an initial model, build to discover what is missing, and use representative and adverse cases to revise both the software and the specification. I design for reliability and expected change rather than treating the first delivery as the only measure of success.",
+      "I remain involved in code while working with engineers, product and operations. My current work also includes specifications, review, testing and reproducible development workflows for human and AI-assisted contributions."
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/work/0/summary",
+    "value": "Worked on Money-In experiences and transfer-visibility tools for Brazil, Mexico and Colombia, using Clojure, Datomic, GraphQL and microservice integrations."
+  },
+  {
+    "op": "replace",
+    "path": "/work/0/highlights",
+    "value": [
+      "Developed customer-facing Money-In features in a full-stack environment using Clojure and Nubank's internal application framework.",
+      "Applied knowledge of payment systems in Brazil, Colombia and Mexico to investigate and implement transfer-related behavior.",
+      "Delivered transfer-visibility tools for customer support in Colombia and Mexico, integrating React and Clojure with GraphQL and internal microservices.",
+      "Used Grafana and other internal tools for service observability and debugging; created documentation to understand platform behavior.",
+      "Collaborated with distributed teams in English, Spanish and Portuguese, using AI-assisted coding tools alongside implementation and review."
+    ]
+  },
+  {
+    "op": "test",
+    "path": "/work/0/company",
+    "value": "Nubank"
+  },
+  {
+    "op": "add",
+    "path": "/work/0/resumeFeatured",
+    "value": true
+  },
+  {
+    "op": "test",
+    "path": "/work/1/company",
+    "value": "Sofía Salud"
+  },
+  {
+    "op": "add",
+    "path": "/work/1/resumeFeatured",
+    "value": true
+  },
+  {
+    "op": "test",
+    "path": "/work/2/company",
+    "value": "Banco Covalto"
+  },
+  {
+    "op": "add",
+    "path": "/work/2/resumeFeatured",
+    "value": true
+  },
+  {
+    "op": "test",
+    "path": "/work/3/company",
+    "value": "Banco Covalto"
+  },
+  {
+    "op": "add",
+    "path": "/work/3/resumeFeatured",
+    "value": true
+  },
+  {
+    "op": "test",
+    "path": "/work/4/company",
+    "value": "Credijusto (now Banco Covalto)"
+  },
+  {
+    "op": "add",
+    "path": "/work/4/resumeFeatured",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/work/0",
+    "value": {
+      "company": "SitesPay",
+      "description": "Financial and business systems",
+      "position": "",
+      "location": "",
+      "startDate": "",
+      "endDate": "",
+      "url": "",
+      "summary": "Design and development of financial systems, combining payment and accounting-domain modeling, software architecture, hands-on implementation and engineering-team development.",
+      "highlights": [
+        "Model payment, pricing, FX, accounting and reconciliation workflows in collaboration with product, engineering and operations.",
+        "Design boundaries between economic records and external payment execution, with explicit responsibilities and traceable operations.",
+        "Develop specifications, contract and end-to-end tests, provider simulations and reproducible development environments to verify complete business flows.",
+        "Coordinate engineering and AI-assisted contributions through documentation, review and integration, while remaining involved in implementation and engineer development."
+      ],
+      "resumeFeatured": true
+    }
+  }
+]
