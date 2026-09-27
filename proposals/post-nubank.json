@@ -1,0 +1,77 @@
+{
+  "status": "draft-for-owner-review-not-canonical",
+  "instructions": "Review these snippets before copying approved fields into luisfernandobarrera.resume.json. This file is not a JSON Resume document and is not loaded by app.py.",
+  "needsConfirmation": [
+    "SitesPay start month/year",
+    "SitesPay public position/title; candidate position below describes functional scope only",
+    "Permission to name PayGlobal and describe the proposed current-work scope publicly"
+  ],
+  "basicsPatch": {
+    "label": "Software Engineer, Systems Architect & Technical Leader",
+    "specialty": "Business & Financial Systems | Accounting, Payments, Data & Platforms",
+    "summary": "Hands-on software engineer, systems architect and technical leader with experience across ERP, lending, banking, payments and data platforms. I connect business, financial and operational requirements to executable domain models, integration contracts and verification cases. My work combines direct implementation, team development and AI-assisted engineering, with an emphasis on reliable systems that remain practical to change.",
+    "about": [
+      "I work across software engineering, domain modeling, architecture and technical leadership. My experience spans ERP, lending, banking, payments and data-collection platforms, with accounting and finance as recurring areas of depth rather than a restriction to one industry.",
+      "I connect product, economic and operational requirements to the models that software implements. I use documentation, working code and representative and adverse cases to clarify rules, challenge assumptions and guide changes.",
+      "I remain hands-on while working with engineers, product and operations. My current work includes financial-system design and development, reusable domain tools and AI-assisted engineering workflows. I focus on preserving reliable behavior and making expected changes less costly to implement."
+    ]
+  },
+  "workToPrepend": {
+    "company": "SitesPay",
+    "position": "Technical Leadership & Financial Systems Engineering",
+    "startDate": "",
+    "endDate": "",
+    "summary": "Work on financial-system architecture and development, connecting payment operations, accounting, pricing and product requirements with implementation and verification.",
+    "resumeSummary": "Design and develop financial systems spanning payments, accounting and pricing, alongside hands-on technical leadership and AI-assisted engineering workflows.",
+    "highlights": [
+      "Work on PayGlobal's payment and remittance flows, including funding, pricing, FX, execution, reconciliation and accounting effects.",
+      "Develop domain models and integration contracts that distinguish business and accounting state from provider execution and external evidence.",
+      "Build and review representative and adverse business-flow cases to validate behavior across components and controlled provider integrations.",
+      "Contribute to reproducible development environments, documentation and review workflows for engineers and AI agents.",
+      "Work with engineers and product stakeholders to translate business rules into implementation and verification, while remaining hands-on with code."
+    ],
+    "resumeHighlights": [
+      "Connect payment operations, accounting and pricing rules through domain models and integration contracts.",
+      "Develop business-flow verification and review workflows for collaborative human and AI-assisted engineering."
+    ]
+  },
+  "workUpdates": [
+    {
+      "match": {"company": "Nubank", "startDate": "2024-12-10"},
+      "patch": {
+        "summary": "Worked on Money-In systems for Brazil, Mexico and Colombia using Clojure, Datomic, microservices and Nubank's internal platforms.",
+        "highlights": [
+          "Developed in-app experiences in a Clojure-based environment using Nubank's proprietary Clojure/Flutter framework.",
+          "Worked on transfer-in integrations and support tooling across Brazilian, Colombian and Mexican payment contexts.",
+          "Delivered a React and Clojure application for customer-support teams to inspect transfer details through microservices and GraphQL.",
+          "Used Grafana for service monitoring and wrote documentation on internal platforms and integration behavior.",
+          "Collaborated across countries in English, Spanish and Portuguese."
+        ]
+      }
+    }
+  ],
+  "projectsToPrepend": [
+    {
+      "name": "OpenBancor Ledger / Cljedger",
+      "type": "Accounting infrastructure and developer tooling",
+      "description": "Accounting models and tooling for explicit quantities, commodities, transaction history and verification.",
+      "summary": "Develop accounting semantics and an experimental temporal accounting runtime, with domain models, reference cases and verification tools.",
+      "highlights": ["Work on explicit monetary and commodity representation, transaction history and reproducible verification."],
+      "keywords": ["Accounting", "Domain Modeling", "Clojure", "Verification"],
+      "hide": false
+    },
+    {
+      "name": "Catálogo MX",
+      "type": "Reference data and domain tooling",
+      "description": "Reusable Mexican reference catalogs and validation tools.",
+      "summary": "Organize recurring reference data and validation logic into reusable packages instead of reimplementing them independently in each application.",
+      "highlights": ["Develop reusable reference-data and validation components for Mexican business applications."],
+      "keywords": ["Reference Data", "Validation", "Business Systems"],
+      "hide": false
+    }
+  ],
+  "metaPatch": {
+    "atsJobLimit": 6,
+    "projectsJobLimit": 6
+  }
+}

@@ -1,191 +1,29 @@
-{% extends "template.html" %}
+{% extends "resume_ats.html" %}
+{% import "partials/resume_macros.html" as compact %}
 
-{% block title %}
-<title>{{ resume.basics.name }} — Resume with Projects</title>
-{% endblock %}
-
-{% block body_class %} class="ats-resume"{% endblock %}
-
-{% block header %}
-<header id="header">
-    <div>
-        <h1 class="name">{{ resume.basics.name }}</h1>
-        <h2 class="label">{{ resume.basics.label }}</h2>
-        {% if resume.basics.specialty %}
-        <h3 class="specialty">{{ resume.basics.specialty }}</h3>
-        {% endif %}
-        <div class="languages-line">
-            {% for language in resume.languages %}{{ language.language }} ({{ language.fluency }}){% if not loop.last %}, {% endif %}{% endfor %}
-        </div>
-    </div>
-</header>
-
-<section id="basics" class="no-page-break">
-    <div class="contact-info">
-        <div class="contact-line">
-            {% for profile in resume.basics.profiles %}<span>{{ profile.url }}</span>{% if not loop.last %} | {% endif %}{% endfor %}
-        </div>
-        <div class="contact-line">{{ resume.basics.email }} | {{ resume.basics.phone }} | {{ resume.basics.location.city }}, {{ resume.basics.location.country }}</div>
-    </div>
-</section>
-{% endblock header %}
-
-{% block about %}
-    <section>
-        {% set ns = namespace(earliest_year=9999) %}
-        {% for job in resume.work %}
-            {% set year = job.startDate[:4] | int %}
-            {% if year < ns.earliest_year %}
-                {% set ns.earliest_year = year %}
-            {% endif %}
-        {% endfor %}
-        {% set current_year = 2025 %}
-        {% set years_experience = current_year - ns.earliest_year %}
-        <p><strong>{{ years_experience }}+ years of experience</strong> building high-performing teams and shipping complex systems in finance, banking, and data-intensive products. Expert in Python and Backend development; proficient in modern web stacks. Translate business and regulatory requirements into robust architectures and deliver reliable software at scale.</p>
-    </section>
-{% endblock about %}
-
-{% block jobs %}
-    {% set visible_jobs = resume.work | selectattr('hide', 'ne', True) | selectattr('resumeHide', 'ne', True) | list %}
-    {% for job in visible_jobs[:5] %}
-        {% set prev_company = visible_jobs[loop.index0 - 1].company if loop.index0 > 0 else '' %}
-        {% set is_same_company = 'Covalto' in job.company and 'Covalto' in prev_company %}
-        <section class="job entry{% if is_same_company %} same-company{% endif %}">
-            <header class="no-page-break">
-                <h3 class="name">{{ job.company }}</h3>
-                <div class="date">
-                    <span class="startDate">{{ job.startDate }} -</span>
-                    {% if job.endDate %}
-                    <span class="endDate">{{ job.endDate }}</span>
-                    {% else %}
-                    <span class="endDate">current</span>
-                    {% endif %}
-                </div>
-                <div class="position">{{ job.position }}</div>
-                <div class="location">{{ job.location }}</div>
-            </header>
-            {% if job.summary %}
-            <div class="item">
-                <p>{{ job.summary }}</p>
-            </div>
-            {% endif %}
-        </section>
-    {% endfor %}
-{% endblock jobs %}
-
-{% block skills %}
-    <section class="section no-page-break">
-        <h2 class='section-title'>Technical Skills</h2>
-        <div style="margin-top: 0.3em; font-size: 1em; line-height: 1.4;">
-            {# Build skill categories from JSON #}
-            {% set ns = namespace(backend=[], database=[], frontend=[], infra=[], mgmt=[], business=[]) %}
-            
-            {% for skill in resume.skills %}
-                {% if 'Python' in skill.name %}
-                    {# Extract from Python sections #}
-                    {% for kw in skill.keywords %}
-                        {% if kw in ['Django', 'FastAPI', 'Flask', 'Django REST Framework', 'REST API', 'GraphQL'] %}
-                            {% set _ = ns.backend.append(kw) %}
-                        {% elif kw in ['pandas', 'dataclasses', 'numpy', 'SQLAlchemy', 'advanced SQL', 'PostgreSQL', 'SQLite3'] %}
-                            {% set _ = ns.database.append(kw) %}
-                        {% elif kw in ['JavaScript', 'TypeScript', 'Vue.js', 'React', 'HTMX', 'SASS'] %}
-                            {% set _ = ns.frontend.append(kw) %}
-                        {% endif %}
-                    {% endfor %}
-                {% elif 'Engineering Management' in skill.name %}
-                    {% for kw in skill.keywords %}
-                        {% set _ = ns.mgmt.append(kw) %}
-                    {% endfor %}
-                {% elif 'Business' in skill.name %}
-                    {% for kw in skill.keywords %}
-                        {% set _ = ns.business.append(kw) %}
-                    {% endfor %}
-                {% elif 'Tools' in skill.name %}
-                    {# Extract infrastructure from Tools #}
-                    {% for kw in skill.keywords %}
-                        {% if kw in ['docker', 'kubernetes', 'bash', 'linux', 'continuous integration', 'CircleCI', 'DevOps', 'AI-Powered Coding', 'observability with Grafana'] %}
-                            {% set _ = ns.infra.append(kw) %}
-                        {% endif %}
-                    {% endfor %}
-                {% endif %}
-            {% endfor %}
-            
-            {# Add Python and TypeScript to backend #}
-            {% set backend_skills = ['Python', 'TypeScript'] + ns.backend %}
-            
-            {# Technical line with subcategories #}
-            <p style="margin-bottom: 0.25em;">
-                <strong>Technical:</strong> 
-                <strong style="font-size: 1.05em;">Backend:</strong> {{ backend_skills | join(', ') }} · 
-                <strong style="font-size: 1.05em;">Databases:</strong> {{ ns.database | join(', ') }} · 
-                <strong style="font-size: 1.05em;">Frontend:</strong> {{ ns.frontend | join(', ') }} · 
-                <strong style="font-size: 1.05em;">Infrastructure:</strong> {{ ns.infra | join(', ') }}
-            </p>
-            
-            {# Leadership & Management #}
-            <p style="margin-bottom: 0.25em;">
-                <strong>Leadership & Management:</strong> 
-                {% for kw in ns.mgmt %}{{ kw }}{% if not loop.last %}, {% endif %}{% endfor %}
-            </p>
-            
-            {# Business Domain #}
-            <p style="margin-bottom: 0;">
-                <strong>Business Domain:</strong> 
-                {% for kw in ns.business %}{{ kw }}{% if not loop.last %}, {% endif %}{% endfor %}
-            </p>
-        </div>
-    </section>
-{% endblock skills %}
+{% block title %}<title>{{ resume.basics.name }} — Resume with Projects</title>{% endblock %}
+{% block jobs %}{{ compact.jobs(resume, 'projectsJobLimit', 5) }}{% endblock %}
 
 {% block projects %}
-    {% if resume.projects %}
-        <section class="section">
-            <h2 class="section-title">Key Projects</h2>
-            <section id="projects">
-                {% for project in resume.projects %}
-                    {% if not project.hide %}
-                        <section class="project entry no-page-break">
-                            <header>
-                                <h3 class="name">{{ project.name }}</h3>
-                                {% if project.entity %}
-                                    <div class="working-for">{{ project.entity }}</div>
-                                {% endif %}
-                                <div class="project-description">{{ project.description }}</div>
-                            </header>
-                            <div class="item">
-                                {% if project.keywords %}
-                                    <div class="extras">
-                                        <span class="keywords">{% for keyword in project.keywords %}{{ keyword|lower }}{% if not loop.last %} · {% endif %}{% endfor %}</span>
-                                    </div>
-                                {% endif %}
-                                {% if project.summary %}
-                                    <p>{{ project.summary }}</p>
-                                {% endif %}
-                            </div>
-                        </section>
-                    {% endif %}
-                {% endfor %}
+    {% set visible_projects = resume.projects | default([]) | rejectattr('hide', 'equalto', True) | list %}
+    {% if visible_projects %}
+    <section class="section">
+        <h2 class="section-title">Key Projects</h2>
+        <section id="projects">
+            {% for project in visible_projects %}
+            <section class="project entry no-page-break">
+                <header>
+                    <h3 class="name">{{ project.name }}</h3>
+                    {% if project.entity %}<div class="working-for">{{ project.entity }}</div>{% endif %}
+                    {% if project.description %}<div class="project-description">{{ project.description }}</div>{% endif %}
+                </header>
+                <div class="item">
+                    {% if project.keywords %}<div class="extras"><span class="keywords">{{ project.keywords | join(' · ') }}</span></div>{% endif %}
+                    {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
+                </div>
             </section>
+            {% endfor %}
         </section>
-    {% endif %}
-{% endblock projects %}
-
-{% block education %}
-    {% if resume.education %}
-    <section class="section no-page-break">
-        <h2 class='section-title'>Education</h2>
-        <p style="margin-top: 0.5em;">
-        {% for study in resume.education %}
-            <strong>{{ study.studyType }} in {{ study.area }}</strong> — {{ study.institution }} ({{ study.startDate }}{% if study.endDate %} - {{ study.endDate }}{% endif %}){% if not loop.last %}; {% endif %}
-        {% endfor %}
-        </p>
     </section>
     {% endif %}
-{% endblock education %}
-
-{% block languages %}
-{% endblock languages %}
-
-{% block interests %}{% endblock interests %}
-{% block volunteer %}{% endblock volunteer %}
-
+{% endblock projects %}

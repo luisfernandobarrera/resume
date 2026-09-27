@@ -1,0 +1,54 @@
+{# Shared compact views. All professional copy comes from the resume JSON. #}
+{% macro summary(resume) -%}
+    {% if resume.basics.summary %}<p>{{ resume.basics.summary }}</p>{% endif %}
+{%- endmacro %}
+
+{% macro dates(job) -%}
+    {% if job.startDate %}<span class="startDate">{{ job.startDate }}</span> – {% endif %}
+    <span class="endDate">{{ job.endDate if job.endDate else 'Present' }}</span>
+{%- endmacro %}
+
+{% macro jobs(resume, limit_key, default_limit) -%}
+    {% set visible = resume.work | selectattr('hide', 'ne', True) | selectattr('resumeHide', 'ne', True) | list %}
+    {% set limit = (resume.meta | default({}, true)).get(limit_key, default_limit) %}
+    {# 0 means all visible roles. Invalid settings retain the existing default. #}
+    {% if limit is not integer or limit < 0 %}{% set limit = default_limit %}{% endif %}
+    {% set selected = visible[:limit] if limit else visible %}
+    {% for job in selected %}
+        {% set previous_company = selected[loop.index0 - 1].company if loop.index0 > 0 else '' %}
+        <section class="job entry{% if loop.index0 > 0 and job.company == previous_company %} same-company{% endif %}">
+            <header class="no-page-break">
+                <h3 class="name">{{ job.company }}</h3>
+                <div class="date">{{ dates(job) }}</div>
+                {% if job.position %}<div class="position">{{ job.position }}</div>{% endif %}
+                {% if job.location %}<div class="location">{{ job.location }}</div>{% endif %}
+            </header>
+            {% if job.resumeSummary or job.summary %}
+            <div class="item"><p>{{ job.resumeSummary or job.summary }}</p></div>
+            {% endif %}
+            {% if job.resumeHighlights %}
+            <div class="item"><ul class="highlights">
+                {% for highlight in job.resumeHighlights %}<li>{{ highlight }}</li>{% endfor %}
+            </ul></div>
+            {% endif %}
+        </section>
+    {% endfor %}
+    {% if selected | length < visible | length %}
+    <p class="additional-experience">Additional experience is available in the full CV.</p>
+    {% endif %}
+{%- endmacro %}
+
+{% macro skills(resume) -%}
+    {% if resume.skills %}
+    <section class="section">
+        <h2 class="section-title">Skills</h2>
+        {% for skill in resume.skills %}
+            {% if not skill.hide and skill.keywords %}
+            <p class="no-page-break" style="margin-bottom: 0.25em; line-height: 1.4;">
+                <strong>{{ skill.name }}:</strong> {{ skill.keywords | join(', ') }}
+            </p>
+            {% endif %}
+        {% endfor %}
+    </section>
+    {% endif %}
+{%- endmacro %}
