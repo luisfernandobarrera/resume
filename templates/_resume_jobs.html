@@ -1,0 +1,26 @@
+{# Explicit selection for short resumes; keep positional defaults for older data. #}
+{% macro render_jobs(resume, legacy_limit) -%}
+    {% set eligible = resume.work | selectattr('hide', 'ne', True) | selectattr('resumeHide', 'ne', True) | list %}
+    {% set featured = eligible | selectattr('resumeFeatured', 'equalto', True) | list %}
+    {% set selected = featured if featured else eligible[:legacy_limit] %}
+    {% for job in selected %}
+        {% set previous_company = selected[loop.index0 - 1].company if loop.index0 > 0 else '' %}
+        {% set same_company = loop.index0 > 0 and job.company == previous_company %}
+        <section class="job entry{% if same_company %} same-company{% endif %}">
+            <header class="no-page-break">
+                <h3 class="name">{{ job.company }}</h3>
+                <div class="date">
+                    {% if job.startDate %}<span class="startDate">{{ job.startDate }} -</span>{% endif %}
+                    <span class="endDate">{{ job.endDate if job.endDate else 'current' }}</span>
+                </div>
+                {% if job.position %}<div class="position">{{ job.position }}</div>{% endif %}
+                {% if job.location %}<div class="location">{{ job.location }}</div>{% endif %}
+            </header>
+            {% if job.summary %}
+            <div class="item">
+                <p>{{ job.summary }}</p>
+            </div>
+            {% endif %}
+        </section>
+    {% endfor %}
+{%- endmacro %}
