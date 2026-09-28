@@ -1,10 +1,18 @@
 {
   "status": "draft-for-owner-review-not-canonical",
-  "instructions": "Review these snippets before copying approved fields into luisfernandobarrera.resume.json. This file is not a JSON Resume document and is not loaded by app.py.",
+  "instructions": "The owner has confirmed the current-role date, title and public work scope below. Review the remaining profile/project selection before copying approved fields into luisfernandobarrera.resume.json. This file is not a JSON Resume document and is not loaded by app.py.",
+  "confirmedRoleFacts": {
+    "startDate": "2025-12-15",
+    "ownerStatedTitle": "Manager de ingeniería de desarrollo y Arquitecto",
+    "publicTitle": "Engineering Manager & Software Architect",
+    "publicWorkScope": [
+      "PayGlobal",
+      "Treasury ERP with banking connectivity",
+      "Substantial hands-on AI-assisted software development"
+    ]
+  },
   "needsConfirmation": [
-    "SitesPay start month/year",
-    "SitesPay public position/title; candidate position below describes functional scope only",
-    "Permission to name PayGlobal and describe the proposed current-work scope publicly"
+    "Final profile wording and selection of independent projects"
   ],
   "basicsPatch": {
     "label": "Software Engineer, Systems Architect & Technical Leader",
@@ -18,21 +26,21 @@
   },
   "workToPrepend": {
     "company": "SitesPay",
-    "position": "Technical Leadership & Financial Systems Engineering",
-    "startDate": "",
+    "position": "Engineering Manager & Software Architect",
+    "startDate": "2025-12-15",
     "endDate": "",
-    "summary": "Work on financial-system architecture and development, connecting payment operations, accounting, pricing and product requirements with implementation and verification.",
-    "resumeSummary": "Design and develop financial systems spanning payments, accounting and pricing, alongside hands-on technical leadership and AI-assisted engineering workflows.",
+    "summary": "Lead software engineering and architecture for PayGlobal and a treasury ERP with banking connectivity, combining team leadership with substantial hands-on, AI-assisted software development.",
+    "resumeSummary": "Lead engineering and architecture for financial systems spanning payments and treasury, including PayGlobal and a bank-connected treasury ERP, while remaining hands-on with AI-assisted development.",
     "highlights": [
-      "Work on PayGlobal's payment and remittance flows, including funding, pricing, FX, execution, reconciliation and accounting effects.",
-      "Develop domain models and integration contracts that distinguish business and accounting state from provider execution and external evidence.",
-      "Build and review representative and adverse business-flow cases to validate behavior across components and controlled provider integrations.",
-      "Contribute to reproducible development environments, documentation and review workflows for engineers and AI agents.",
-      "Work with engineers and product stakeholders to translate business rules into implementation and verification, while remaining hands-on with code."
+      "Lead engineering and architecture work on PayGlobal's payment and remittance flows, connecting pricing, FX, execution, reconciliation and accounting requirements.",
+      "Design and develop a treasury ERP with banking connectivity.",
+      "Implement and review code extensively with AI-assisted tools, retaining responsibility for domain decisions, integration and verification.",
+      "Develop domain models, integration contracts and representative and adverse business-flow cases to validate behavior across components and controlled provider integrations.",
+      "Work with engineers and product stakeholders to translate business rules into implementation, documentation and reproducible verification."
     ],
     "resumeHighlights": [
-      "Connect payment operations, accounting and pricing rules through domain models and integration contracts.",
-      "Develop business-flow verification and review workflows for collaborative human and AI-assisted engineering."
+      "Design and develop PayGlobal and a treasury ERP with banking connectivity.",
+      "Combine engineering management and architecture with hands-on AI-assisted implementation and business-flow verification."
     ]
   },
   "workUpdates": [

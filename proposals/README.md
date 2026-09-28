@@ -1,28 +1,37 @@
 # Post-Nubank CV refresh — content proposal
 
-The canonical CV currently starts with Nubank, ending on 2025-09-12. This proposal adds the subsequent work without inferring a start date or assigning a formal seniority level.
+The canonical CV currently starts with Nubank, ending on 2025-09-12. This proposal adds the subsequent work without inferring chronology or assigning an unconfirmed seniority level.
+
+## Confirmed current-role facts
+
+The owner confirmed the start date as **2025-12-15** and described the role as **Manager de ingeniería de desarrollo y Arquitecto**, with substantial hands-on coding assisted by AI. The proposed English rendering is **Engineering Manager & Software Architect**; it does not introduce a Principal, Staff or Director title.
+
+The owner also approved mentioning **PayGlobal** and **a treasury ERP with banking connectivity**. These appear as current design/development work, not as claims of a completed launch, customer adoption or measured business impact. No legal employer name beyond the existing SitesPay work context is inferred.
+
+The date, role and permission to name these projects are no longer outstanding questions. Remaining owner review concerns final profile wording and independent-project selection.
 
 ## Review snippets, then apply
 
-`post-nubank.json` is a proposal, not a complete JSON Resume file and not an automatically applied patch. The application's `*.resume.json` loader does not load this file. Following the content-change protocol in `AGENTS.md`, the canonical JSON remains unchanged for owner review.
+`post-nubank.json` is a proposal, not a complete JSON Resume file and not an automatically applied patch. The application's `*.resume.json` loader does not load this file. Following the content-change protocol in `AGENTS.md`, the canonical JSON remains unchanged for owner application.
 
 The proposal contains:
 
+- `confirmedRoleFacts`: the owner's factual confirmation and the corresponding English title; editorial provenance, not a JSON Resume field to copy.
 - `basicsPatch`: replace only the corresponding keys in `basics`; preserve contact details and profiles.
-- `workToPrepend`: add the current SitesPay role at the beginning of `work` after confirming the start date, public title and proposed scope. The title is a functional description, not a confirmed contractual title. Empty dates are unresolved fields, not an invented employment chronology.
+- `workToPrepend`: the confirmed SitesPay role to add at the beginning of `work`. The empty `endDate` means the role is current; the start date is known.
 - `workUpdates`: locate Nubank by company and start date and replace only the supplied fields. Existing dates remain unchanged; completed-role prose is in the past tense.
-- `projectsToPrepend`: optional project snippets, kept separate from employer work. Select projects for the intended CV; no commercial adoption or ownership transfer is asserted.
-- `metaPatch`: review the job limits before copying them into `meta`. Six slots preserve the current role, Nubank, Sofía, both Covalto entries and Credijusto in the existing ordering. This can require more than one page.
+- `projectsToPrepend`: optional independent-project snippets, kept separate from employer work. No commercial adoption or ownership transfer is asserted.
+- `metaPatch`: review job limits before copying into `meta`. Six slots preserve SitesPay, Nubank, Sofía, both Covalto entries and Credijusto in the existing ordering. This can require more than one page.
 
-No private source notes, unverified launch, monetary migration figure, comparative ranking or performance metric are introduced.
+PayGlobal and the treasury ERP belong under SitesPay experience, not in a list that implies personal ownership. Selection of other projects must distinguish a repository's documented scope from deployed results and individual attribution.
 
 ## Template fixes
 
-The compact templates now use `basics.summary`; they no longer substitute hard-coded promotional text or a fixed 2025 experience calculation. They render skill groups directly, so Clojure and future groups are not silently dropped by keyword whitelists.
+The compact templates use `basics.summary`; they no longer substitute hard-coded promotional text or a fixed 2025 experience calculation. They render skill groups directly, so Clojure and future groups are not silently dropped by keyword whitelists.
 
-`meta.atsJobLimit` and `meta.projectsJobLimit` control the respective visible-role limits. Defaults remain 4 and 5; 0 includes all visible roles. Both `hide` and `resumeHide` remain respected. A visible note indicates when additional roles have been omitted. Optional `resumeSummary` and `resumeHighlights` support concise copy without replacing full-CV detail.
+`meta.atsJobLimit` and `meta.projectsJobLimit` control visible-role limits. Defaults remain 4 and 5; 0 includes all visible roles. Both `hide` and `resumeHide` remain respected. A note indicates when additional roles have been omitted. Optional `resumeSummary` and `resumeHighlights` support concise copy without replacing full-CV detail.
 
-The projects view inherits the ATS header, summary and skills rather than maintaining a second copy. Existing full-CV and screen templates are unchanged.
+The projects view inherits the ATS header, summary and skills. Existing full-CV and screen templates are unchanged.
 
 ## Verification and release
 
@@ -32,6 +41,8 @@ Run the template regression tests with:
 uv run python -m unittest discover -s tests -p 'test_resume_templates.py' -v
 ```
 
-These tests exercise Jinja rendering, data selection and escaping. They are not browser/PDF layout tests. The existing one-page ATS / two-page projects assertions still require a real build after content approval; do not infer page count from HTML tests.
+The proposal regression now checks the confirmed start date, title, present-role display, PayGlobal/treasury scope and hands-on AI-assisted work. The missing-date fixture remains separate to test rendering when a different role genuinely lacks a start date.
 
-This change does not regenerate `docs/`, overwrite `docs/resume.pdf`, modify the static site, or merge/publish the proposed CV. The existing build/clean rules conflict with the protected external `docs/resume.pdf`; use a disposable checkout or back up that asset before invoking those targets. That build-policy repair is separate from this focused content/template change.
+Targeted JSON and date-macro smoke checks were executed for this content revision. The full template suite and PDF build were not rerun in this revision. HTML checks do not establish browser layout or PDF pagination; page budgets require a real build after content application.
+
+This change does not regenerate `docs/`, overwrite `docs/resume.pdf`, update the static site or merge the PR. The existing build/clean rules conflict with the protected external `docs/resume.pdf`; use a disposable checkout or back up that asset before invoking those targets. That build-policy repair remains separate from this content update.

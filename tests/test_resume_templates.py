@@ -182,20 +182,31 @@ class ResumeTemplateTests(unittest.TestCase):
             self.assertIn("&lt;script&gt;", html)
         self.assertEqual(before, self.document)
 
-    def test_review_proposal_is_not_auto_loaded_or_falsely_dated(self):
+    def test_review_proposal_preserves_confirmed_role_without_auto_loading(self):
         path = ROOT / "proposals" / "post-nubank.json"
         proposal = json.loads(path.read_text(encoding="utf-8"))
         self.assertFalse(path.name.endswith(".resume.json"))
-        self.assertEqual(proposal["workToPrepend"]["startDate"], "")
+        role = proposal["workToPrepend"]
+        self.assertEqual(role["startDate"], "2025-12-15")
+        self.assertEqual(role["position"], "Engineering Manager & Software Architect")
+        self.assertEqual(role["endDate"], "")
+        self.assertEqual(proposal["confirmedRoleFacts"]["startDate"], role["startDate"])
+        self.assertEqual(proposal["confirmedRoleFacts"]["publicTitle"], role["position"])
         self.assertIn("draft", proposal["status"])
         self.assertTrue(proposal["needsConfirmation"])
         self.document["basics"].update(proposal["basicsPatch"])
-        self.document["work"].insert(0, proposal["workToPrepend"])
+        self.document["work"].insert(0, role)
         self.document["meta"].update(proposal["metaPatch"])
         for view in VIEWS:
             html = self.render(view)
             self.assertIn('class="name">SitesPay</h3>', html)
+            self.assertIn('class="startDate">2025-12-15</span>', html)
+            self.assertIn('class="endDate">Present</span>', html)
+            self.assertIn("Engineering Manager &amp; Software Architect", html)
             self.assertIn("financial systems spanning payments", html)
+            self.assertIn("PayGlobal", html)
+            self.assertIn("treasury ERP", html)
+            self.assertIn("hands-on AI-assisted implementation", html)
 
 
 if __name__ == "__main__":
