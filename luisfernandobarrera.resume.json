@@ -3,8 +3,8 @@
     "name": "Luis Fernando Barrera",
     "email": "luisfernando@informind.com",
     "image": "https://avatars2.githubusercontent.com/u/1202547?s=460&v=4",
-    "label": "Senior Software Engineer and Manager",
-    "specialty": "Python, TypeScript, Databases | Finance, Accounting, Business",
+    "label": "Systems Architect, Engineering Manager & Product Builder",
+    "specialty": "Financial Systems | Product Architecture | Human + AI Engineering",
     "phone": "+52 55 4848 1150",
     "location": {
       "city": "Mexico City",
@@ -12,14 +12,12 @@
       "countryCode": "MX",
       "country": "Mexico"
     },
-    "summary": "Senior Software Engineering Developer and Manager with proven experience building teams and mentoring people. Skilled and enthusiastic Python programmer with a solid background in Finance, Accounting, and Business Data Applications. Now doing Clojure and React.",
+    "summary": "Hands-on systems architect and engineering manager with experience across ERP, lending, banking, payments, data and business software. I work across product, financial-domain modeling, architecture and implementation, turning business rules into scalable systems and complete operational flows. I also design human-and-AI engineering systems and build independent products and reusable infrastructure across finance, tax software and developer tooling.",
     "about": [
-      "Senior Software Engineer and Engineering Manager with a track record building high-performing teams and shipping complex systems in finance, banking, and data-intensive products. Expert in Python and Backend development and; proficient in modern web stacks. I translate business and regulatory requirements into robust architectures and deliver reliable software at scale.",
-      "I have a strong drive for building software, leading teams, structuring chaos, organizing complexity. I achieve team objectives by fostering discussions to deeply understand problems and tackle them with a practical, hands-on approach, engage in coding and problem-solving alongside the team, focus on collective success and foster a collaborative environment. I am experienced in building teams and mentoring people.",
-      "I have the strong belief that the success of a team is not only a function of will and skills of the people but also of the culture, the organization, and the management team of the company. Enthusiastic about improving within a team, a company, and myself.",
-      "Skilled and enthusiastic Python programmer with a solid background in Finance, Accounting, and Business Data Applications. Love to design and analyze data through building applications and libraries. I don't just develop projects, I am proud to craft them.",
-      "Hopelessly curious and eclectic. Love to learn about any topic to solve problems. I use Getting Things Done (GTD) as my personal workflow, practice mindfulness to keep my mind clear and calm while handling stress, and have kept a personal ledger for 10 years.",
-      "If your data or project involves symbols like '$¢£€¥%', you would probably like to share a coffee with me or interview me."
+      "I work where product, business rules and software architecture meet. My strongest recurring domain is financial and accounting systems, but I approach problems as a systems generalist: understand the business model, make the important relationships explicit, and deepen the technical or domain model where the problem requires it.",
+      "My experience spans ERP, lending, banking, payments, treasury, data platforms and tax software. I participate directly in product definition and interface design as well as backend architecture, integration, data modeling and implementation.",
+      "I remain hands-on while leading engineers. I design engineering systems that combine human developers with AI agents for implementation, analysis, review and verification, with explicit context, evidence and human responsibility for technical decisions.",
+      "Alongside employer work, I build independent products and reusable technical infrastructure. Those projects let me explore financial-system primitives, developer tooling, product design and new ways to construct and verify software."
     ],
     "profiles": [
       {
@@ -35,94 +33,71 @@
     ]
   },
   "skills": [
-    
     {
-      "name": "Clojure",
-      "level": "Intermediate",
+      "name": "Financial & Business Systems",
       "keywords": [
-        "clojure",
-        "clojurescript",
-        "re-frame",
-        "reagent",
-        "datomic",
-        "datascript"
+        "accounting",
+        "payments",
+        "treasury",
+        "banking integrations",
+        "FX and pricing",
+        "reconciliation",
+        "lending and credit",
+        "ERP",
+        "CFDI and tax"
       ]
     },
     {
-      "name": "Python Data Programming",
-      "level": "Expert",
+      "name": "Systems & Product Architecture",
       "keywords": [
-        "pandas",
-        "dataclasses",
-        "numpy",
-        "SQLAlchemy",
-        "advanced SQL",
-        "PostgreSQL",
-        "SQLite3"
+        "domain modeling",
+        "distributed systems",
+        "microservices",
+        "integration contracts",
+        "event-driven systems",
+        "workflow design",
+        "data modeling",
+        "API design",
+        "product interfaces"
       ]
     },
     {
-      "name": "Python Web Development",
-      "level": "Expert",
+      "name": "Engineering Leadership",
       "keywords": [
+        "engineering management",
+        "team design",
+        "mentoring",
+        "technical leadership",
+        "architecture review",
+        "product and engineering collaboration",
+        "delivery systems"
+      ]
+    },
+    {
+      "name": "Human + AI Engineering",
+      "keywords": [
+        "agent-assisted development",
+        "multi-model review",
+        "context engineering",
+        "coding agents",
+        "verification and evidence",
+        "reproducible workflows"
+      ]
+    },
+    {
+      "name": "Implementation",
+      "keywords": [
+        "Python",
         "Django",
         "FastAPI",
-        "Flask",
-        "Django REST Framework",
-        "REST API",
-        "GraphQL",
-        "JavaScript",
+        "PostgreSQL",
+        "Clojure",
         "TypeScript",
-        "Vue.js",
+        "JavaScript",
+        "SvelteKit",
         "React",
-        "HTMX",
-        "SASS"
-      ]
-    },
-    {
-      "name": "Engineering Management",
-      "keywords": [
-        "team building",
-        "OKRs and KPIs",
-        "mentoring",
-        "DevOps",
-        "agile methodologies",
-        "product requirements",
-        "software architecture & design",
-        "project management"
-      ]
-    },
-    {
-      "name": "Business",
-      "keywords": [
-        "administration",
-        "accounting",
-        "finance",
-        "software for SMB",
-        "ERP",
-        "CRM",
-        "taxes",
-        "electronic invoicing (CFDI)",
-        "electronic signature",
-        "financial math"
-      ]
-    },
-    {
-      "name": "Tools",
-      "keywords": [
-        "AI-Powered Coding",
-        "docker",
-        "kubernetes",
-        "observability with Grafana",
-        "bash",
-        "linux",
-        "Excel VBA",
-        "CircleCI",
-        "SDLC",
-        "code quality",
-        "clean code",
-        "networking",
-        "continuous integration"
+        "Docker",
+        "Kubernetes"
       ]
     }
   ],
@@ -205,7 +180,7 @@
       "startDate": "2024-12-10",
       "endDate": "2025-09-12",
       "url": "https://nu.com.mx",
-      "summary": "Building amazing experiences for our customers to bring money to Nubank in Brazil, Mexico and Colombia. Using Clojure, Datomic, microservices and other proprietary technologies from Nubank.",
+      "summary": "Worked on Money-In systems for Brazil, Mexico and Colombia using Clojure, Datomic, microservices and Nubank's internal platforms.",
       "highlights": [
         "Worked in a full-stack environment using Clojure to deliver in-app experiences with the Nubank's proprietary framework in Clojure / Flutter (BDC).",
         "Used knowledge of banking systems in Brazil (Pix, TED, Boleto), Colombia (Bre-B, ACH, PSE), and Mexico (SPEI) to help solve problems in the Nubank microservices.",
@@ -213,7 +188,7 @@
         "Worked with AI-powered coding tools (Cursor, Claude, Gemini) to learn and deliver features quickly while debugging issues",
         "Used Grafana and other tools to monitor the microservices and the Nubank's proprietary platform.",
         "Studied and created documentation to better understand the Nubank's proprietary platform. Learning Clojure, Datomic, BDC to onboard to the team.",
-        "Collaborating in a multi-country team, using skills in English, Spanish and Portuguese."
+        "Collaborated in a multi-country team using English, Spanish and Portuguese."
       ]
     },
 
