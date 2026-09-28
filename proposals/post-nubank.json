@@ -1,6 +1,6 @@
 {
   "status": "draft-for-owner-review-not-canonical",
-  "instructions": "The owner has confirmed the current-role date, title and public work scope below. Review the remaining profile/project selection before copying approved fields into luisfernandobarrera.resume.json. This file is not a JSON Resume document and is not loaded by app.py.",
+  "instructions": "The owner has confirmed the current-role date, title and public work scope below. Review the remaining profile/project selection before copying approved fields into luisfernandobarrera.resume.json. Prepend workToPrepend to work and projectsToPrepend to projects without replacing their existing entries; apply workUpdates only to the matching role. Preserve existing project history, including Pennyworth, Kardex and Experos. The source catalog is not limited to the projects selected for a short CV. This file is a set of JSON snippets, not a complete JSON Resume document, and is not loaded by app.py.",
   "confirmedRoleFacts": {
     "startDate": "2025-12-15",
     "ownerStatedTitle": "Manager de ingeniería de desarrollo y Arquitecto",
@@ -12,7 +12,7 @@
     ]
   },
   "needsConfirmation": [
-    "Final profile wording and selection of independent projects"
+    "Final profile wording and project visibility for each CV version"
   ],
   "basicsPatch": {
     "label": "Software Engineer, Systems Architect & Technical Leader",
@@ -66,6 +66,18 @@
       "summary": "Develop accounting semantics and an experimental temporal accounting runtime, with domain models, reference cases and verification tools.",
       "highlights": ["Work on explicit monetary and commodity representation, transaction history and reproducible verification."],
       "keywords": ["Accounting", "Domain Modeling", "Clojure", "Verification"],
+      "hide": false
+    },
+    {
+      "name": "Reviewctl",
+      "type": "AI-assisted engineering and developer tooling",
+      "description": "Code-review tooling that records findings and verifiable review evidence.",
+      "summary": "Develop a CLI for bounded, policy-controlled LLM code reviews, preserving findings, review history and verifiable records separately from each organization's private data and credentials.",
+      "highlights": [
+        "Separate model transport from review policy, response validation and evidence handling.",
+        "Track findings and their lifecycle in an append-only project journal, with a separate workflow for offline-verifiable formal review records."
+      ],
+      "keywords": ["Python", "AI-assisted Engineering", "Code Review", "Verification", "Developer Tools"],
       "hide": false
     },
     {
