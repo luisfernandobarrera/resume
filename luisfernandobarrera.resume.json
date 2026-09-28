@@ -3,8 +3,8 @@
     "name": "Luis Fernando Barrera",
     "email": "luisfernando@informind.com",
     "image": "https://avatars2.githubusercontent.com/u/1202547?s=460&v=4",
-    "label": "Senior Software Engineer and Manager",
-    "specialty": "Python, TypeScript, Databases | Finance, Accounting, Business",
+    "label": "Systems Architect, Engineering Manager & Product Builder",
+    "specialty": "Financial Systems | Product Architecture | Human + AI Engineering",
     "phone": "+52 55 4848 1150",
     "location": {
       "city": "Mexico City",
@@ -12,14 +12,12 @@
       "countryCode": "MX",
       "country": "Mexico"
     },
-    "summary": "Senior Software Engineering Developer and Manager with proven experience building teams and mentoring people. Skilled and enthusiastic Python programmer with a solid background in Finance, Accounting, and Business Data Applications. Now doing Clojure and React.",
+    "summary": "Hands-on systems architect and engineering manager with experience across ERP, lending, banking, payments, data and business software. I work across product, financial-domain modeling, architecture and implementation, turning business rules into scalable systems and complete operational flows. I also design human-and-AI engineering systems and build independent products and reusable infrastructure across finance, tax software and developer tooling.",
     "about": [
-      "Senior Software Engineer and Engineering Manager with a track record building high-performing teams and shipping complex systems in finance, banking, and data-intensive products. Expert in Python and Backend development and; proficient in modern web stacks. I translate business and regulatory requirements into robust architectures and deliver reliable software at scale.",
-      "I have a strong drive for building software, leading teams, structuring chaos, organizing complexity. I achieve team objectives by fostering discussions to deeply understand problems and tackle them with a practical, hands-on approach, engage in coding and problem-solving alongside the team, focus on collective success and foster a collaborative environment. I am experienced in building teams and mentoring people.",
-      "I have the strong belief that the success of a team is not only a function of will and skills of the people but also of the culture, the organization, and the management team of the company. Enthusiastic about improving within a team, a company, and myself.",
-      "Skilled and enthusiastic Python programmer with a solid background in Finance, Accounting, and Business Data Applications. Love to design and analyze data through building applications and libraries. I don't just develop projects, I am proud to craft them.",
-      "Hopelessly curious and eclectic. Love to learn about any topic to solve problems. I use Getting Things Done (GTD) as my personal workflow, practice mindfulness to keep my mind clear and calm while handling stress, and have kept a personal ledger for 10 years.",
-      "If your data or project involves symbols like '$¢£€¥%', you would probably like to share a coffee with me or interview me."
+      "I work where product, business rules and software architecture meet. My strongest recurring domain is financial and accounting systems, but I approach problems as a systems generalist: understand the business model, make the important relationships explicit, and deepen the technical or domain model where the problem requires it.",
+      "My experience spans ERP, lending, banking, payments, treasury, data platforms and tax software. I participate directly in product definition and interface design as well as backend architecture, integration, data modeling and implementation.",
+      "I remain hands-on while leading engineers. I design engineering systems that combine human developers with AI agents for implementation, analysis, review and verification, with explicit context, evidence and human responsibility for technical decisions.",
+      "Alongside employer work, I build independent products and reusable technical infrastructure. Those projects let me explore financial-system primitives, developer tooling, product design and new ways to construct and verify software."
     ],
     "profiles": [
       {
@@ -35,94 +33,71 @@
     ]
   },
   "skills": [
-    
     {
-      "name": "Clojure",
-      "level": "Intermediate",
+      "name": "Financial & Business Systems",
       "keywords": [
-        "clojure",
-        "clojurescript",
-        "re-frame",
-        "reagent",
-        "datomic",
-        "datascript"
+        "accounting",
+        "payments",
+        "treasury",
+        "banking integrations",
+        "FX and pricing",
+        "reconciliation",
+        "lending and credit",
+        "ERP",
+        "CFDI and tax"
       ]
     },
     {
-      "name": "Python Data Programming",
-      "level": "Expert",
+      "name": "Systems & Product Architecture",
       "keywords": [
-        "pandas",
-        "dataclasses",
-        "numpy",
-        "SQLAlchemy",
-        "advanced SQL",
-        "PostgreSQL",
-        "SQLite3"
+        "domain modeling",
+        "distributed systems",
+        "microservices",
+        "integration contracts",
+        "event-driven systems",
+        "workflow design",
+        "data modeling",
+        "API design",
+        "product interfaces"
       ]
     },
     {
-      "name": "Python Web Development",
-      "level": "Expert",
+      "name": "Engineering Leadership",
       "keywords": [
+        "engineering management",
+        "team design",
+        "mentoring",
+        "technical leadership",
+        "architecture review",
+        "product and engineering collaboration",
+        "delivery systems"
+      ]
+    },
+    {
+      "name": "Human + AI Engineering",
+      "keywords": [
+        "agent-assisted development",
+        "multi-model review",
+        "context engineering",
+        "coding agents",
+        "verification and evidence",
+        "reproducible workflows"
+      ]
+    },
+    {
+      "name": "Implementation",
+      "keywords": [
+        "Python",
         "Django",
         "FastAPI",
-        "Flask",
-        "Django REST Framework",
-        "REST API",
-        "GraphQL",
-        "JavaScript",
+        "PostgreSQL",
+        "Clojure",
         "TypeScript",
-        "Vue.js",
+        "JavaScript",
+        "SvelteKit",
         "React",
-        "HTMX",
-        "SASS"
-      ]
-    },
-    {
-      "name": "Engineering Management",
-      "keywords": [
-        "team building",
-        "OKRs and KPIs",
-        "mentoring",
-        "DevOps",
-        "agile methodologies",
-        "product requirements",
-        "software architecture & design",
-        "project management"
-      ]
-    },
-    {
-      "name": "Business",
-      "keywords": [
-        "administration",
-        "accounting",
-        "finance",
-        "software for SMB",
-        "ERP",
-        "CRM",
-        "taxes",
-        "electronic invoicing (CFDI)",
-        "electronic signature",
-        "financial math"
-      ]
-    },
-    {
-      "name": "Tools",
-      "keywords": [
-        "AI-Powered Coding",
-        "docker",
-        "kubernetes",
-        "observability with Grafana",
-        "bash",
-        "linux",
-        "Excel VBA",
-        "CircleCI",
-        "SDLC",
-        "code quality",
-        "clean code",
-        "networking",
-        "continuous integration"
+        "Docker",
+        "Kubernetes"
       ]
     }
   ],
@@ -164,6 +139,40 @@
     }
   ],
   "work": [
+    {
+      "company": "SitesPay",
+      "description": "Financial technology and payments platform",
+      "position": "Engineering Manager & Systems Architect",
+      "location": "Remote and Mexico City",
+      "startDate": "2025-12-15",
+      "endDate": "",
+      "summary": "Lead product, systems architecture and engineering for financial platforms, combining engineering management with hands-on development across payments, treasury, banking integrations and business operations.",
+      "highlights": [
+        "Lead and develop engineering teams while designing how work is divided, coordinated and reviewed across human engineers and AI agents.",
+        "Participate directly in financial-product design across pricing, FX, treasury, payments, reconciliation, accounting and operational workflows.",
+        "Design product interfaces and end-to-end workflows that connect customer and operator experiences with underlying financial and technical models.",
+        "Architect and develop PayGlobal and a treasury ERP with banking connectivity as distributed financial systems with explicit service boundaries and integration contracts.",
+        "Design systems for business scalability, reducing operational coupling as products, providers and transaction volumes evolve.",
+        "Remain hands-on in architecture, implementation, code review and domain modeling while coordinating product and engineering decisions."
+      ]
+    },
+    {
+      "company": "Independent Products & Consulting",
+      "description": "Independent product development, engineering systems and client work",
+      "position": "Product & Systems Architect",
+      "location": "Remote and Mexico City",
+      "startDate": "2025",
+      "endDate": "",
+      "summary": "Build independent product lines and reusable engineering systems across financial infrastructure, tax software, AI-assisted software development and business applications.",
+      "highlights": [
+        "Develop OpenBancor, an ecosystem for financial-system building blocks spanning accounting and ledger semantics, financial calculations, reference data and distributed-system components.",
+        "Build Potzal and Reviewctl as engineering infrastructure for evidence-backed, multi-model software review, reproducibility and agent-assisted development.",
+        "Develop Powali as a portfolio of focused applications and calculators built on reusable product and domain components.",
+        "Build Alma CFDI for storing, organizing and working with Mexican CFDI documents and related SAT and fiscal workflows.",
+        "Design and improve websites, product interfaces and business applications for external clients.",
+        "Develop reusable human-and-AI engineering harnesses and workflows using multiple agent systems and model families."
+      ]
+    },
     {"company": "Nubank",
       "description": "Brazilian Global Fintech Bank",
       "position": "Senior Software Engineer (Money-In Team)",
@@ -171,7 +180,7 @@
       "startDate": "2024-12-10",
       "endDate": "2025-09-12",
       "url": "https://nu.com.mx",
-      "summary": "Building amazing experiences for our customers to bring money to Nubank in Brazil, Mexico and Colombia. Using Clojure, Datomic, microservices and other proprietary technologies from Nubank.",
+      "summary": "Worked on Money-In systems for Brazil, Mexico and Colombia using Clojure, Datomic, microservices and Nubank's internal platforms.",
       "highlights": [
         "Worked in a full-stack environment using Clojure to deliver in-app experiences with the Nubank's proprietary framework in Clojure / Flutter (BDC).",
         "Used knowledge of banking systems in Brazil (Pix, TED, Boleto), Colombia (Bre-B, ACH, PSE), and Mexico (SPEI) to help solve problems in the Nubank microservices.",
@@ -179,7 +188,7 @@
         "Worked with AI-powered coding tools (Cursor, Claude, Gemini) to learn and deliver features quickly while debugging issues",
         "Used Grafana and other tools to monitor the microservices and the Nubank's proprietary platform.",
         "Studied and created documentation to better understand the Nubank's proprietary platform. Learning Clojure, Datomic, BDC to onboard to the team.",
-        "Collaborating in a multi-country team, using skills in English, Spanish and Portuguese."
+        "Collaborated in a multi-country team using English, Spanish and Portuguese."
       ]
     },
 
@@ -235,7 +244,7 @@
         "Successfully achieved the Portfolio from SOFOM to Banco Covalto (Lender company to regulated bank). 2 billion Mexican pesos (100 million USD). Migrating from SOFOM's in-house system Loan Management System to Stefanini's Topaz in Banco Covalto. Regulated operation by the Comisión Nacional Bancaria y de Valores (CNBV, Mexican equivalent to the U.S. SEC).",
         "Migration was a necessary step for business growth and the merger between Credijusto and Banco Covalto (former Finterra) and to achieve a NASDAQ IPO.",
         "Led the collaboration across all business areas and departments to gather the logic from legacy systems and the logic to target systems. Creating all the transformations in between.",
-        "Wrote several financial math and accounting modules in a library to calculate, solve, split and do general work with amortization tables, cash flows, accounting, and payment application handling. Written against time with hard deadlines. (More details on the projects section in this CV as Pennyworth). Full Coverage. Data testing from source information and in delivered files.",
+        "Wrote several financial math and accounting modules in a library to calculate, solve, split and do general work with amortization tables, cash flows, accounting, and payment application handling. Written against time with hard deadlines. Full Coverage. Data testing from source information and in delivered files.",
         "Wrote a library to abstract the Credit Contract to work, fill and share data. Writing multiple extractors to fill these Contracts from different sources: Loan Management Systems, Excel Files, Google Sheet Files, etc.",
         "Delivered normalized data to the business teams for validation and calculations to fill the migration layouts",
         "Worked as Engineering Manager for a team of 6 engineers working with several legacy projects related to payments, financial quotes, loan management systems, and the Enterprise Service Bus (ESB) components.",
@@ -255,7 +264,7 @@
         "Maintained and developed Loany, a Portfolio Management System that handles Loans and Leases' transactions and calculations. Using Django and React.",
         "Refactored the Theoretical Table calculations to handle grace periods.",
         "Maintained Core Financial Libraries to handle calculations and settings across the company.",
-        "Designed and developed Kardex, a financial transaction database that allows to get reports gathering quantitative and qualitative data. (More details on the projects section in this CV).",
+        "Designed and developed Kardex, a financial transaction database that allows to get reports gathering quantitative and qualitative data.",
         "Audited all the Loan contracts to arrive to correct calculations and logic based on each subproduct (revolving and simple credit).",
         "Developed strong financial math and accounting skills to help Tech team to understand the financial team needs and provide solutions to major company problems.",
         "Designed the Enterprise Service Bus architecture to message processes across multiple origin and target systems in a sequential process, inspired by the Django middleware architecture."
@@ -362,7 +371,102 @@
   ],
   "projects": [
     {
+      "name": "OpenBancor",
+      "entity": "Independent",
+      "type": "Financial Systems Infrastructure",
+      "roles": [
+        "Product Designer",
+        "Systems Architect",
+        "Developer"
+      ],
+      "url": "https://github.com/openbancor",
+      "description": "Reusable components and experiments for building financial systems.",
+      "keywords": [
+        "accounting",
+        "ledger",
+        "financial math",
+        "transaction systems",
+        "reference data",
+        "Clojure",
+        "Python"
+      ],
+      "summary": "An ecosystem that includes the Universal Ledger work, PacioliDB/cljedger, Pennyworth, CatalogMX and related components for accounting, financial calculations, reference data and financial-system composition.",
+      "highlights": [
+        "Develop accounting-aware and transaction-history models with explicit quantities and commodities.",
+        "Reengineered earlier financial-calculation work into the current OpenBancor ecosystem instead of maintaining Pennyworth as a standalone résumé project."
+      ]
+    },
+    {
+      "name": "Potzal / Reviewctl",
+      "entity": "Independent",
+      "type": "AI Engineering Infrastructure",
+      "roles": [
+        "Product Designer",
+        "Systems Architect",
+        "Developer"
+      ],
+      "url": "https://github.com/potzal/reviewctl",
+      "description": "Engineering infrastructure for evidence-backed, multi-model software development and review.",
+      "keywords": [
+        "AI agents",
+        "LLM review",
+        "developer tools",
+        "verification",
+        "provenance",
+        "Python"
+      ],
+      "summary": "Build tooling and reusable workflows for agent-assisted engineering, including bounded multi-model review, evidence, provenance and reproducible verification.",
+      "highlights": [
+        "Reviewctl separates model transport from review policy, findings lifecycle and verifiable review evidence.",
+        "Potzal explores durable artifact and evidence infrastructure for reproducible engineering workflows."
+      ]
+    },
+    {
+      "name": "Powali",
+      "entity": "Independent",
+      "type": "Product Portfolio",
+      "roles": [
+        "Product Designer",
+        "Systems Architect",
+        "Developer"
+      ],
+      "url": "https://github.com/powali10",
+      "description": "A portfolio of focused calculator applications built from shared product and domain components.",
+      "keywords": [
+        "product design",
+        "calculators",
+        "domain modeling",
+        "shared framework",
+        "Flutter"
+      ],
+      "summary": "Build a reusable calculator framework and product family spanning financial, scientific, unit, currency, betting and other calculation domains.",
+      "highlights": [
+        "Use individual applications as concrete cases for discovering reusable product and domain abstractions."
+      ]
+    },
+    {
+      "name": "Alma CFDI",
+      "entity": "Independent",
+      "type": "Mexican Tax Software",
+      "roles": [
+        "Product Designer",
+        "Systems Architect",
+        "Developer"
+      ],
+      "url": "https://github.com/almacfdi",
+      "description": "Product for storing, organizing and working with Mexican CFDI tax documents.",
+      "keywords": [
+        "CFDI",
+        "SAT",
+        "tax",
+        "document management",
+        "Mexico"
+      ],
+      "summary": "Develop a CFDI repository and fiscal workflow product for organizing tax documents and supporting SAT-related processes."
+    },
+    {
       "name": "Treasury API",
+      "hide": true,
       "entity": "Banco Covalto",
       "type": "Banking API",
       "description": "Treasury API to expose movements to bank customers",
@@ -392,6 +496,7 @@
     },
     {
       "name": "firmas / mifiel",
+      "hide": true,
       "entity": "Banco Covalto",
       "type": "Web Application",
       "description": "Electronic Signature System",
@@ -427,6 +532,7 @@
     },
     {
       "name": "Pennyworth",
+      "hide": true,
       "entity": "Covalto, Inc.",
       "type": "Financial Math/Accounting Library",
       "roles": [
@@ -457,6 +563,7 @@
     },
     {
       "name": "Kardex",
+      "hide": true,
       "entity": "Credijusto & Covalto, Inc.",
       "type": "Loan Accounting System",
       "roles": [
@@ -487,6 +594,7 @@
     },
     {
       "name": "This CV",
+      "hide": true,
       "type": "Personal Project",
       "description": "Curriculum Vitae Production System",
       "startDate": "2018-12-17",
@@ -529,6 +637,7 @@
     },
     {
       "name": "Experos",
+      "hide": true,
       "entity": "Nextor Telecom",
       "type": "ERP",
       "roles": [

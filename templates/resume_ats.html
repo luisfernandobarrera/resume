@@ -32,16 +32,7 @@
 
 {% block about %}
     <section>
-        {% set ns = namespace(earliest_year=9999) %}
-        {% for job in resume.work %}
-            {% set year = job.startDate[:4] | int %}
-            {% if year < ns.earliest_year %}
-                {% set ns.earliest_year = year %}
-            {% endif %}
-        {% endfor %}
-        {% set current_year = 2025 %}
-        {% set years_experience = current_year - ns.earliest_year %}
-        <p><strong>{{ years_experience }}+ years of experience</strong> building high-performing teams and shipping complex systems in finance, banking, and data-intensive products. Expert in Python and Backend development; proficient in modern web stacks. Translate business and regulatory requirements into robust architectures and deliver reliable software at scale.</p>
+        <p>{{ resume.basics.summary }}</p>
     </section>
 {% endblock about %}
 
@@ -74,67 +65,20 @@
 {% endblock jobs %}
 
 {% block skills %}
+    {% if resume.skills %}
     <section class="section no-page-break">
-        <h2 class='section-title'>Skills</h2>
+        <h2 class='section-title'>Capabilities & Implementation</h2>
         <div style="margin-top: 0.3em; font-size: 1em; line-height: 1.4;">
-            {# Build skill categories from JSON #}
-            {% set ns = namespace(backend=[], database=[], frontend=[], infra=[], mgmt=[], business=[]) %}
-            
             {% for skill in resume.skills %}
-                {% if 'Python' in skill.name %}
-                    {# Extract from Python sections #}
-                    {% for kw in skill.keywords %}
-                        {% if kw in ['Django', 'FastAPI', 'Flask', 'Django REST Framework', 'REST API', 'GraphQL'] %}
-                            {% set _ = ns.backend.append(kw) %}
-                        {% elif kw in ['pandas', 'dataclasses', 'numpy', 'SQLAlchemy', 'advanced SQL', 'PostgreSQL', 'SQLite3'] %}
-                            {% set _ = ns.database.append(kw) %}
-                        {% elif kw in ['JavaScript', 'TypeScript', 'Vue.js', 'React', 'HTMX', 'SASS'] %}
-                            {% set _ = ns.frontend.append(kw) %}
-                        {% endif %}
-                    {% endfor %}
-                {% elif 'Engineering Management' in skill.name %}
-                    {% for kw in skill.keywords %}
-                        {% set _ = ns.mgmt.append(kw) %}
-                    {% endfor %}
-                {% elif 'Business' in skill.name %}
-                    {% for kw in skill.keywords %}
-                        {% set _ = ns.business.append(kw) %}
-                    {% endfor %}
-                {% elif 'Tools' in skill.name %}
-                    {# Extract infrastructure from Tools #}
-                    {% for kw in skill.keywords %}
-                        {% if kw in ['docker', 'kubernetes', 'bash', 'linux', 'continuous integration', 'CircleCI', 'DevOps', 'AI-Powered Coding', 'observability with Grafana'] %}
-                            {% set _ = ns.infra.append(kw) %}
-                        {% endif %}
-                    {% endfor %}
+                {% if not skill.hide and skill.keywords %}
+                <p style="margin-bottom: 0.25em;">
+                    <strong>{{ skill.name }}:</strong> {{ skill.keywords | join(', ') }}
+                </p>
                 {% endif %}
             {% endfor %}
-            
-            {# Add Python and TypeScript to backend #}
-            {% set backend_skills = ['Python', 'TypeScript'] + ns.backend %}
-            
-            {# Technical line with subcategories #}
-            <p style="margin-bottom: 0.25em;">
-                <strong>Technical:</strong> 
-                <strong style="font-size: 1.05em;">Backend:</strong> {{ backend_skills | join(', ') }} · 
-                <strong style="font-size: 1.05em;">Databases:</strong> {{ ns.database | join(', ') }} · 
-                <strong style="font-size: 1.05em;">Frontend:</strong> {{ ns.frontend | join(', ') }} · 
-                <strong style="font-size: 1.05em;">Infrastructure:</strong> {{ ns.infra | join(', ') }}
-            </p>
-            
-            {# Leadership & Management #}
-            <p style="margin-bottom: 0.25em;">
-                <strong>Leadership & Management:</strong> 
-                {% for kw in ns.mgmt %}{{ kw }}{% if not loop.last %}, {% endif %}{% endfor %}
-            </p>
-            
-            {# Business Domain #}
-            <p style="margin-bottom: 0;">
-                <strong>Business Domain:</strong> 
-                {% for kw in ns.business %}{{ kw }}{% if not loop.last %}, {% endif %}{% endfor %}
-            </p>
         </div>
     </section>
+    {% endif %}
 {% endblock skills %}
 
 {% block projects %}{% endblock projects %}

@@ -169,98 +169,22 @@
         
         <!-- Skills -->
         <section id="skills" class="section">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title">Capabilities & Implementation</h2>
             <div class="skills-list">
-                {# Build skill categories from JSON #}
-                {% set ns = namespace(backend=[], database=[], frontend=[], infra=[], mgmt=[], business=[]) %}
-                
                 {% for skill in resume.skills %}
-                    {% if 'Python' in skill.name %}
-                        {# Extract from Python sections #}
-                        {% for kw in skill.keywords %}
-                            {% if kw in ['Django', 'FastAPI', 'Flask', 'Django REST Framework', 'REST API', 'GraphQL'] %}
-                                {% set _ = ns.backend.append(kw) %}
-                            {% elif kw in ['pandas', 'dataclasses', 'numpy', 'SQLAlchemy', 'advanced SQL', 'PostgreSQL', 'SQLite3'] %}
-                                {% set _ = ns.database.append(kw) %}
-                            {% elif kw in ['JavaScript', 'TypeScript', 'Vue.js', 'React', 'HTMX', 'SASS'] %}
-                                {% set _ = ns.frontend.append(kw) %}
-                            {% endif %}
-                        {% endfor %}
-                    {% elif 'Engineering Management' in skill.name %}
-                        {% for kw in skill.keywords %}
-                            {% set _ = ns.mgmt.append(kw) %}
-                        {% endfor %}
-                    {% elif 'Business' in skill.name %}
-                        {% for kw in skill.keywords %}
-                            {% set _ = ns.business.append(kw) %}
-                        {% endfor %}
-                    {% elif 'Tools' in skill.name %}
-                        {# Extract infrastructure from Tools #}
-                        {% for kw in skill.keywords %}
-                            {% if kw in ['docker', 'kubernetes', 'bash', 'linux', 'continuous integration', 'CircleCI', 'DevOps', 'AI-Powered Coding', 'observability with Grafana'] %}
-                                {% set _ = ns.infra.append(kw) %}
-                            {% endif %}
-                        {% endfor %}
+                    {% if not skill.hide %}
+                    <div class="skill-row">
+                        <h3>{{ skill.name }}</h3>
+                        {% if skill.keywords %}
+                        <div class="skill-tags">
+                            {% for keyword in skill.keywords %}
+                            <span class="skill-tag">{{ keyword }}</span>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
                     {% endif %}
                 {% endfor %}
-                
-                {# Add Python and TypeScript to backend #}
-                {% set backend_skills = ['Python', 'TypeScript'] + ns.backend %}
-                
-                {# Clean, simple list format #}
-                <div class="skill-row">
-                    <h3><i class="fa fa-server"></i> Backend</h3>
-                    <div class="skill-tags">
-                        {% for skill in backend_skills %}
-                        <span class="skill-tag">{{ skill }}</span>
-                        {% endfor %}
-                    </div>
-                </div>
-                
-                <div class="skill-row">
-                    <h3><i class="fa fa-database"></i> Databases</h3>
-                    <div class="skill-tags">
-                        {% for skill in ns.database %}
-                        <span class="skill-tag">{{ skill }}</span>
-                        {% endfor %}
-                    </div>
-                </div>
-                
-                <div class="skill-row">
-                    <h3><i class="fa fa-desktop"></i> Frontend</h3>
-                    <div class="skill-tags">
-                        {% for skill in ns.frontend %}
-                        <span class="skill-tag">{{ skill }}</span>
-                        {% endfor %}
-                    </div>
-                </div>
-                
-                <div class="skill-row">
-                    <h3><i class="fa fa-cogs"></i> Infrastructure</h3>
-                    <div class="skill-tags">
-                        {% for skill in ns.infra %}
-                        <span class="skill-tag">{{ skill }}</span>
-                        {% endfor %}
-                    </div>
-                </div>
-                
-                <div class="skill-row">
-                    <h3><i class="fa fa-users"></i> Leadership & Management</h3>
-                    <div class="skill-tags">
-                        {% for skill in ns.mgmt %}
-                        <span class="skill-tag">{{ skill }}</span>
-                        {% endfor %}
-                    </div>
-                </div>
-                
-                <div class="skill-row">
-                    <h3><i class="fa fa-briefcase"></i> Business Domain</h3>
-                    <div class="skill-tags">
-                        {% for skill in ns.business %}
-                        <span class="skill-tag">{{ skill }}</span>
-                        {% endfor %}
-                    </div>
-                </div>
             </div>
         </section>
         
