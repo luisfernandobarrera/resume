@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 <head>
     <title>{{ resume.basics.name }} - CV</title>
@@ -34,22 +34,6 @@
     <span class="toggle-label">Compact</span>
 </button>
 
-<!-- Download Navigation -->
-<nav id="site-nav" aria-label="Download resume">
-    <span class="nav-label">Download:</span>
-    <a href="/resume.pdf" class="nav-link" target="_blank" rel="noopener" title="Download 1-page resume">
-        <i class="fa fa-file-text-o"></i>
-        <span>Resume</span>
-    </a>
-    <a href="/resume-projects.pdf" class="nav-link" target="_blank" rel="noopener" title="Download resume with projects">
-        <i class="fa fa-file-text"></i>
-        <span>+ Projects</span>
-    </a>
-    <a href="/cv.pdf" class="nav-link" target="_blank" rel="noopener" title="Download full CV">
-        <i class="fa fa-file-pdf-o"></i>
-        <span>Full CV</span>
-    </a>
-</nav>
 {% endif %}
 
 <div id="resume">
@@ -66,7 +50,7 @@
         <!-- Social Links -->
         <div class="social-links">
             {% for profile in resume.basics.profiles %}
-            <a href="{{ profile.url }}" class="social-link" target="_blank" rel="noopener" title="{{ profile.network }}">
+            <a href="{{ profile.url }}" class="social-link" target="_blank" rel="noopener" title="{{ profile.network }}" aria-label="{{ profile.network }}">
                 <i class="fa fa-{{ profile.network }}"></i>
             </a>
             {% endfor %}
@@ -94,6 +78,25 @@
                 <a href="tel:{{ resume.basics.phone }}">{{ resume.basics.phone }}</a>
             </div>
         </div>
+
+        {% if not print %}
+        <!-- Download Navigation -->
+        <nav id="site-nav" aria-label="Download resume">
+            <span class="nav-label">Download:</span>
+            <a href="/resume.pdf" class="nav-link" target="_blank" rel="noopener" title="Download 1-page resume">
+                <i class="fa fa-file-text-o"></i>
+                <span>Resume</span>
+            </a>
+            <a href="/resume-projects.pdf" class="nav-link" target="_blank" rel="noopener" title="Download resume with projects">
+                <i class="fa fa-file-text"></i>
+                <span>+ Projects</span>
+            </a>
+            <a href="/cv.pdf" class="nav-link" target="_blank" rel="noopener" title="Download full CV">
+                <i class="fa fa-file-pdf-o"></i>
+                <span>Full CV</span>
+            </a>
+        </nav>
+        {% endif %}
     </aside>
     
     <!-- Main Content -->
@@ -121,10 +124,10 @@
             </div>
             {% if resume.basics.about|length > 1 %}
             <div class="toggle-wrapper">
-                <a class="toggle-link" onclick="toggleContent('about-more', this)">
+                <button type="button" class="toggle-link" aria-expanded="false" aria-controls="about-more" onclick="toggleContent('about-more', this)">
                     <span class="toggle-text">Show more</span>
                     <i class="fa fa-angle-down"></i>
-                </a>
+                </button>
             </div>
             {% endif %}
         </section>
@@ -155,10 +158,10 @@
                                 </ul>
                             </div>
                             <div class="toggle-wrapper">
-                                <a class="toggle-link" onclick="toggleContent('job-{{ loop.index }}', this)">
+                                <button type="button" class="toggle-link" aria-expanded="false" aria-controls="job-{{ loop.index }}" onclick="toggleContent('job-{{ loop.index }}', this)">
                                     <span class="toggle-text">Show details</span>
                                     <i class="fa fa-angle-down"></i>
-                                </a>
+                                </button>
                             </div>
                             {% endif %}
                         </article>
@@ -309,10 +312,10 @@
                         
                         {% if project.highlights or project.keywords %}
                         <div class="toggle-wrapper">
-                            <a class="toggle-link" onclick="toggleContent('project-{{ loop.index }}', this)">
+                            <button type="button" class="toggle-link" aria-expanded="false" aria-controls="project-{{ loop.index }}" onclick="toggleContent('project-{{ loop.index }}', this)">
                                 <span class="toggle-text">Show details</span>
                                 <i class="fa fa-angle-down"></i>
-                            </a>
+                            </button>
                         </div>
                         {% endif %}
                     </article>
@@ -400,12 +403,14 @@ function toggleContent(contentId, link) {
     
     if (content.classList.contains('expanded')) {
         content.classList.remove('expanded');
+        link.setAttribute('aria-expanded', 'false');
         icon.className = 'fa fa-angle-down';
         text.textContent = text.textContent.replace('less', 'more').replace('Hide', 'Show').replace('fewer skills', 'all skills');
     } else {
         content.classList.add('expanded');
+        link.setAttribute('aria-expanded', 'true');
         icon.className = 'fa fa-angle-up';
-        text.textContent = text.textContent.replace('more', 'less').replace('Show', 'Hide').replace('details', 'less').replace('all skills', 'fewer skills');
+        text.textContent = text.textContent.replace('more', 'less').replace('Show', 'Hide').replace('all skills', 'fewer skills');
     }
 }
 

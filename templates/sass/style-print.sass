@@ -300,3 +300,149 @@ body:not(.ats-resume)
           margin-right: 0
           border-right: 1px solid lightgray
 
+
+// Full CV sheet (cv.html). Scoped so the 1-page ATS layouts stay untouched.
+body:not(.ats-resume)
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-size: 9.5pt
+  line-height: 1.45
+  text-align: left
+  color: #111
+
+  p, li
+    orphans: 3
+    widows: 3
+
+  h1, h2, h3, h4, h5, h6
+    font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif
+    break-after: avoid
+    page-break-after: avoid
+
+  h1.name
+    margin: 0
+    font-size: 20pt
+    line-height: 1.15
+    letter-spacing: -0.01em
+
+  h2.label
+    margin: 0.25em 0 0.15em
+    font-size: 11.5pt
+    font-weight: 600
+
+  h3.specialty
+    margin: 0 0 0.9em
+    font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-size: 9.5pt
+    color: #444
+
+  #basics
+    padding: 0.6em 0
+    border-top: 0.75pt solid #111
+    border-bottom: 0.5pt solid #bbb
+    margin-bottom: 1.4em
+    font-size: 9pt
+    line-height: 1.5
+
+  .section
+    margin-bottom: 1.5em
+
+  h2.section-title
+    margin: 0 0 0.8em
+    padding-bottom: 0.35em
+    border-bottom: 0.75pt solid #111
+    font-size: 8.5pt
+    font-weight: 700
+    letter-spacing: 0.09em
+    text-transform: uppercase
+
+  .main-summary p
+    margin: 0 0 0.6em
+
+  #work, #projects, #volunteer
+    section.job, section.project
+      &:not(:last-child)
+        margin-bottom: 1.5em
+        padding-bottom: 1.2em
+        border-bottom: 0.5pt solid #ccc
+
+    header
+      break-inside: avoid
+      page-break-inside: avoid
+      break-after: avoid
+      page-break-after: avoid
+
+    h3.name
+      font-size: 11pt
+      line-height: 1.35
+
+    .website, .date, .location, .working-for
+      font-size: 8.5pt
+      line-height: 1.6
+      color: #444
+
+    .date
+      font-weight: 600
+      font-variant-numeric: tabular-nums
+      color: #111
+
+    .company-description, .project-description
+      font-family: inherit
+      font-style: normal
+      color: #444
+
+    .position, .roles, .working-for
+      font-weight: 600
+
+    .summary
+      margin-bottom: 0.4em
+
+      p
+        margin: 0.5em 0 0
+
+    .extras
+      margin: 0.3em 0 0.4em
+      font-size: 8.5pt
+      color: #444
+
+    ul.highlights
+      margin: 0.4em 0 0
+      padding-left: 1.2em
+
+      li
+        margin-bottom: 0.25em
+        break-inside: avoid
+        page-break-inside: avoid
+
+  #volunteer
+    header
+      overflow: hidden
+
+    .item
+      clear: both
+      margin-bottom: 0.8em
+
+  .education
+    margin-bottom: 0.7em
+    break-inside: avoid
+    page-break-inside: avoid
+
+    header .name
+      font-size: 9.5pt
+
+  #languages
+    padding-bottom: 0
+    font-family: inherit
+
+    .item
+      padding: 0 2em 0 0
+
+    .language
+      font-family: inherit
+      font-size: 100%
+
+  #interests, #skills
+    .item
+      margin-bottom: 0.6em
+
+    .keywords
+      font-family: inherit
